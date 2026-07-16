@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T17:35:18Z",
+  "generated": "2026-07-16T18:25:55Z",
   "kraken_assets": [
     "BTC",
     "ETH",
@@ -53,9 +53,9 @@
       "symbol": "ANSEM",
       "stop": 0.0050953,
       "tp1": 0.0203812,
-      "tp1_hit": false,
+      "tp1_hit": true,
       "trail_pct": 0.4,
-      "high_water": 0.01004,
+      "high_water": 0.2184,
       "liquidation_price": null,
       "be_ratchet": null,
       "liquidity_at_entry": 331723
