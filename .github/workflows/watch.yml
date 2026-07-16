@@ -1,0 +1,35 @@
+name: market-sentinel
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 minutes (GitHub may add a few minutes of jitter)
+  workflow_dispatch: {}      # manual "Run workflow" button for testing
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sentinel
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run watcher
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 watcher.py
+      - name: Commit data
+        if: always()
+        run: |
+          git config user.name "sentinel-bot"
+          git config user.email "sentinel@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && exit 0
+          git commit -m "sample $(date -u +%Y-%m-%dT%H:%M)"
+          for i in 1 2 3; do git push && exit 0 || git pull --rebase; done
+          git push

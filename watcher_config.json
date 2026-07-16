@@ -1,0 +1,121 @@
+{
+  "generated": "2026-07-16T17:35:18Z",
+  "kraken_assets": [
+    "BTC",
+    "ETH",
+    "SOL"
+  ],
+  "meme_tokens": [
+    {
+      "symbol": "ANSEM",
+      "address": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+      "chain": "solana"
+    }
+  ],
+  "positions": [
+    {
+      "id": "MAJ-001",
+      "track": "majors",
+      "symbol": "ETH",
+      "stop": 1780,
+      "tp1": 2150,
+      "tp1_hit": false,
+      "trail_pct": 0.12,
+      "high_water": 1877.78,
+      "liquidation_price": null,
+      "be_ratchet": {
+        "trigger": 1972.0,
+        "ratchet_stop_to": 1879.66,
+        "done": false
+      },
+      "liquidity_at_entry": null
+    },
+    {
+      "id": "MAJ-002",
+      "track": "majors",
+      "symbol": "BTC",
+      "stop": 61500,
+      "tp1": 69500,
+      "tp1_hit": false,
+      "trail_pct": 0.1,
+      "high_water": 64444.6,
+      "liquidation_price": null,
+      "be_ratchet": {
+        "trigger": 67700.0,
+        "ratchet_stop_to": 64509.04,
+        "done": false
+      },
+      "liquidity_at_entry": null
+    },
+    {
+      "id": "MEME-001",
+      "track": "meme",
+      "symbol": "ANSEM",
+      "stop": 0.0050953,
+      "tp1": 0.0203812,
+      "tp1_hit": false,
+      "trail_pct": 0.4,
+      "high_water": 0.01004,
+      "liquidation_price": null,
+      "be_ratchet": null,
+      "liquidity_at_entry": 331723
+    },
+    {
+      "id": "STK-001",
+      "track": "stocks",
+      "symbol": "TSM",
+      "stop": 380,
+      "tp1": 470,
+      "tp1_hit": false,
+      "trail_pct": 0.08,
+      "high_water": 411.2,
+      "liquidation_price": null,
+      "be_ratchet": {
+        "trigger": 432.0,
+        "ratchet_stop_to": 411.41,
+        "done": false
+      },
+      "liquidity_at_entry": null,
+      "watch": false
+    },
+    {
+      "id": "STK-002",
+      "track": "stocks",
+      "symbol": "SPX",
+      "stop": 7180,
+      "tp1": null,
+      "tp1_hit": false,
+      "trail_pct": null,
+      "high_water": null,
+      "liquidation_price": null,
+      "be_ratchet": null,
+      "liquidity_at_entry": null,
+      "watch": false
+    },
+    {
+      "id": "LEV-001",
+      "track": "leveraged",
+      "symbol": "ETH",
+      "stop": 1780,
+      "tp1": 2150,
+      "tp1_hit": false,
+      "trail_pct": 0.1,
+      "high_water": 1877.78,
+      "liquidation_price": 1261.24,
+      "be_ratchet": {
+        "trigger": 1972.0,
+        "ratchet_stop_to": 1877.78,
+        "done": false
+      },
+      "liquidity_at_entry": null
+    }
+  ],
+  "rules": {
+    "near_band_pct": 0.02,
+    "meme_fast_move_pct": 0.1,
+    "meme_liquidity_floor_usd": 100000,
+    "meme_liquidity_halved_from_entry": true,
+    "liq_proximity_pct": 0.05,
+    "alert_cooldown_seconds": 3600
+  }
+}
