@@ -156,6 +156,13 @@ for p in cfg["positions"]:
 json.dump(state, open(os.path.join(DATA, "state.json"), "w"), indent=2)
 
 # ---------------- 4. notify ----------------
+# one-shot test alert: commit a file named data/test_alert_requested to trigger
+flag = os.path.join(DATA, "test_alert_requested")
+if os.path.exists(flag):
+    os.remove(flag)
+    alerts.append("TEST alert — the sentinel is live and notifications are working. "
+                  "This is what a real alert will look like. No action needed.")
+
 if alerts:
     with open(os.path.join(DATA, "alerts.jsonl"), "a") as f:
         for a in alerts:
@@ -166,7 +173,8 @@ if alerts:
     hook = os.environ.get("DISCORD_WEBHOOK")
     if hook:
         try:
-            req = urllib.request.Request(hook, data=json.dumps({"content": msg[:1900]}).encode(),
+            dmsg = "@everyone " + msg  # forces a push notification even on default channel settings
+            req = urllib.request.Request(hook, data=json.dumps({"content": dmsg[:1900]}).encode(),
                                          headers={"Content-Type": "application/json", "User-Agent": "sentinel"})
             urllib.request.urlopen(req, timeout=15); sent = True
         except Exception as e:
