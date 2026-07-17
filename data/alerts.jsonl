@@ -1,3 +1,4 @@
 {"ts": "2026-07-16T18:21:56Z", "alert": "ALERT MEME-001 (ANSEM): CROSSED TP1 0.0203812 \u2014 price 0.2184"}
 {"ts": "2026-07-16T18:21:56Z", "alert": "TEST alert \u2014 the sentinel is live and notifications are working. This is what a real alert will look like. No action needed."}
 {"ts": "2026-07-16T19:25:28Z", "alert": "TEST alert \u2014 the sentinel is live and notifications are working. This is what a real alert will look like. No action needed."}
+{"ts": "2026-07-17T04:22:13Z", "alert": "ALERT MEME-001 (ANSEM): moved +13.4% since last sample \u2014 price 0.1907"}
