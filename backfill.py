@@ -24,13 +24,40 @@ done = {}
 if os.path.exists(MARKER):
     done = json.load(open(MARKER))
 
-todo = [(s, p, m) for s, p in PAIRS.items() for m in MONTHS if not done.get(f"{s}-{m}")]
+todo = [("kline", s, p, m) for s, p in PAIRS.items() for m in MONTHS if not done.get(f"{s}-{m}")]
+todo += [("funding", s, p, m) for s, p in PAIRS.items() for m in MONTHS if not done.get(f"FUND-{s}-{m}")]
 if not todo:
     print("backfill: complete, nothing to do")
     sys.exit(0)
 
 processed = 0
-for sym, pair, month in todo[:MAX_FILES_PER_RUN]:
+for kind, sym, pair, month in todo[:MAX_FILES_PER_RUN]:
+    if kind == "funding":
+        url = f"https://data.binance.vision/data/futures/um/monthly/fundingRate/{pair}/{pair}-fundingRate-{month}.zip"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "sentinel-backfill/1.0"})
+            with urllib.request.urlopen(req, timeout=120) as r:
+                blob = r.read()
+            zf = zipfile.ZipFile(io.BytesIO(blob))
+            out_path = os.path.join(HIST, f"{sym}_funding_{month}.csv.gz")
+            n = 0
+            with gzip.open(out_path, "wt", newline="") as gz:
+                w = csv.writer(gz)
+                w.writerow(["t", "rate"])
+                for row in csv.reader(io.TextIOWrapper(zf.open(zf.namelist()[0]))):
+                    if not row or not row[0].strip().isdigit():
+                        continue
+                    t = int(row[0])
+                    if t > 1e14: t //= 1_000_000
+                    elif t > 1e11: t //= 1000
+                    w.writerow([t, row[-1]])
+                    n += 1
+            done[f"FUND-{sym}-{month}"] = n
+            processed += 1
+            print(f"backfill: {sym} funding {month} -> {n} rows")
+        except Exception as e:
+            print(f"backfill WARN: {sym} funding {month} failed: {e}")
+        continue
     url = f"https://data.binance.vision/data/spot/monthly/klines/{pair}/1m/{pair}-1m-{month}.zip"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "sentinel-backfill/1.0"})

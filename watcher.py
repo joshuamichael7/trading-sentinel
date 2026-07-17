@@ -89,6 +89,44 @@ if os.path.exists(spath):
 with open(spath, "a") as f:
     f.write(json.dumps({"ts": TS, "prices": prices, "liquidity": liquidity}) + "\n")
 
+# ---------------- 1a. cross-exchange top-of-book spread sampling ----------------
+# For arbitrage research: synchronized best bid/ask across venues, logged with the
+# net executable spread after 0.1%/side taker fees. Failures are skipped silently.
+kr_book = fetch_json("https://api.kraken.com/0/public/Ticker?pair=XBTUSD,ETHUSD,SOLUSD")
+books = {}  # sym -> {venue: (bid, ask)}
+if kr_book and kr_book.get("result"):
+    for k, v in kr_book["result"].items():
+        sym = "BTC" if "XBT" in k else ("ETH" if "ETH" in k else "SOL")
+        books.setdefault(sym, {})["kraken"] = (float(v["b"][0]), float(v["a"][0]))
+for sym, prod in {"BTC": "BTC-USD", "ETH": "ETH-USD", "SOL": "SOL-USD"}.items():
+    d = fetch_json(f"https://api.exchange.coinbase.com/products/{prod}/ticker", tries=1)
+    if d and d.get("bid"):
+        books.setdefault(sym, {})["coinbase"] = (float(d["bid"]), float(d["ask"]))
+for sym, inst in {"BTC": "BTC-USDT", "ETH": "ETH-USDT", "SOL": "SOL-USDT"}.items():
+    d = fetch_json(f"https://www.okx.com/api/v5/market/ticker?instId={inst}", tries=1)
+    row = ((d or {}).get("data") or [{}])[0]
+    if row.get("bidPx"):
+        books.setdefault(sym, {})["okx"] = (float(row["bidPx"]), float(row["askPx"]))
+spread_rows = []
+TAKER = 0.001
+for sym, venues in books.items():
+    # sanity: drop venues whose mid deviates >3% from the median mid (bad tick guard)
+    mids = {v: (b + a) / 2 for v, (b, a) in venues.items()}
+    med = sorted(mids.values())[len(mids) // 2]
+    venues = {v: ba for v, ba in venues.items() if abs(mids[v] / med - 1) <= 0.03}
+    if len(venues) < 2:
+        continue
+    best_bid_v, (best_bid, _) = max(venues.items(), key=lambda kv: kv[1][0])
+    best_ask_v, (_, best_ask) = min(venues.items(), key=lambda kv: kv[1][1])
+    gross_pct = (best_bid - best_ask) / best_ask * 100
+    net_pct = gross_pct - 2 * TAKER * 100
+    spread_rows.append({"sym": sym, "buy_on": best_ask_v, "sell_on": best_bid_v,
+                        "gross_pct": round(gross_pct, 4), "net_pct": round(net_pct, 4),
+                        "venues": {v: [b, a] for v, (b, a) in venues.items()}})
+if spread_rows:
+    with open(os.path.join(DATA, "spreads.jsonl"), "a") as f:
+        f.write(json.dumps({"ts": TS, "spreads": spread_rows}) + "\n")
+
 # ---------------- 1b. 1-minute OHLC archive (BTC/ETH/SOL) ----------------
 # Builds a continuous 1m candle dataset for future short-timeframe strategy research.
 # Kraken serves ~12h of 1m candles per request, so gaps between runs self-heal.
