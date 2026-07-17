@@ -14,7 +14,7 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - name: Run watcher
@@ -23,6 +23,9 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python3 watcher.py
+      - name: Historical backfill (one-time, self-limiting)
+        if: always()
+        run: python3 backfill.py
       - name: Commit data
         if: always()
         run: |
