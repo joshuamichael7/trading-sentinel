@@ -16,8 +16,12 @@ HIST = os.path.join(HERE, "data", "hist")
 os.makedirs(HIST, exist_ok=True)
 MARKER = os.path.join(HIST, ".complete.json")
 
-PAIRS = {"BTC": "BTCUSDT", "ETH": "ETHUSDT", "SOL": "SOLUSDT"}
-MONTHS = ["2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"]
+PAIRS = {"BTC": "BTCUSDT", "ETH": "ETHUSDT", "SOL": "SOLUSDT",
+         "DOGE": "DOGEUSDT", "XRP": "XRPUSDT", "AVAX": "AVAXUSDT", "PEPE": "PEPEUSDT"}
+BEAR_MONTHS = ["2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"]
+BULL_MONTHS = ["2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03"]
+MONTHS = BEAR_MONTHS + BULL_MONTHS
+FUNDING_PAIRS = {"BTC": "BTCUSDT", "ETH": "ETHUSDT", "SOL": "SOLUSDT"}  # PEPE perp is 1000PEPE; skipped
 MAX_FILES_PER_RUN = 6
 
 done = {}
@@ -25,7 +29,7 @@ if os.path.exists(MARKER):
     done = json.load(open(MARKER))
 
 todo = [("kline", s, p, m) for s, p in PAIRS.items() for m in MONTHS if not done.get(f"{s}-{m}")]
-todo += [("funding", s, p, m) for s, p in PAIRS.items() for m in MONTHS if not done.get(f"FUND-{s}-{m}")]
+todo += [("funding", s, p, m) for s, p in FUNDING_PAIRS.items() for m in MONTHS if not done.get(f"FUND-{s}-{m}")]
 if not todo:
     print("backfill: complete, nothing to do")
     sys.exit(0)
