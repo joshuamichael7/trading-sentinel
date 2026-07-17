@@ -8,5 +8,10 @@
   "last_alert": {
     "MEME-001:tp1": 1784226116.3663232
   },
-  "ratchet_done": {}
+  "ratchet_done": {},
+  "ohlc_last_ts": {
+    "BTC": 1784250360,
+    "ETH": 1784250360,
+    "SOL": 1784250360
+  }
 }
