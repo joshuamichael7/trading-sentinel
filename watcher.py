@@ -89,6 +89,29 @@ if os.path.exists(spath):
 with open(spath, "a") as f:
     f.write(json.dumps({"ts": TS, "prices": prices, "liquidity": liquidity}) + "\n")
 
+# ---------------- 1b. 1-minute OHLC archive (BTC/ETH/SOL) ----------------
+# Builds a continuous 1m candle dataset for future short-timeframe strategy research.
+# Kraken serves ~12h of 1m candles per request, so gaps between runs self-heal.
+OHLC_DIR = os.path.join(DATA, "ohlc")
+os.makedirs(OHLC_DIR, exist_ok=True)
+PAIR_MAP = {"BTC": "XBTUSD", "ETH": "ETHUSD", "SOL": "SOLUSD"}
+ohlc_state = state.setdefault("ohlc_last_ts", {})
+for sym, pair in PAIR_MAP.items():
+    since = ohlc_state.get(sym, 0)
+    d = fetch_json(f"https://api.kraken.com/0/public/OHLC?pair={pair}&interval=1&since={since}")
+    res = (d or {}).get("result") or {}
+    rows = next((v for k, v in res.items() if k != "last" and isinstance(v, list)), [])
+    if not rows:
+        continue
+    rows = rows[:-1]  # drop the still-forming candle
+    new = [r for r in rows if int(r[0]) > since]
+    if new:
+        with open(os.path.join(OHLC_DIR, f"{sym}_1m.jsonl"), "a") as f:
+            for r in new:
+                f.write(json.dumps({"t": int(r[0]), "o": float(r[1]), "h": float(r[2]),
+                                    "l": float(r[3]), "c": float(r[4]), "v": float(r[6])}) + "\n")
+        ohlc_state[sym] = int(new[-1][0])
+
 # ---------------- 2. trending meta snapshot ----------------
 boosts = fetch_json("https://api.dexscreener.com/token-boosts/top/v1")
 if isinstance(boosts, list) and boosts:
@@ -116,30 +139,38 @@ for p in cfg["positions"]:
     if not px:
         continue
     pid = p["id"]
-    hw = max(state["high_water"].get(pid, 0), p.get("high_water") or 0, px)
-    state["high_water"][pid] = hw
+    short = p.get("side") == "short"
+    sign = -1 if short else 1
+    # water mark: high-water for longs, low-water for shorts
+    if short:
+        wm = min(x for x in [state["high_water"].get(pid), p.get("high_water"), px] if x is not None)
+    else:
+        wm = max(state["high_water"].get(pid, 0), p.get("high_water") or 0, px)
+    state["high_water"][pid] = wm
     stop, tp1 = p.get("stop"), p.get("tp1")
 
     br = p.get("be_ratchet")
     ratcheted = state["ratchet_done"].get(pid) or (br or {}).get("done")
-    if br and not ratcheted and px >= br["trigger"]:
+    if br and not ratcheted and sign * (px - br["trigger"]) >= 0:
         state["ratchet_done"][pid] = True
         stop = br["ratchet_stop_to"]
         if cooled(f"{pid}:ratchet"):
             alerts.append(f"INFO {pid} ({s}): breakeven ratchet fired at {px} — stop is now entry ({stop}). No action needed; FYI.")
     elif br and ratcheted:
-        stop = max(stop or 0, br["ratchet_stop_to"])
+        stop = (min if short else max)(x for x in [stop, br["ratchet_stop_to"]] if x is not None)
 
-    if stop and px <= stop and cooled(f"{pid}:stop"):
-        alerts.append(f"ALERT {pid} ({s}): CROSSED STOP {stop} — price {px}")
-    elif stop and px <= stop * (1 + R["near_band_pct"]) and cooled(f"{pid}:nearstop"):
-        alerts.append(f"ALERT {pid} ({s}): within {R['near_band_pct']*100:.0f}% of stop {stop} — price {px}")
-    if tp1 and not p.get("tp1_hit") and px >= tp1 and cooled(f"{pid}:tp1"):
-        alerts.append(f"ALERT {pid} ({s}): CROSSED TP1 {tp1} — price {px}")
-    if p.get("trail_pct") and p.get("tp1_hit") and px <= hw * (1 - p["trail_pct"]) and cooled(f"{pid}:trail"):
-        alerts.append(f"ALERT {pid} ({s}): trailing stop hit ({p['trail_pct']*100:.0f}% off high {hw}) — price {px}")
-    if p.get("liquidation_price") and px <= p["liquidation_price"] * (1 + R["liq_proximity_pct"]) and cooled(f"{pid}:liq"):
-        alerts.append(f"ALERT {pid} ({s}): within {R['liq_proximity_pct']*100:.0f}% of LIQUIDATION {p['liquidation_price']} — price {px}")
+    # stop is adverse: below price for longs, above for shorts
+    if stop and sign * (stop - px) >= 0 and cooled(f"{pid}:stop"):
+        alerts.append(f"ALERT {pid} ({s}, {'short' if short else 'long'}): CROSSED STOP {stop} — price {px}")
+    elif stop and sign * (stop * (1 + sign * R["near_band_pct"]) - px) >= 0 and cooled(f"{pid}:nearstop"):
+        alerts.append(f"ALERT {pid} ({s}, {'short' if short else 'long'}): within {R['near_band_pct']*100:.0f}% of stop {stop} — price {px}")
+    if tp1 and not p.get("tp1_hit") and sign * (px - tp1) >= 0 and cooled(f"{pid}:tp1"):
+        alerts.append(f"ALERT {pid} ({s}, {'short' if short else 'long'}): CROSSED TP1 {tp1} — price {px}")
+    if p.get("trail_pct") and p.get("tp1_hit") and sign * (wm * (1 - sign * p["trail_pct"]) - px) >= 0 and cooled(f"{pid}:trail"):
+        alerts.append(f"ALERT {pid} ({s}): trailing stop hit ({p['trail_pct']*100:.0f}% off {'low' if short else 'high'} {wm}) — price {px}")
+    lq = p.get("liquidation_price")
+    if lq and sign * (lq * (1 + sign * R["liq_proximity_pct"]) - px) >= 0 and cooled(f"{pid}:liq"):
+        alerts.append(f"ALERT {pid} ({s}): within {R['liq_proximity_pct']*100:.0f}% of LIQUIDATION {lq} — price {px}")
     if p["track"] == "meme":
         if prev and s in prev.get("prices", {}) and prev["prices"][s] > 0:
             chg = (px / prev["prices"][s] - 1) * 100
