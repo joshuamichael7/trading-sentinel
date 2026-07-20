@@ -6,3 +6,4 @@
 {"ts": "2026-07-17T13:56:22Z", "alert": "ALERT LEV-001 (ETH, long): within 2% of stop 1780 \u2014 price 1815.1"}
 {"ts": "2026-07-17T15:16:17Z", "alert": "ALERT MAJ-001 (ETH, long): within 2% of stop 1780 \u2014 price 1812.62"}
 {"ts": "2026-07-17T15:16:17Z", "alert": "ALERT LEV-001 (ETH, long): within 2% of stop 1780 \u2014 price 1812.62"}
+{"ts": "2026-07-20T01:07:56Z", "alert": "ALERT MEME-001 (ANSEM): moved +13.6% since last sample \u2014 price 0.2032"}
