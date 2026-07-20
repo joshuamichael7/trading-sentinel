@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: "*/5 * * * *"   # every 5 minutes (GitHub may add a few minutes of jitter)
   workflow_dispatch: {}      # manual "Run workflow" button for testing
+  push:
+    branches: [main]         # PAT pushes kick a run when cron lags; bot's own GITHUB_TOKEN commits do NOT re-trigger
 
 permissions:
   contents: write
