@@ -26,6 +26,9 @@ jobs:
       - name: Historical backfill (one-time, self-limiting)
         if: always()
         run: python3 backfill.py
+      - name: QQQ/VIX history backfill (one-time, self-limiting)
+        if: always()
+        run: python3 qqq_backfill.py
       - name: Commit data
         if: always()
         run: |

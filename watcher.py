@@ -150,6 +150,38 @@ for sym, pair in PAIR_MAP.items():
                                     "l": float(r[3]), "c": float(r[4]), "v": float(r[6])}) + "\n")
         ohlc_state[sym] = int(new[-1][0])
 
+# ---------------- 1c. QQQ option-chain archive (iron-condor forward test) ----------------
+# Weekdays 17:40-22:10 UTC: snapshot CBOE delayed QQQ chain (0DTE + 1DTE expiries,
+# strikes within 5% of spot) + VIX, one line per run. Check-ins execute the condor
+# rules against this archive. Delayed ~15 min; noted in the track's methodology.
+if NOW.weekday() < 5 and (17, 40) <= (NOW.hour, NOW.minute) <= (22, 10):
+    chain = fetch_json("https://cdn.cboe.com/api/global/delayed_quotes/options/QQQ.json", tries=1)
+    vixq = fetch_json("https://cdn.cboe.com/api/global/delayed_quotes/options/_VIX.json", tries=1)
+    data_blk = (chain or {}).get("data") or {}
+    spot = data_blk.get("current_price")
+    opts = data_blk.get("options") or []
+    if spot and opts:
+        import re as _re
+        today = NOW.date()
+        exps = sorted({o.get("option", "")[3:9] for o in opts if len(o.get("option", "")) > 9})
+        keep_exps = set(exps[:2])  # nearest two expiries ~ 0DTE + 1DTE
+        rows = []
+        for o in opts:
+            sym = o.get("option", "")
+            m = _re.match(r"QQQ(\d{6})([CP])(\d{8})", sym)
+            if not m or m.group(1) not in keep_exps:
+                continue
+            strike = int(m.group(3)) / 1000.0
+            if abs(strike / spot - 1) > 0.05:
+                continue
+            rows.append({"e": m.group(1), "t": m.group(2), "k": strike,
+                         "b": o.get("bid"), "a": o.get("ask"), "d": o.get("delta"), "iv": o.get("iv")})
+        if rows:
+            os.makedirs(os.path.join(DATA, "condor_chains"), exist_ok=True)
+            vix_val = ((vixq or {}).get("data") or {}).get("current_price")
+            with open(os.path.join(DATA, "condor_chains", f"{today.isoformat()}.jsonl"), "a") as f:
+                f.write(json.dumps({"ts": TS, "spot": spot, "vix": vix_val, "opts": rows}) + "\n")
+
 # ---------------- 2. trending meta snapshot ----------------
 boosts = fetch_json("https://api.dexscreener.com/token-boosts/top/v1")
 if isinstance(boosts, list) and boosts:
