@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T17:17:34Z",
+  "generated": "2026-07-22T00:03:05Z",
   "kraken_assets": [
     "BTC",
     "ETH",
@@ -22,7 +22,7 @@
       "tp1": 2150,
       "tp1_hit": false,
       "trail_pct": 0.12,
-      "high_water": 1877.78,
+      "high_water": 1941.52,
       "liquidation_price": null,
       "be_ratchet": {
         "trigger": 1972.0,
@@ -40,7 +40,7 @@
       "tp1": 69500,
       "tp1_hit": false,
       "trail_pct": 0.1,
-      "high_water": 64444.6,
+      "high_water": 66740.5,
       "liquidation_price": null,
       "be_ratchet": {
         "trigger": 67700.0,
@@ -58,7 +58,7 @@
       "tp1": 0.0203812,
       "tp1_hit": true,
       "trail_pct": 0.4,
-      "high_water": 0.2184,
+      "high_water": 0.2259,
       "liquidation_price": null,
       "be_ratchet": null,
       "liquidity_at_entry": 331723
@@ -106,13 +106,27 @@
       "tp1": 2150,
       "tp1_hit": false,
       "trail_pct": 0.1,
-      "high_water": 1877.78,
+      "high_water": 1941.52,
       "liquidation_price": 1261.24,
       "be_ratchet": {
         "trigger": 1972.0,
         "ratchet_stop_to": 1877.78,
         "done": false
       },
+      "liquidity_at_entry": null
+    },
+    {
+      "id": "IC-1DTE-0721",
+      "track": "condors",
+      "symbol": "QQQ IC 1DTE exp 7/22 (703P/717C w702/718)",
+      "side": "short-premium",
+      "stop": null,
+      "tp1": null,
+      "tp1_hit": false,
+      "trail_pct": null,
+      "high_water": null,
+      "liquidation_price": null,
+      "be_ratchet": null,
       "liquidity_at_entry": null
     }
   ],
