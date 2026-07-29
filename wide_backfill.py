@@ -19,7 +19,7 @@ What it collects into data/:
   eq_daily/<TICKER>.csv.gz daily equity/ETF bars, ~10y, for cross-market
                            validation. Sector ETFs are survivorship-free.
 """
-import csv, gzip, io, json, os, sys, time, urllib.request, urllib.error, zipfile
+import csv, gzip, io, json, os, sys, time, urllib.request, urllib.error, urllib.parse, zipfile
 import xml.etree.ElementTree as ET
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -74,71 +74,116 @@ def write_csv(path, header, rows):
 MANIFEST_P = os.path.join(D, "universe", "manifest.json")
 
 
+# data-api.binance.vision is the public data mirror: same payloads, no geo block
+# on cloud IPs, which api.binance.com sometimes returns 451 for.
+SPOT_HOSTS = ["https://data-api.binance.vision", "https://api.binance.com"]
+
+
+def spot_api(path_and_query):
+    for h in SPOT_HOSTS:
+        raw = get(h + path_and_query)
+        if raw:
+            return raw
+    return None
+
+
 def build_manifest():
     if os.path.exists(MANIFEST_P) and STATE.get("manifest_done"):
         return json.load(open(MANIFEST_P))
-    live = set()
-    raw = get("https://api.binance.com/api/v3/exchangeInfo")
+    prev = json.load(open(MANIFEST_P)) if os.path.exists(MANIFEST_P) else {}
+    live = set(prev.get("live", []))
+    raw = spot_api("/api/v3/exchangeInfo")
     if raw:
-        for s in json.loads(raw)["symbols"]:
-            if s["quoteAsset"] == "USDT" and s["status"] == "TRADING":
-                live.add(s["symbol"])
-    # every symbol that ever had a monthly 1d kline file (includes delisted)
-    ever, token = set(), None
+        try:
+            fresh = {s["symbol"] for s in json.loads(raw)["symbols"]
+                     if s["quoteAsset"] == "USDT" and s["status"] == "TRADING"}
+            if fresh:
+                live = fresh
+        except Exception as e:
+            print("exchangeInfo parse failed:", e)
+    # every symbol that ever had a monthly 1d kline file (includes delisted).
+    # Resumable across runs: the S3 marker is checkpointed so a run that runs
+    # out of budget mid-listing continues instead of freezing a partial list.
+    ever = set(prev.get("ever", []))
+    token = STATE.get("manifest_marker")
+    complete = False
     while True:
         u = ("https://s3-ap-northeast-1.amazonaws.com/data.binance.vision"
              "?delimiter=/&prefix=data/spot/monthly/klines/")
         if token:
-            u += "&marker=" + urllib.request.quote(token)
+            u += "&marker=" + urllib.parse.quote(token, safe="")
         raw = get(u)
         if not raw:
             break
-        root = ET.fromstring(raw)
+        try:
+            root = ET.fromstring(raw)
+        except Exception:
+            break
         ns = {"s3": root.tag.split("}")[0].strip("{")}
         pref = root.findall("s3:CommonPrefixes/s3:Prefix", ns)
         if not pref:
+            complete = True
             break
         for p in pref:
             sym = p.text.rstrip("/").split("/")[-1]
             if sym.endswith("USDT"):
                 ever.add(sym)
-        trunc = root.findtext("s3:IsTruncated", "false", ns)
-        if trunc != "true":
-            break
         token = pref[-1].text
+        if root.findtext("s3:IsTruncated", "false", ns) != "true":
+            complete = True
+            break
         if out_of_time():
             break
     man = {"live": sorted(live), "ever": sorted(ever),
-           "delisted": sorted(ever - live), "built": int(time.time())}
+           "delisted": sorted(ever - live), "built": int(time.time()),
+           "complete": complete}
     json.dump(man, open(MANIFEST_P, "w"), indent=1)
-    STATE["manifest_done"] = True
+    STATE["manifest_marker"] = token
+    # only freeze the manifest once the full listing has actually been walked
+    if complete and live:
+        STATE["manifest_done"] = True
     save_state()
-    print(f"manifest: {len(live)} live, {len(ever)} ever, {len(man['delisted'])} delisted")
+    print(f"manifest: {len(live)} live, {len(ever)} ever, "
+          f"{len(man['delisted'])} delisted, complete={complete}")
     return man
 
 
 # ------------------------------------------------------------ daily klines ---
-def fetch_daily_rest(symbol, base, path_out, start_ms):
-    """Paginated daily klines from the REST API (live symbols only)."""
-    rows, cursor = [], start_ms
+def fetch_daily_rest(symbol, bases, path_out, start_ms):
+    """Paginated daily klines from the REST API (live symbols only).
+    Returns (rows, complete). complete=False means the run hit the time budget
+    mid-symbol -- the caller must NOT mark it done, or a truncated price series
+    gets frozen into the archive and silently corrupts every backtest."""
+    rows, cursor, complete = [], start_ms, False
+    if isinstance(bases, str):
+        bases = [bases]
     while True:
-        u = f"{base}?symbol={symbol}&interval=1d&startTime={cursor}&limit=1000"
-        raw = get(u)
+        q = f"?symbol={symbol}&interval=1d&startTime={cursor}&limit=1000"
+        raw = None
+        for b in bases:
+            raw = get(b + q)
+            if raw:
+                break
         if not raw:
             break
-        ks = json.loads(raw)
+        try:
+            ks = json.loads(raw)
+        except Exception:
+            break
         if not ks:
+            complete = True
             break
         for k in ks:
             rows.append([int(k[0]) // 1000, k[1], k[2], k[3], k[4], k[5], k[7]])
         if len(ks) < 1000:
+            complete = True
             break
         cursor = int(ks[-1][0]) + 86400000
         if out_of_time():
             break
-    if rows:
+    if rows and complete:
         write_csv(path_out, ["t", "o", "h", "l", "c", "v", "qv"], rows)
-    return len(rows)
+    return len(rows), complete
 
 
 def fetch_daily_vision(symbol, path_out):
@@ -147,14 +192,18 @@ def fetch_daily_vision(symbol, path_out):
          f"?delimiter=/&prefix=data/spot/monthly/klines/{symbol}/1d/")
     raw = get(u)
     if not raw:
-        return 0
-    root = ET.fromstring(raw)
+        return 0, False
+    try:
+        root = ET.fromstring(raw)
+    except Exception:
+        return 0, False
     ns = {"s3": root.tag.split("}")[0].strip("{")}
     keys = [k.text for k in root.findall("s3:Contents/s3:Key", ns)
             if k.text.endswith(".zip")]
-    rows = []
+    rows, complete = [], True
     for key in sorted(keys):
         if out_of_time():
+            complete = False
             break
         blob = get("https://data.binance.vision/" + key, timeout=90)
         if not blob:
@@ -171,34 +220,39 @@ def fetch_daily_vision(symbol, path_out):
                     rows.append([ts, p[1], p[2], p[3], p[4], p[5], p[7]])
         except Exception:
             continue
-    if rows:
+    if rows and complete:
         rows.sort()
         write_csv(path_out, ["t", "o", "h", "l", "c", "v", "qv"], rows)
-    return len(rows)
+    return len(rows), complete
 
 
 # ----------------------------------------------------------------- funding ---
 def fetch_funding(symbol, path_out):
-    rows, cursor = [], 1568000000000  # Sep 2019, before the first perp funding
+    rows, cursor, complete = [], 1568000000000, False  # Sep 2019, pre-funding
     while True:
         u = ("https://fapi.binance.com/fapi/v1/fundingRate"
              f"?symbol={symbol}&startTime={cursor}&limit=1000")
         raw = get(u)
         if not raw:
             break
-        ks = json.loads(raw)
+        try:
+            ks = json.loads(raw)
+        except Exception:
+            break
         if not ks:
+            complete = True
             break
         for k in ks:
             rows.append([int(k["fundingTime"]) // 1000, k["fundingRate"]])
         if len(ks) < 1000:
+            complete = True
             break
         cursor = int(ks[-1]["fundingTime"]) + 1
         if out_of_time():
             break
-    if rows:
+    if rows and complete:
         write_csv(path_out, ["t", "rate"], rows)
-    return len(rows)
+    return len(rows), complete
 
 
 # ---------------------------------------------------------------- equities ---
@@ -215,29 +269,61 @@ EQ_TICKERS = [
 ]
 
 
-def fetch_equity(ticker, path_out):
-    u = (f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-         "?range=10y&interval=1d")
-    raw = get(u)
-    if not raw:
-        return 0
-    try:
-        j = json.loads(raw)["chart"]["result"][0]
-        ts = j["timestamp"]
-        q = j["indicators"]["quote"][0]
-        adj = j["indicators"].get("adjclose", [{}])[0].get("adjclose")
-    except Exception:
-        return 0
-    rows = []
-    for i, t in enumerate(ts):
-        c = q["close"][i]
-        if c is None:
+def _eq_yahoo(ticker):
+    for host in ("query1", "query2"):
+        raw = get(f"https://{host}.finance.yahoo.com/v8/finance/chart/{ticker}"
+                  "?range=10y&interval=1d")
+        if not raw:
             continue
-        rows.append([t, q["open"][i], q["high"][i], q["low"][i], c,
-                     q["volume"][i], (adj[i] if adj else c)])
+        try:
+            j = json.loads(raw)["chart"]["result"][0]
+            ts = j["timestamp"]
+            q = j["indicators"]["quote"][0]
+            adj = j["indicators"].get("adjclose", [{}])[0].get("adjclose")
+        except Exception:
+            continue
+        rows = []
+        for i, t in enumerate(ts):
+            c = q["close"][i]
+            if c is None:
+                continue
+            rows.append([t, q["open"][i], q["high"][i], q["low"][i], c,
+                         q["volume"][i], (adj[i] if adj else c)])
+        if rows:
+            return rows
+    return []
+
+
+def _eq_stooq(ticker):
+    """Fallback source. Stooq serves plain CSV and does not rate-limit cloud IPs
+    the way Yahoo does. Prices are split-adjusted; dividends are not, which is a
+    disclosed difference from the Yahoo adjusted close."""
+    sym = ticker.replace("-", "-").lower() + ".us"
+    raw = get(f"https://stooq.com/q/d/l/?s={sym}&i=d")
+    if not raw:
+        return []
+    rows = []
+    for line in raw.decode("utf-8", "ignore").splitlines()[1:]:
+        p = line.split(",")
+        if len(p) < 6 or not p[0][:1].isdigit():
+            continue
+        try:
+            y, m, dd = (int(x) for x in p[0].split("-"))
+            t = int(time.mktime((y, m, dd, 0, 0, 0, 0, 0, 0)))
+            c = float(p[4])
+            rows.append([t, float(p[1]), float(p[2]), float(p[3]), c,
+                         float(p[5] or 0), c])
+        except Exception:
+            continue
+    return rows
+
+
+def fetch_equity(ticker, path_out):
+    rows = _eq_yahoo(ticker) or _eq_stooq(ticker)
     if rows:
+        rows.sort()
         write_csv(path_out, ["t", "o", "h", "l", "c", "v", "adjc"], rows)
-    return len(rows)
+    return len(rows), bool(rows)
 
 
 # --------------------------------------------------------------------- run ---
@@ -257,10 +343,11 @@ def main():
         key = "EQ:" + tk
         if done.get(key):
             continue
-        n = fetch_equity(tk, os.path.join(D, "eq_daily", f"{tk}.csv.gz"))
-        done[key] = n
+        n, ok = fetch_equity(tk, os.path.join(D, "eq_daily", f"{tk}.csv.gz"))
+        if ok:
+            done[key] = n
         work += 1
-        print(f"eq {tk}: {n} bars")
+        print(f"eq {tk}: {n} bars{'' if ok else ' (FAILED, will retry)'}")
 
     # 2. funding for the liquid perp set, full history
     perps = [s for s in man["live"] if s in {
@@ -275,17 +362,19 @@ def main():
         key = "FUND:" + sym
         if done.get(key):
             continue
-        n = fetch_funding(sym, os.path.join(D, "funding", f"{sym}.csv.gz"))
-        done[key] = n
+        n, ok = fetch_funding(sym, os.path.join(D, "funding", f"{sym}.csv.gz"))
+        if ok:
+            done[key] = n
         work += 1
-        print(f"funding {sym}: {n} stamps")
-        if n:
+        print(f"funding {sym}: {n} stamps{'' if ok else ' (partial, will retry)'}")
+        if ok and n:
             k2 = "PERP:" + sym
             if not done.get(k2):
-                n2 = fetch_daily_rest(sym, "https://fapi.binance.com/fapi/v1/klines",
-                                      os.path.join(D, "perp_daily", f"{sym}.csv.gz"),
-                                      1568000000000)
-                done[k2] = n2
+                n2, ok2 = fetch_daily_rest(sym, ["https://fapi.binance.com/fapi/v1/klines"],
+                                           os.path.join(D, "perp_daily", f"{sym}.csv.gz"),
+                                           1568000000000)
+                if ok2:
+                    done[k2] = n2
 
     # 3. spot daily for the whole live universe
     for sym in man["live"]:
@@ -294,9 +383,10 @@ def main():
         key = "D:" + sym
         if done.get(key):
             continue
-        n = fetch_daily_rest(sym, "https://api.binance.com/api/v3/klines",
-                             os.path.join(D, "daily", f"{sym}.csv.gz"), 1502928000000)
-        done[key] = n
+        n, ok = fetch_daily_rest(sym, [h + "/api/v3/klines" for h in SPOT_HOSTS],
+                                 os.path.join(D, "daily", f"{sym}.csv.gz"), 1502928000000)
+        if ok:
+            done[key] = n
         work += 1
 
     # 4. delisted symbols -- the survivorship fix. Slowest, so it goes last.
@@ -306,8 +396,9 @@ def main():
         key = "D:" + sym
         if done.get(key):
             continue
-        n = fetch_daily_vision(sym, os.path.join(D, "daily", f"{sym}.csv.gz"))
-        done[key] = n
+        n, ok = fetch_daily_vision(sym, os.path.join(D, "daily", f"{sym}.csv.gz"))
+        if ok:
+            done[key] = n
         work += 1
 
     save_state()
