@@ -164,6 +164,88 @@ def build_manifest():
     return man
 
 
+# ------------------------------------------------------- binance vision s3 ---
+VISION_S3 = "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision"
+
+
+def s3_list(prefix):
+    """All .zip keys under a prefix. -> (keys, complete)"""
+    keys, token = [], None
+    while True:
+        u = f"{VISION_S3}?prefix={urllib.parse.quote(prefix, safe='')}&max-keys=1000"
+        if token:
+            u += "&marker=" + urllib.parse.quote(token, safe="")
+        raw = get(u)
+        if not raw:
+            return keys, False
+        try:
+            root = ET.fromstring(raw)
+        except Exception:
+            return keys, False
+        ns = {"s3": root.tag.split("}")[0].strip("{")}
+        ks = [k.text for k in root.findall("s3:Contents/s3:Key", ns)]
+        keys += [k for k in ks if k.endswith(".zip")]
+        if not ks or root.findtext("s3:IsTruncated", "false", ns) != "true":
+            return keys, True
+        token = ks[-1]
+        if out_of_time():
+            return keys, False
+
+
+def vision_rows(prefix, parse):
+    """Download every monthly zip under prefix and parse each CSV line.
+    -> (rows, complete). Used for futures data, which the fapi REST host will
+    not serve to cloud IPs at all."""
+    keys, ok = s3_list(prefix)
+    if not keys:
+        return [], False
+    rows, complete = [], ok
+    for key in sorted(keys):
+        if out_of_time():
+            complete = False
+            break
+        blob = get("https://data.binance.vision/" + key, timeout=90)
+        if not blob:
+            continue
+        try:
+            zf = zipfile.ZipFile(io.BytesIO(blob))
+            with zf.open(zf.namelist()[0]) as fh:
+                for line in io.TextIOWrapper(fh, "utf-8"):
+                    p = line.strip().split(",")
+                    if not p or not p[0] or not p[0][:1].isdigit():
+                        continue          # header row
+                    r = parse(p)
+                    if r:
+                        rows.append(r)
+        except Exception:
+            continue
+    rows.sort()
+    return rows, complete
+
+
+def _ts(v):
+    v = int(float(v))
+    return v // 1000000 if v > 1e14 else (v // 1000 if v > 1e11 else v)
+
+
+def fetch_funding_vision(symbol, path_out):
+    rows, complete = vision_rows(
+        f"data/futures/um/monthly/fundingRate/{symbol}/",
+        lambda p: [_ts(p[0]), p[-1]] if len(p) >= 3 else None)
+    if rows and complete:
+        write_csv(path_out, ["t", "rate"], rows)
+    return len(rows), complete
+
+
+def fetch_perp_daily_vision(symbol, path_out):
+    rows, complete = vision_rows(
+        f"data/futures/um/monthly/klines/{symbol}/1d/",
+        lambda p: [_ts(p[0]), p[1], p[2], p[3], p[4], p[5], p[7]] if len(p) >= 8 else None)
+    if rows and complete:
+        write_csv(path_out, ["t", "o", "h", "l", "c", "v", "qv"], rows)
+    return len(rows), complete
+
+
 # ------------------------------------------------------------ daily klines ---
 def fetch_daily_rest(symbol, bases, path_out, start_ms):
     """Paginated daily klines from the REST API (live symbols only).
@@ -378,17 +460,25 @@ def main():
         key = "FUND:" + sym
         if done.get(key):
             continue
-        n, ok = fetch_funding(sym, os.path.join(D, "funding", f"{sym}.csv.gz"))
+        fp = os.path.join(D, "funding", f"{sym}.csv.gz")
+        n, ok = fetch_funding(sym, fp)
+        src = "rest"
+        if not ok:                      # fapi is unreachable from cloud IPs
+            n, ok = fetch_funding_vision(sym, fp)
+            src = "vision"
         if ok:
             done[key] = n
         work += 1
-        print(f"funding {sym}: {n} stamps{'' if ok else ' (partial, will retry)'}")
+        print(f"funding {sym}: {n} stamps via {src}{'' if ok else ' (FAILED, will retry)'}")
         if ok and n:
             k2 = "PERP:" + sym
             if not done.get(k2):
                 n2, ok2 = fetch_daily_rest(sym, ["https://fapi.binance.com/fapi/v1/klines"],
                                            os.path.join(D, "perp_daily", f"{sym}.csv.gz"),
                                            1568000000000)
+                if not ok2:
+                    n2, ok2 = fetch_perp_daily_vision(
+                        sym, os.path.join(D, "perp_daily", f"{sym}.csv.gz"))
                 if ok2:
                     done[k2] = n2
 
