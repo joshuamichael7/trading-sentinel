@@ -34,6 +34,18 @@ for sub in ("universe", "daily", "perp_daily", "funding", "eq_daily"):
 STATE_P = os.path.join(D, "universe", "backfill_state.json")
 STATE = json.load(open(STATE_P)) if os.path.exists(STATE_P) else {}
 
+# One-time migration. Run 1 could mark a symbol "done" after the time budget cut
+# its pagination short, freezing a truncated price series into the archive --
+# which would silently corrupt every backtest built on it. Drop those claims and
+# refetch; equity pulls are single-request so they are unaffected.
+SCHEMA = 2
+if STATE.get("schema", 1) < SCHEMA:
+    STATE["done"] = {k: v for k, v in STATE.get("done", {}).items()
+                     if k.startswith("EQ:")}
+    STATE.pop("manifest_done", None)
+    STATE.pop("manifest_marker", None)
+    STATE["schema"] = SCHEMA
+
 
 def save_state():
     json.dump(STATE, open(STATE_P, "w"), indent=1, sort_keys=True)
@@ -88,9 +100,13 @@ def spot_api(path_and_query):
 
 
 def build_manifest():
-    if os.path.exists(MANIFEST_P) and STATE.get("manifest_done"):
-        return json.load(open(MANIFEST_P))
     prev = json.load(open(MANIFEST_P)) if os.path.exists(MANIFEST_P) else {}
+    # Only trust a cached manifest if it actually has a live set AND the S3
+    # listing was walked to the end. The first run froze a manifest with
+    # live=[] (api.binance.com geo-blocks the runner), which mislabelled the
+    # entire universe as delisted.
+    if STATE.get("manifest_done") and prev.get("live") and prev.get("complete"):
+        return prev
     live = set(prev.get("live", []))
     raw = spot_api("/api/v3/exchangeInfo")
     if raw:
