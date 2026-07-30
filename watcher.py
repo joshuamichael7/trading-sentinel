@@ -187,6 +187,32 @@ boosts = fetch_json("https://api.dexscreener.com/token-boosts/top/v1")
 if isinstance(boosts, list) and boosts:
     trending = [{"chain": b.get("chainId"), "address": b.get("tokenAddress"),
                  "desc": (b.get("description") or "")[:120]} for b in boosts[:8]]
+    # Log a price with every sighting. Without this the trending log is
+    # unfalsifiable: a token can appear 96 times over 12 days and there is still
+    # no way to compute what passing on it cost. One extra batched call per run.
+    addrs = ",".join(t["address"] for t in trending if t.get("address"))
+    if addrs:
+        tok = fetch_json(f"https://api.dexscreener.com/latest/dex/tokens/{addrs}")
+        best = {}
+        for p in (tok or {}).get("pairs") or []:
+            a = (p.get("baseToken") or {}).get("address", "").lower()
+            liq = ((p.get("liquidity") or {}).get("usd")) or 0
+            # keep the deepest pair per token; thin pairs quote nonsense prices
+            if a and liq >= (best.get(a, {}).get("liq") or -1):
+                best[a] = {"liq": liq, "price": p.get("priceUsd"),
+                           "sym": (p.get("baseToken") or {}).get("symbol"),
+                           "vol24": (p.get("volume") or {}).get("h24"),
+                           "mcap": p.get("marketCap"),
+                           "chg24": (p.get("priceChange") or {}).get("h24")}
+        for t in trending:
+            b = best.get((t.get("address") or "").lower())
+            if b:
+                t["symbol"] = b["sym"]
+                t["price_usd"] = float(b["price"]) if b.get("price") else None
+                t["liquidity_usd"] = b["liq"]
+                t["vol24_usd"] = b["vol24"]
+                t["mcap_usd"] = b["mcap"]
+                t["chg24_pct"] = b["chg24"]
     with open(os.path.join(DATA, "meta_watch.jsonl"), "a") as f:
         f.write(json.dumps({"ts": TS, "trending": trending}) + "\n")
 
