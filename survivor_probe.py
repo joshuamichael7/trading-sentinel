@@ -35,7 +35,7 @@ UA = {"User-Agent": "trading-sentinel/1.0 (research probe)"}
 START = time.time()
 
 
-def get(url, tries=2):
+def get(url, tries=3):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers=UA)
@@ -47,11 +47,14 @@ def get(url, tries=2):
             if e.code == 404:
                 return {"__http__": 404}
             if e.code == 429:
-                time.sleep(4)
+                # Rate limited. Back off hard; the first version gave up after
+                # one 4s retry and recorded the result as a transport_error,
+                # which is how two thirds of the first 12 tokens got poisoned.
+                time.sleep(6 * (i + 1))
                 continue
             return {"__http__": e.code}
         except Exception:
-            time.sleep(1.5)
+            time.sleep(2 * (i + 1))
     return None
 
 
@@ -135,17 +138,39 @@ def main():
     coh = cohort()
     state["cohort_size"] = len(coh)
 
-    todo = [a for a in coh if a not in results]
+    # A transport_error is NOT an answer. The whole probe turns on the
+    # difference between "provider has no history for this dead token" (a
+    # result) and "we got rate limited" (a failure). Retry the failures on
+    # later cycles instead of freezing them into the record; cap the attempts
+    # so a genuinely unreachable token cannot spin forever.
+    MAX_TRIES = 5
+
+    def unresolved(a):
+        r = results.get(a)
+        if r is None:
+            return True
+        if r.get("attempts", 1) >= MAX_TRIES:
+            return False
+        return r.get("pools_http") == "transport_error" or r.get("ohlcv_http") == "transport_error"
+
+    fresh = [a for a in coh if a not in results]
+    retry = [a for a in coh if a in results and unresolved(a)]
+    todo = fresh + retry           # unseen tokens first, then the poisoned ones
     if not todo:
-        print(f"survivor_probe: complete, {len(results)}/{len(coh)} probed, nothing to do")
+        stuck = sum(1 for a in coh if results.get(a, {}).get("pools_http") == "transport_error"
+                    or results.get(a, {}).get("ohlcv_http") == "transport_error")
+        print(f"survivor_probe: complete, {len(results)}/{len(coh)} probed, "
+              f"{stuck} unresolved after {MAX_TRIES} tries, nothing to do")
         return
 
     n = 0
     for addr in todo:
         if time.time() - START > BUDGET_S:
             break
+        prior = results.get(addr, {}).get("attempts", 0)
         r = probe(addr)
         r.update(coh[addr])
+        r["attempts"] = prior + 1
         results[addr] = r
         n += 1
         print(f"probe {addr[:8]} pools={r['pools_http']}/{r['n_pools']} "
@@ -155,8 +180,10 @@ def main():
     state["updated"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     state["probed"] = len(results)
     state["remaining"] = len(coh) - len(results)
+    state["unresolved"] = sum(1 for a in coh if unresolved(a))
     json.dump(state, open(OUT, "w"), indent=1)
-    print(f"survivor_probe: +{n} this run, {len(results)}/{len(coh)} done")
+    print(f"survivor_probe: +{n} this run, {len(results)}/{len(coh)} done, "
+          f"{state['unresolved']} still unresolved")
 
 
 if __name__ == "__main__":
