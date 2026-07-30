@@ -13,3 +13,5 @@
 21:18:17 watcher module loaded
 21:23:17 watcher module loaded
 21:28:17 watcher module loaded
+21:33:18 watcher module loaded
+21:34:15 rc=0 out='be 4LjLUvg5 pools=200/4 ohlcv=200/291 liq=4368.8317\nprobe AgCpt2wg pools=200/2 ohlcv=200/556 liq=122002.7322\nprobe 2AEuuDip pools=200/7 ohlcv=transport_error/0 liq=5376.3069\nprobe GqQc4tjs pools=transport_error/0 ohlcv=None/0 liq=None\nprobe E7vTVLLa pools=transport_error/0 ohlcv=None/0 liq=None\nprobe HVRtNeFP pools=200/9 ohlcv=transport_error/0 liq=7639.2162\nsurvivor_probe: +6 this run, 6/120 done' err=''
