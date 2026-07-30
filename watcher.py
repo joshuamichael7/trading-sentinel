@@ -15,8 +15,31 @@ Runs on a schedule (GitHub Actions cron), costs zero AI tokens. Each run:
 
 No external dependencies — stdlib only.
 """
-import json, os, sys, time, urllib.request, urllib.error
+import atexit, json, os, subprocess, sys, time, urllib.request, urllib.error
 from datetime import datetime, timezone
+
+
+def _survivor_probe():
+    """Run the meme-coin survivorship probe as a side-car to each sample.
+
+    It lives here rather than as a step in watch.yml for one reason: the
+    workflow's `run:` block is frozen at job start, and the job now loops for
+    5.6 hours, so a new workflow step would not execute until the next run.
+    watcher.py, by contrast, is re-read from disk every cycle -- a change
+    pushed now lands as soon as the loop's next push is rejected and it
+    rebases. Registered with atexit so it still runs on watcher's sys.exit(1)
+    alert path. Self-limiting: 55s of a 300s cycle, and a no-op once the
+    cohort is exhausted. Delete this hook when the probe reports complete.
+    """
+    try:
+        p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "survivor_probe.py")
+        if os.path.exists(p):
+            subprocess.run([sys.executable, p], timeout=180, check=False)
+    except Exception as e:
+        print(f"WARN: survivor_probe failed: {e}")
+
+
+atexit.register(_survivor_probe)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
