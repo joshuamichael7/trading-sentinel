@@ -47,16 +47,16 @@
    "pools_http": 200,
    "n_pools": 8,
    "pool": "CU5oVY5cNCi62CACpz5LVJm6dFrHEQrssuRzwFrDQgqc",
-   "live_liquidity_usd": 9530.6471,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 9539.337,
+   "ohlcv_http": 200,
+   "n_candles": 356,
+   "first_candle_ts": 1784149200,
+   "first_candle_close": 4.5367364078441346e-05,
+   "last_candle_ts": 1785452400,
+   "last_candle_close": 1.0887662595360395e-05,
    "first_seen": "2026-07-16T18:21:56Z",
    "desc": "For the first time in history Barron Trumpa ccidentally leaked his Wallet - Now ",
-   "attempts": 1
+   "attempts": 2
   },
   "E7vTVLLaxV3y68cpnDx2Q7ExeznhWgJKwPziKDsrpump": {
    "pools_http": 200,
@@ -77,15 +77,16 @@
    "pools_http": 200,
    "n_pools": 9,
    "pool": "4z3ZkJiksBXGr7PVkfSJBuK2GmkHmTTfaGHmGWPAgo8D",
-   "live_liquidity_usd": 7639.2162,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 7696.146,
+   "ohlcv_http": 200,
+   "n_candles": 342,
+   "first_candle_ts": 1784178000,
+   "first_candle_close": 0.0002114518805139587,
+   "last_candle_ts": 1785452400,
+   "last_candle_close": 5.412756980749925e-06,
    "first_seen": "2026-07-16T18:21:56Z",
-   "desc": "Welcome to Cubeman's world! Just a chill yellow-and-blue guy enjoying games, cho"
+   "desc": "Welcome to Cubeman's world! Just a chill yellow-and-blue guy enjoying games, cho",
+   "attempts": 1
   },
   "7V6Sk63y8Rr1MvcN5mYNp61wgFhy4EeQg5gUASk9pump": {
    "pools_http": 200,
@@ -119,7 +120,7 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "4WYaV3yqLJDQfUGTySMGe2CoL3pCLTjim3gMoXFGLeuY",
-   "live_liquidity_usd": 2991.2096,
+   "live_liquidity_usd": 3006.7963,
    "ohlcv_http": "transport_error",
    "n_candles": 0,
    "first_candle_ts": null,
@@ -127,21 +128,23 @@
    "last_candle_ts": null,
    "last_candle_close": null,
    "first_seen": "2026-07-16T21:33:35Z",
-   "desc": ""
+   "desc": "",
+   "attempts": 1
   },
   "DRhgZun6hRwH9ZuN8WnBqNg2o3SxGrPXdXh51XXfpump": {
-   "pools_http": "transport_error",
-   "n_pools": 0,
-   "pool": null,
-   "live_liquidity_usd": null,
-   "ohlcv_http": null,
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "HeZvXJH5ZY5KkMpPsx7bRBNwqMrfkfXSZfPBwwamrMKF",
+   "live_liquidity_usd": 6046.2485,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1784160000,
+   "first_candle_close": 9.23139100482786e-06,
+   "last_candle_ts": 1784163600,
+   "last_candle_close": 2.5396843352985936e-05,
    "first_seen": "2026-07-16T21:33:35Z",
-   "desc": "smol bull"
+   "desc": "smol bull",
+   "attempts": 1
   },
   "2agcQWJftYzYWJNDW4BPok1RKL1xVqpDJtT4SSVVpump": {
    "pools_http": "transport_error",
@@ -1796,8 +1799,8 @@
   }
  },
  "cohort_size": 121,
- "updated": "2026-07-30T23:54:20Z",
+ "updated": "2026-07-30T23:59:21Z",
  "probed": 121,
  "remaining": 0,
- "unresolved": 38
+ "unresolved": 35
 }
