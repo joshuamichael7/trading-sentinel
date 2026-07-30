@@ -23,3 +23,5 @@
 21:49:15 rc=0 out='probe Aszfd7qj pools=200/2 ohlcv=200/168 liq=2997.787\nprobe 74fkPhNC pools=200/2 ohlcv=200/192 liq=3686.738\nprobe 12kNKGQD pools=200/2 ohlcv=transport_error/0 liq=3184.9914\nprobe WxN2LrhD pools=transport_error/0 ohlcv=None/0 liq=None\nprobe DLz4bLgo pools=transport_error/0 ohlcv=None/0 liq=None\nprobe 8CXQ9D7X pools=200/4 ohlcv=transport_error/0 liq=2939.2093\nsurvivor_probe: +6 this run, 24/120 done' err=''
 21:53:17 watcher module loaded
 21:54:21 rc=0 out='probe CVhWiQ2S pools=200/7 ohlcv=200/390 liq=137218.6871\nprobe 6ehEcTMC pools=200/20 ohlcv=200/1000 liq=297890.434\nprobe B3ctTEb4 pools=200/2 ohlcv=transport_error/0 liq=4328.2622\nprobe 4gRYGyDP pools=200/3 ohlcv=200/158 liq=3509.1474\nsurvivor_probe: +4 this run, 28/120 done, 109 still unresolved' err=''
+21:58:17 watcher module loaded
+21:59:21 rc=0 out='probe BoRwd4Fu pools=200/2 ohlcv=200/1 liq=6634.3309\nprobe DnKyYTMk pools=200/8 ohlcv=200/217 liq=3427.3546\nprobe HcfnJxLo pools=200/6 ohlcv=transport_error/0 liq=92819.8059\nprobe 9cnYQDzw pools=200/2 ohlcv=200/168 liq=3783.4463\nsurvivor_probe: +4 this run, 32/120 done, 106 still unresolved' err=''
