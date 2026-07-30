@@ -1,10 +1,16 @@
 name: market-sentinel
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes (GitHub may add a few minutes of jitter)
-  workflow_dispatch: {}      # manual "Run workflow" button for testing
+    # GitHub honours maybe 3% of a "*/5" schedule -- observed cadence was ~159
+    # minutes, not 5. This cron is no longer the heartbeat; it is the RESTARTER.
+    # The job below loops internally for ~5.6h, and the concurrency group holds
+    # one queued run pending the whole time, so whichever scheduled tick lands
+    # next starts the moment the current job exits. One surviving tick per 5.6h
+    # is a bar GitHub clears easily.
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
   push:
-    branches: [main]         # PAT pushes kick a run when cron lags; bot's own GITHUB_TOKEN commits do NOT re-trigger
+    branches: [main]         # PAT pushes kick a run; bot GITHUB_TOKEN commits do NOT
 
 permissions:
   contents: write
@@ -16,31 +22,41 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
-      - name: Run watcher
+      - name: Sample loop
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python3 watcher.py
-      - name: Historical backfill (one-time, self-limiting)
-        if: always()
-        run: python3 backfill.py
-      - name: QQQ/VIX history backfill (one-time, self-limiting)
-        if: always()
-        run: python3 qqq_backfill.py
-      - name: Wide-universe backfill (time-budgeted, self-limiting)
-        if: always()
-        run: python3 wide_backfill.py
-      - name: Commit data
-        if: always()
         run: |
-          git config user.name "sentinel-bot"
+          set -u
+          git config user.name  "sentinel-bot"
           git config user.email "sentinel@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet && exit 0
-          git commit -m "sample $(date -u +%Y-%m-%dT%H:%M)"
-          for i in 1 2 3; do git push && exit 0 || git pull --rebase; done
-          git push
+
+          START=$(date +%s)
+          BUDGET=$((335 * 60))       # leave ~15 min of headroom under the 350 timeout
+          CYCLE=300                  # 5 minutes
+
+          while :; do
+            NOW=$(date +%s)
+            [ $((NOW - START)) -ge $BUDGET ] && { echo "budget spent, exiting for the next run"; break; }
+
+            # A failing watcher must not kill the loop -- one bad upstream response
+            # should cost one sample, not 5.6 hours of coverage.
+            python3 watcher.py || echo "watcher.py exited $? -- continuing"
+
+            git add data/
+            if git diff --cached --quiet; then
+              echo "no data change"
+            else
+              git commit -q -m "sample $(date -u +%Y-%m-%dT%H:%M)"
+              for i in 1 2 3; do git push -q && break || git pull --rebase -q; done
+            fi
+
+            # sleep to the next cycle boundary, not a flat 300s, so drift does not
+            # accumulate over 68 iterations
+            SPENT=$(( $(date +%s) - NOW ))
+            [ $SPENT -lt $CYCLE ] && sleep $((CYCLE - SPENT))
+          done
