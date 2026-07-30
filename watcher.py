@@ -31,12 +31,30 @@ def _survivor_probe():
     alert path. Self-limiting: 55s of a 300s cycle, and a no-op once the
     cohort is exhausted. Delete this hook when the probe reports complete.
     """
+    # Breadcrumbs to data/probe_log.txt: the Actions API is unreachable from the
+    # research container, so a committed file is the only way to see what the
+    # runner actually did. Remove once the probe is confirmed working.
+    here = os.path.dirname(os.path.abspath(__file__))
+    logp = os.path.join(here, "data", "probe_log.txt")
+
+    def note(msg):
+        try:
+            with open(logp, "a") as f:
+                f.write(f"{datetime.now(timezone.utc).strftime('%H:%M:%S')} {msg}\n")
+        except Exception:
+            pass
+
     try:
-        p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "survivor_probe.py")
-        if os.path.exists(p):
-            subprocess.run([sys.executable, p], timeout=180, check=False)
+        p = os.path.join(here, "survivor_probe.py")
+        if not os.path.exists(p):
+            note("MISSING survivor_probe.py; dir=" + ",".join(sorted(os.listdir(here))[:20]))
+            return
+        r = subprocess.run([sys.executable, p], timeout=180, check=False,
+                           capture_output=True, text=True)
+        note(f"rc={r.returncode} out={(r.stdout or '').strip()[-400:]!r} "
+             f"err={(r.stderr or '').strip()[-400:]!r}")
     except Exception as e:
-        print(f"WARN: survivor_probe failed: {e}")
+        note(f"EXCEPTION {type(e).__name__}: {e}")
 
 
 atexit.register(_survivor_probe)
