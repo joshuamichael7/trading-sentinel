@@ -15,7 +15,7 @@ Runs on a schedule (GitHub Actions cron), costs zero AI tokens. Each run:
 
 No external dependencies — stdlib only.
 """
-import atexit, json, os, subprocess, sys, time, urllib.request, urllib.error
+import json, os, subprocess, sys, time, urllib.request, urllib.error
 from datetime import datetime, timezone
 
 
@@ -27,8 +27,9 @@ def _survivor_probe():
     5.6 hours, so a new workflow step would not execute until the next run.
     watcher.py, by contrast, is re-read from disk every cycle -- a change
     pushed now lands as soon as the loop's next push is rejected and it
-    rebases. Registered with atexit so it still runs on watcher's sys.exit(1)
-    alert path. Self-limiting: 55s of a 300s cycle, and a no-op once the
+    rebases. Called inline at the end of this module rather than via
+    atexit, because the atexit hook silently never fired on the runner and
+    the Actions log is unreachable from here. Self-limiting: 55s of a 300s cycle, and a no-op once the
     cohort is exhausted. Delete this hook when the probe reports complete.
     """
     # Breadcrumbs to data/probe_log.txt: the Actions API is unreachable from the
@@ -56,8 +57,6 @@ def _survivor_probe():
     except Exception as e:
         note(f"EXCEPTION {type(e).__name__}: {e}")
 
-
-atexit.register(_survivor_probe)
 
 # Module-level breadcrumb. If this line never appears in data/probe_log.txt but
 # samples keep committing, then the runner is not executing THIS file and the
@@ -371,3 +370,8 @@ if alerts:
         sys.exit(1)  # no channel configured/working -> fail the workflow so GitHub emails the owner
 else:
     print(f"OK {TS} — sampled {len(prices)} assets, nothing to do")
+
+# Probe runs LAST, inline, so a failure here cannot cost us a price sample.
+# The sys.exit(1) alert path above skips it deliberately: on an alert cycle the
+# priority is committing the sample, not spending 55s on research.
+_survivor_probe()

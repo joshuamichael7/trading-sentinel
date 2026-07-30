@@ -47,10 +47,13 @@ jobs:
             # should cost one sample, not 5.6 hours of coverage.
             python3 watcher.py || echo "watcher.py exited $? -- continuing"
 
-            # NOTE: survivor_probe.py is deliberately NOT a step here. Steps are
-            # frozen at job start and this job runs 5.6h, so a step added now
-            # would not run until tomorrow. watcher.py invokes it instead and is
-            # re-read from disk every cycle. See the _survivor_probe docstring.
+            # Belt and braces. watcher.py also invokes the probe (so it can start
+            # mid-run, since steps are frozen at job start and this job loops for
+            # 5.6h), but that path is not firing for reasons I could not diagnose
+            # without Actions logs. This step is the guaranteed path from the next
+            # job onwards. Double invocation is harmless: the probe is resumable
+            # and becomes a no-op once the cohort is exhausted.
+            python3 survivor_probe.py || echo "survivor_probe.py exited $? -- continuing"
 
             # Pick up code pushed since this job started, so the next such fix
             # does not have to be smuggled in through watcher.py.
