@@ -59,6 +59,15 @@ def _survivor_probe():
 
 atexit.register(_survivor_probe)
 
+# Module-level breadcrumb. If this line never appears in data/probe_log.txt but
+# samples keep committing, then the runner is not executing THIS file and the
+# problem is the checkout, not the atexit hook.
+try:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "probe_log.txt"), "a") as _f:
+        _f.write(f"{datetime.now(timezone.utc).strftime('%H:%M:%S')} watcher module loaded\n")
+except Exception as _e:
+    print(f"WARN: breadcrumb failed: {_e}")
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 os.makedirs(DATA, exist_ok=True)
