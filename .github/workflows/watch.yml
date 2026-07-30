@@ -47,6 +47,11 @@ jobs:
             # should cost one sample, not 5.6 hours of coverage.
             python3 watcher.py || echo "watcher.py exited $? -- continuing"
 
+            # Survivorship probe for the meme-coin question. Self-limiting: it
+            # budgets 55s of one 300s cycle, resumes across runs, and prints
+            # "complete, nothing to do" forever once the cohort is exhausted.
+            python3 survivor_probe.py || echo "survivor_probe.py exited $? -- continuing"
+
             git add data/
             if git diff --cached --quiet; then
               echo "no data change"
