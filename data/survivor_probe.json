@@ -1836,11 +1836,26 @@
    "first_seen": "2026-07-31T09:04:37Z",
    "desc": "A quiet protest against public superstitions and human prejudice that leave blac",
    "attempts": 1
+  },
+  "WUbc4PcHxraU3NJqyygjM2YaTpSDaXirV3U8TtZpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "Gq8wZt3UNPsb6P9adRkS2vwjycKsdyjXcdHZGJGo9Kkj",
+   "live_liquidity_usd": 29665.1838,
+   "ohlcv_http": 200,
+   "n_candles": 15,
+   "first_candle_ts": 1785445200,
+   "first_candle_close": 7.298901789148475e-05,
+   "last_candle_ts": 1785495600,
+   "last_candle_close": 0.00016688711993128466,
+   "first_seen": "2026-07-31T11:14:38Z",
+   "desc": "Nascat",
+   "attempts": 1
   }
  },
- "cohort_size": 123,
- "updated": "2026-07-31T09:04:44Z",
- "probed": 123,
+ "cohort_size": 124,
+ "updated": "2026-07-31T11:14:45Z",
+ "probed": 124,
  "remaining": 0,
  "unresolved": 0
 }
