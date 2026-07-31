@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-29T17:44:07Z",
+  "generated": "2026-07-31T18:48:53Z",
   "kraken_assets": [
     "BTC",
     "ETH",
@@ -13,24 +13,6 @@
     }
   ],
   "positions": [
-    {
-      "id": "MAJ-002",
-      "track": "majors",
-      "symbol": "BTC",
-      "side": "long",
-      "stop": 61500,
-      "tp1": 69500,
-      "tp1_hit": false,
-      "trail_pct": 0.1,
-      "high_water": 66740.5,
-      "liquidation_price": null,
-      "be_ratchet": {
-        "trigger": 67700.0,
-        "ratchet_stop_to": 64509.04,
-        "done": false
-      },
-      "liquidity_at_entry": null
-    },
     {
       "id": "MEME-001",
       "track": "meme",
