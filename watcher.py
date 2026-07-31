@@ -98,14 +98,11 @@ def _survivor_probe():
         note(f"EXCEPTION {type(e).__name__}: {e}")
 
 
-# Module-level breadcrumb. If this line never appears in data/probe_log.txt but
-# samples keep committing, then the runner is not executing THIS file and the
-# problem is the checkout, not the atexit hook.
-try:
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "probe_log.txt"), "a") as _f:
-        _f.write(f"{datetime.now(timezone.utc).strftime('%H:%M:%S')} watcher module loaded\n")
-except Exception as _e:
-    print(f"WARN: breadcrumb failed: {_e}")
+# The module-level breadcrumb that used to write "watcher module loaded" here on
+# every cycle is removed: it did its job (it proved the runner was executing this
+# file rather than a stale checkout) and was appending ~288 lines a day to
+# probe_log.txt for no remaining diagnostic value. The per-side-car lines below
+# still record rc/stdout/stderr, which is the part that is actually informative.
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
@@ -415,8 +412,15 @@ else:
 # The sys.exit(1) alert path above skips it deliberately: on an alert cycle the
 # priority is committing the sample, not spending 55s on research.
 _survivor_probe()
-# COPY-PERP-01 step 0: establish what Hyperliquid's info endpoint actually
-# serves before designing a study on it. Capability probe only -- it ranks
-# nothing and selects nothing, and goes no-op once every request type has an
-# answer. See hl_probe.py's docstring for why Dune cannot answer this.
-_side_car("hl_probe.py", budget_s=90)
+# COPY-PERP-01 step 0 is DONE (hl_probe.py: 8/8 request types resolved). Its
+# verdict: every per-address request type works, but neither `leaderboard` (422)
+# nor `vaultSummaries` (empty) enumerates, so there is no directory of vaults.
+# hl_probe.py is retained in the repo as the record of that answer but is no
+# longer invoked -- it would only re-read its own output file.
+#
+# Step 1a replaces it: build the directory ourselves by snowball crawl, seeded
+# from the one vault address that is public knowledge. This collects names; it
+# ranks and selects nothing. Its three upward survivorship biases are declared
+# in hl_crawl.py's docstring and pre-registered in the ledger BEFORE any data
+# came back, which is what makes a negative result usable and a positive one not.
+_side_car("hl_crawl.py", budget_s=100)
