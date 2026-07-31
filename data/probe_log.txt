@@ -90,3 +90,6 @@
 00:33:17 watcher module loaded
 00:34:20 rc=0 out='probe BSXiu8in pools=200/4 ohlcv=200/121 liq=4085.14\nprobe 5saAXYWp pools=200/2 ohlcv=200/113 liq=2132.0507\nprobe CjA1dq97 pools=200/3 ohlcv=transport_error/0 liq=2144.9081\nprobe F3u272Bx pools=200/2 ohlcv=200/27 liq=6.50473678047061e-05\nsurvivor_probe: +4 this run, 121/121 done, 14 still unresolved' err=''
 00:34:20 hl_probe.py rc=0 out='hl_probe: complete, 8/8 request types resolved' err=''
+00:38:17 watcher module loaded
+00:39:20 rc=0 out='probe CjA1dq97 pools=200/3 ohlcv=200/96 liq=2144.9081\nprobe Dcvco9Si pools=200/3 ohlcv=200/70 liq=3226.7698\nprobe 9AX92xMk pools=200/2 ohlcv=transport_error/0 liq=2958.2124\nprobe AdMJoQio pools=200/6 ohlcv=200/89 liq=3424.3643\nsurvivor_probe: +4 this run, 121/121 done, 11 still unresolved' err=''
+00:39:20 hl_probe.py rc=0 out='hl_probe: complete, 8/8 request types resolved' err=''

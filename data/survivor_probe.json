@@ -927,15 +927,15 @@
    "n_pools": 3,
    "pool": "7dADYzkTHdBgrscRJxt5maoB8xVKbn6xeMXTKgmgNDZy",
    "live_liquidity_usd": 2144.9081,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "ohlcv_http": 200,
+   "n_candles": 96,
+   "first_candle_ts": 1784944800,
+   "first_candle_close": 0.0001712997230018366,
+   "last_candle_ts": 1785427200,
+   "last_candle_close": 2.016880285089763e-06,
    "first_seen": "2026-07-25T06:58:35Z",
    "desc": "Uno the Borzoi is the internet\u2019s long-nose legend, bringing elegance and memes w",
-   "attempts": 2
+   "attempts": 3
   },
   "2FCerziZbakcdDbuQNgEWPxGRPYGmBzMxEJKkqJEpump": {
    "pools_http": 200,
@@ -1046,16 +1046,16 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "FdcsbstZwzNssMmk4Nh4NnkbSiMv4RksHHr7fAjwZMaH",
-   "live_liquidity_usd": 3239.9148,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 3226.7698,
+   "ohlcv_http": 200,
+   "n_candles": 70,
+   "first_candle_ts": 1785024000,
+   "first_candle_close": 6.379982602142254e-06,
+   "last_candle_ts": 1785441600,
+   "last_candle_close": 3.230757872383463e-06,
    "first_seen": "2026-07-26T01:16:08Z",
    "desc": "$USDP is live.\n\nUrStableDegenPad \u2014 the launchpad for Stable, the USDT chain. Dri",
-   "attempts": 1
+   "attempts": 2
   },
   "7rSpKgASuXN5hfw3jsKNZN6ysNCR1Eixb2PD2Nd9pump": {
    "pools_http": 200,
@@ -1106,7 +1106,7 @@
    "pools_http": 200,
    "n_pools": 2,
    "pool": "EdZ4fJ6rBitX5gkzgr1HnkCxC1F3ADZiJUn5WghK8t5B",
-   "live_liquidity_usd": 2967.1131,
+   "live_liquidity_usd": 2958.2124,
    "ohlcv_http": "transport_error",
    "n_candles": 0,
    "first_candle_ts": null,
@@ -1115,7 +1115,7 @@
    "last_candle_close": null,
    "first_seen": "2026-07-26T15:13:29Z",
    "desc": "Happy Cat is spreading joy across the Solana onchain, one smile at a time.",
-   "attempts": 1
+   "attempts": 2
   },
   "7kJehzAt1WNmXqLwuZzvaN7gnheLLZQsKu7ZMEXkpump": {
    "pools_http": 200,
@@ -1166,16 +1166,16 @@
    "pools_http": 200,
    "n_pools": 6,
    "pool": "9DaLtnvU5SCN1F21FjLkm5KmNRtdYr7rzmQCTjUeKewX",
-   "live_liquidity_usd": 3403.9238,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 3424.3643,
+   "ohlcv_http": 200,
+   "n_candles": 89,
+   "first_candle_ts": 1785117600,
+   "first_candle_close": 0.0001330344508500594,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 3.292273237014574e-06,
    "first_seen": "2026-07-27T04:57:38Z",
    "desc": "",
-   "attempts": 1
+   "attempts": 2
   },
   "3MHZzkmgxguPpq7RRzczjzLRDaJwcyGtyFUgbXMEpump": {
    "pools_http": 200,
@@ -1809,8 +1809,8 @@
   }
  },
  "cohort_size": 121,
- "updated": "2026-07-31T00:34:20Z",
+ "updated": "2026-07-31T00:39:20Z",
  "probed": 121,
  "remaining": 0,
- "unresolved": 14
+ "unresolved": 11
 }
