@@ -1851,11 +1851,26 @@
    "first_seen": "2026-07-31T11:14:38Z",
    "desc": "Nascat",
    "attempts": 1
+  },
+  "CJEmbJRrQTzyvBaPFmk5LAkY34aAi4YjoPaNHZ7Epump": {
+   "pools_http": 200,
+   "n_pools": 1,
+   "pool": "A3EkotC7opcZrS2L73T7HALELB8JSShoAGogziSuYrHo",
+   "live_liquidity_usd": 1887.5434,
+   "ohlcv_http": 200,
+   "n_candles": 22,
+   "first_candle_ts": 1785441600,
+   "first_candle_close": 4.890306287482071e-06,
+   "last_candle_ts": 1785517200,
+   "last_candle_close": 2.3982099363000536e-06,
+   "first_seen": "2026-07-31T17:12:09Z",
+   "desc": "Baby Shark ($SHRK) is small, cute, and dangerously hungry. Built for memes, powe",
+   "attempts": 1
   }
  },
- "cohort_size": 124,
- "updated": "2026-07-31T11:14:45Z",
- "probed": 124,
+ "cohort_size": 125,
+ "updated": "2026-07-31T17:12:15Z",
+ "probed": 125,
  "remaining": 0,
  "unresolved": 0
 }
