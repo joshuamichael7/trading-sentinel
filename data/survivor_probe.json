@@ -1806,11 +1806,26 @@
    "first_seen": "2026-07-30T22:53:17Z",
    "desc": "To The Moon",
    "attempts": 1
+  },
+  "8Byg9wi43TNzgJpYta6UXxPz3LPe8v6ZwvmWWoWQpump": {
+   "pools_http": 200,
+   "n_pools": 5,
+   "pool": "DbRVBRLni7dk9VQQffn9NEL43LbADf5EJYdJnsiLQWaj",
+   "live_liquidity_usd": 67752.3427,
+   "ohlcv_http": 200,
+   "n_candles": 6,
+   "first_candle_ts": 1785456000,
+   "first_candle_close": 0.00042633004446226107,
+   "last_candle_ts": 1785474000,
+   "last_candle_close": 0.0007462202229412919,
+   "first_seen": "2026-07-31T05:40:11Z",
+   "desc": "The first P2E Hood RPG on Solana",
+   "attempts": 1
   }
  },
- "cohort_size": 121,
- "updated": "2026-07-31T01:55:23Z",
- "probed": 121,
+ "cohort_size": 122,
+ "updated": "2026-07-31T05:40:18Z",
+ "probed": 122,
  "remaining": 0,
  "unresolved": 0
 }
