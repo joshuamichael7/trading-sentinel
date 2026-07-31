@@ -747,15 +747,15 @@
    "n_pools": 4,
    "pool": "CUet8ifxu8xZtVVxW25Hb3vy2MGJxFDBbmxqSpYGoAg9",
    "live_liquidity_usd": 4085.14,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "ohlcv_http": 200,
+   "n_candles": 121,
+   "first_candle_ts": 1784829600,
+   "first_candle_close": 0.0010499091621433666,
+   "last_candle_ts": 1785398400,
+   "last_candle_close": 3.373177767351027e-06,
    "first_seen": "2026-07-23T23:41:22Z",
    "desc": "",
-   "attempts": 2
+   "attempts": 3
   },
   "XSTuo1fV7HHMhs4BYiwtrWSLsMCJNrooH2AssWTYZqP": {
    "pools_http": 200,
@@ -866,16 +866,16 @@
    "pools_http": 200,
    "n_pools": 2,
    "pool": "8cM9unFJDWJburT1Fa3N45ugaSnuVEm8CboDcEN1KzbL",
-   "live_liquidity_usd": 2133.403,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 2132.0507,
+   "ohlcv_http": 200,
+   "n_candles": 113,
+   "first_candle_ts": 1784869200,
+   "first_candle_close": 0.0003604041918679411,
+   "last_candle_ts": 1785434400,
+   "last_candle_close": 2.012960839868882e-06,
    "first_seen": "2026-07-24T23:47:36Z",
    "desc": "President Trump KET brings unstoppable American confidence, style, and meme powe",
-   "attempts": 1
+   "attempts": 2
   },
   "AJruxtsavZtzS3VSu3HGTAeiG8A2hGK7PSLqWuc9pump": {
    "pools_http": 200,
@@ -926,7 +926,7 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "7dADYzkTHdBgrscRJxt5maoB8xVKbn6xeMXTKgmgNDZy",
-   "live_liquidity_usd": 2152.2674,
+   "live_liquidity_usd": 2144.9081,
    "ohlcv_http": "transport_error",
    "n_candles": 0,
    "first_candle_ts": null,
@@ -935,7 +935,7 @@
    "last_candle_close": null,
    "first_seen": "2026-07-25T06:58:35Z",
    "desc": "Uno the Borzoi is the internet\u2019s long-nose legend, bringing elegance and memes w",
-   "attempts": 1
+   "attempts": 2
   },
   "2FCerziZbakcdDbuQNgEWPxGRPYGmBzMxEJKkqJEpump": {
    "pools_http": 200,
@@ -987,15 +987,15 @@
    "n_pools": 2,
    "pool": "5pohKmj3pnsPB25j51fKwHwmWNBqqbcyYj6zfqNekHBe",
    "live_liquidity_usd": 6.50473678047061e-05,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "ohlcv_http": 200,
+   "n_candles": 27,
+   "first_candle_ts": 1784977200,
+   "first_candle_close": 5.364667677014497e-05,
+   "last_candle_ts": 1785222000,
+   "last_candle_close": 4.820317513653036e-06,
    "first_seen": "2026-07-25T14:26:10Z",
    "desc": "",
-   "attempts": 1
+   "attempts": 2
   },
   "ATBqqcqKumxQEgLBTbuL5iNMMk7DNPzwKNTi8XVSpump": {
    "pools_http": 200,
@@ -1809,8 +1809,8 @@
   }
  },
  "cohort_size": 121,
- "updated": "2026-07-31T00:29:20Z",
+ "updated": "2026-07-31T00:34:20Z",
  "probed": 121,
  "remaining": 0,
- "unresolved": 17
+ "unresolved": 14
 }
