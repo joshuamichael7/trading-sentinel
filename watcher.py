@@ -19,6 +19,46 @@ import json, os, subprocess, sys, time, urllib.request, urllib.error
 from datetime import datetime, timezone
 
 
+def _side_car(script, budget_s=180):
+    """Run a research probe as a side-car to each sample.
+
+    Probes live here rather than as steps in watch.yml for one reason: the
+    workflow's `run:` block is frozen at job start, and the job now loops for
+    5.6 hours, so a new workflow step would not execute until the next run.
+    watcher.py, by contrast, is re-read from disk every cycle -- a change
+    pushed now lands as soon as the loop's next push is rejected and it
+    rebases. Called inline at the end of this module rather than via atexit,
+    because the atexit hook silently never fired on the runner and the Actions
+    log is unreachable from here.
+
+    Breadcrumbs go to data/probe_log.txt: the Actions API is unreachable from
+    the research container, so a committed file is the only way to see what the
+    runner actually did.
+    """
+    here = os.path.dirname(os.path.abspath(__file__))
+    logp = os.path.join(here, "data", "probe_log.txt")
+
+    def note(msg):
+        try:
+            with open(logp, "a") as f:
+                f.write(f"{datetime.now(timezone.utc).strftime('%H:%M:%S')} "
+                        f"{script} {msg}\n")
+        except Exception:
+            pass
+
+    try:
+        p = os.path.join(here, script)
+        if not os.path.exists(p):
+            note("MISSING; dir=" + ",".join(sorted(os.listdir(here))[:20]))
+            return
+        r = subprocess.run([sys.executable, p], timeout=budget_s, check=False,
+                           capture_output=True, text=True)
+        note(f"rc={r.returncode} out={(r.stdout or '').strip()[-400:]!r} "
+             f"err={(r.stderr or '').strip()[-400:]!r}")
+    except Exception as e:
+        note(f"EXCEPTION {type(e).__name__}: {e}")
+
+
 def _survivor_probe():
     """Run the meme-coin survivorship probe as a side-car to each sample.
 
@@ -375,3 +415,8 @@ else:
 # The sys.exit(1) alert path above skips it deliberately: on an alert cycle the
 # priority is committing the sample, not spending 55s on research.
 _survivor_probe()
+# COPY-PERP-01 step 0: establish what Hyperliquid's info endpoint actually
+# serves before designing a study on it. Capability probe only -- it ranks
+# nothing and selects nothing, and goes no-op once every request type has an
+# answer. See hl_probe.py's docstring for why Dune cannot answer this.
+_side_car("hl_probe.py", budget_s=90)
