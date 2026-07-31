@@ -567,15 +567,15 @@
    "n_pools": 4,
    "pool": "H1Fd99MShUcNsKQaXMWCA8kVKSK6mw6UqURto99YA3Qc",
    "live_liquidity_usd": 3256.1705,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "ohlcv_http": 200,
+   "n_candles": 145,
+   "first_candle_ts": 1784628000,
+   "first_candle_close": 0.00035556891626183784,
+   "last_candle_ts": 1785376800,
+   "last_candle_close": 1.689220099762291e-06,
    "first_seen": "2026-07-21T11:29:15Z",
    "desc": "Ivy is an adorable pit bull with short spine syndrome who has captured hearts",
-   "attempts": 2
+   "attempts": 3
   },
   "4tnZ57E3oWjaZKSQY1iwgqiD8ivAGk5TambivhTYpump": {
    "pools_http": 200,
@@ -686,16 +686,16 @@
    "pools_http": 200,
    "n_pools": 4,
    "pool": "4FgumKjhC8S7zyesLrPPi8XBssTMbYJ9kJbeLZ1wVoUP",
-   "live_liquidity_usd": 70381.4478,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 74520.6931,
+   "ohlcv_http": 200,
+   "n_candles": 240,
+   "first_candle_ts": 1784595600,
+   "first_candle_close": 0.00014755473655150397,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 0.0007275075865769079,
    "first_seen": "2026-07-23T15:24:54Z",
    "desc": "",
-   "attempts": 1
+   "attempts": 2
   },
   "6ctwkKWsuB2VQmvAQXsRAJHQrhunQCDSatAVigWWpump": {
    "pools_http": 200,
@@ -746,7 +746,7 @@
    "pools_http": 200,
    "n_pools": 4,
    "pool": "CUet8ifxu8xZtVVxW25Hb3vy2MGJxFDBbmxqSpYGoAg9",
-   "live_liquidity_usd": 4087.731,
+   "live_liquidity_usd": 4085.14,
    "ohlcv_http": "transport_error",
    "n_candles": 0,
    "first_candle_ts": null,
@@ -755,7 +755,7 @@
    "last_candle_close": null,
    "first_seen": "2026-07-23T23:41:22Z",
    "desc": "",
-   "attempts": 1
+   "attempts": 2
   },
   "XSTuo1fV7HHMhs4BYiwtrWSLsMCJNrooH2AssWTYZqP": {
    "pools_http": 200,
@@ -806,16 +806,16 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "HswK5nfxPgeohks3F667KJPjsGuvqCVrrZ9MFrEWfHEL",
-   "live_liquidity_usd": 10401.4214,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 11250.0828,
+   "ohlcv_http": 200,
+   "n_candles": 178,
+   "first_candle_ts": 1784818800,
+   "first_candle_close": 5.891288344915407e-05,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 2.3627897516924167e-05,
    "first_seen": "2026-07-24T14:51:43Z",
    "desc": "$CCAT \u2014 the Senate sat on the CLARITY Act for a year. A cat sat on it once and i",
-   "attempts": 1
+   "attempts": 2
   },
   "Fyj27HvNPeYXktGa9ifAvwmFnhxNkUr3yUCciZ6jpump": {
    "pools_http": 200,
@@ -1809,8 +1809,8 @@
   }
  },
  "cohort_size": 121,
- "updated": "2026-07-31T00:24:20Z",
+ "updated": "2026-07-31T00:29:20Z",
  "probed": 121,
  "remaining": 0,
- "unresolved": 20
+ "unresolved": 17
 }
