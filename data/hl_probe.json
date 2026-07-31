@@ -1,0 +1,179 @@
+{
+ "results": {
+  "meta": {
+   "http": 200,
+   "bytes": 17527,
+   "attempts": 1,
+   "request": {
+    "type": "meta"
+   },
+   "shape": {
+    "universe": [
+     "list[232]",
+     {
+      "szDecimals": "...",
+      "name": "...",
+      "maxLeverage": "...",
+      "marginTableId": "..."
+     }
+    ],
+    "marginTables": [
+     "list[7]",
+     [
+      "list[2]",
+      "..."
+     ]
+    ],
+    "collateralToken": "int"
+   }
+  },
+  "metaAndAssetCtxs": {
+   "http": 200,
+   "bytes": 71973,
+   "attempts": 1,
+   "request": {
+    "type": "metaAndAssetCtxs"
+   },
+   "shape": [
+    "list[2]",
+    {
+     "universe": [
+      "list[232]",
+      "..."
+     ],
+     "marginTables": [
+      "list[7]",
+      "..."
+     ],
+     "collateralToken": "int"
+    }
+   ],
+   "n_items": 2
+  },
+  "vaultSummaries": {
+   "http": 200,
+   "bytes": 2,
+   "attempts": 1,
+   "request": {
+    "type": "vaultSummaries"
+   },
+   "shape": [
+    "list[0]"
+   ],
+   "n_items": 0
+  },
+  "leaderboard": {
+   "http": 422,
+   "bytes": 0,
+   "attempts": 1,
+   "request": {
+    "type": "leaderboard"
+   },
+   "detail": "Failed to deserialize the JSON body into the target type"
+  },
+  "vaultDetails": {
+   "http": 200,
+   "bytes": 57662,
+   "attempts": 1,
+   "request": {
+    "type": "vaultDetails",
+    "vaultAddress": "0xdfc24b077bc1425ad1dea75bcb6f8158e10df303"
+   },
+   "shape": {
+    "name": "str[29]",
+    "vaultAddress": "str[42]",
+    "leader": "str[42]",
+    "description": "str[153]",
+    "portfolio": [
+     "list[8]",
+     [
+      "list[2]",
+      "..."
+     ]
+    ],
+    "apr": "float",
+    "followerState": "NoneType",
+    "leaderFraction": "float",
+    "leaderCommission": "float",
+    "followers": [
+     "list[100]",
+     {
+      "user": "...",
+      "vaultEquity": "...",
+      "pnl": "...",
+      "allTimePnl": "...",
+      "daysFollowing": "...",
+      "vaultEntryTime": "...",
+      "lockupUntil": "..."
+     }
+    ],
+    "maxDistributable": "float",
+    "maxWithdrawable": "float"
+   }
+  },
+  "clearinghouseState": {
+   "http": 200,
+   "bytes": 401,
+   "attempts": 1,
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0xdfc24b077bc1425ad1dea75bcb6f8158e10df303"
+   },
+   "shape": {
+    "marginSummary": {
+     "accountValue": "str[20]",
+     "totalNtlPos": "str[3]",
+     "totalRawUsd": "str[20]",
+     "totalMarginUsed": "str[10]"
+    },
+    "crossMarginSummary": {
+     "accountValue": "str[20]",
+     "totalNtlPos": "str[3]",
+     "totalRawUsd": "str[20]",
+     "totalMarginUsed": "str[3]"
+    },
+    "crossMaintenanceMarginUsed": "str[3]",
+    "withdrawable": "str[20]",
+    "assetPositions": [
+     "list[0]"
+    ],
+    "time": "int"
+   }
+  },
+  "portfolio": {
+   "http": 200,
+   "bytes": 34255,
+   "attempts": 1,
+   "request": {
+    "type": "portfolio",
+    "user": "0xdfc24b077bc1425ad1dea75bcb6f8158e10df303"
+   },
+   "shape": [
+    "list[8]",
+    [
+     "list[2]",
+     "str[3]"
+    ]
+   ],
+   "n_items": 8
+  },
+  "userFills": {
+   "http": 200,
+   "bytes": 2,
+   "attempts": 1,
+   "request": {
+    "type": "userFills",
+    "user": "0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+    "aggregateByTime": false
+   },
+   "shape": [
+    "list[0]"
+   ],
+   "n_items": 0
+  }
+ },
+ "updated": "2026-07-31T00:24:32Z",
+ "resolved": 8,
+ "total": 8,
+ "note": "Capability probe only. No account is ranked, scored or selected here. See COPY-PERP-01 in the project ledger for the pre-registered kill criteria."
+}

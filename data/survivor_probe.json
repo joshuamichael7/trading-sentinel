@@ -387,15 +387,15 @@
    "n_pools": 2,
    "pool": "77WcHUDbA8ATQSj2eTUBmEMpVQkbZfrWLAW8V3KrfQRJ",
    "live_liquidity_usd": 4334.5488,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "ohlcv_http": 200,
+   "n_candles": 183,
+   "first_candle_ts": 1784426400,
+   "first_candle_close": 5.140358817718035e-05,
+   "last_candle_ts": 1785441600,
+   "last_candle_close": 3.4469228622251504e-06,
    "first_seen": "2026-07-19T10:16:08Z",
    "desc": "Tates have been arrested and put in jail",
-   "attempts": 2
+   "attempts": 3
   },
   "4gRYGyDP9Jkdt2bi9LN8ZKwwd22UfPYAA8bRA3Zppump": {
    "pools_http": 200,
@@ -506,16 +506,16 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "3E8KRoxVEbvKYijVTyzgjUXHewLprMnQ1YbXDsCBH1vV",
-   "live_liquidity_usd": 3463.6377,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 3468.6674,
+   "ohlcv_http": 200,
+   "n_candles": 167,
+   "first_candle_ts": 1784505600,
+   "first_candle_close": 6.993545160231387e-05,
+   "last_candle_ts": 1785409200,
+   "last_candle_close": 2.085139672990288e-06,
    "first_seen": "2026-07-20T14:56:46Z",
    "desc": "CONVICTION",
-   "attempts": 1
+   "attempts": 2
   },
   "HTnd1QWNn8JDZJdEK3Kx7b52GocwuZfx32s94h7Kpump": {
    "pools_http": 200,
@@ -566,7 +566,7 @@
    "pools_http": 200,
    "n_pools": 4,
    "pool": "H1Fd99MShUcNsKQaXMWCA8kVKSK6mw6UqURto99YA3Qc",
-   "live_liquidity_usd": 3259.036,
+   "live_liquidity_usd": 3256.1705,
    "ohlcv_http": "transport_error",
    "n_candles": 0,
    "first_candle_ts": null,
@@ -575,7 +575,7 @@
    "last_candle_close": null,
    "first_seen": "2026-07-21T11:29:15Z",
    "desc": "Ivy is an adorable pit bull with short spine syndrome who has captured hearts",
-   "attempts": 1
+   "attempts": 2
   },
   "4tnZ57E3oWjaZKSQY1iwgqiD8ivAGk5TambivhTYpump": {
    "pools_http": 200,
@@ -626,16 +626,16 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "7Y3rCQkd3MreVnSNdjNsiaTEBo38iJQFhcP1YapBgMai",
-   "live_liquidity_usd": 6421.5649,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 6394.6709,
+   "ohlcv_http": 200,
+   "n_candles": 258,
+   "first_candle_ts": 1784422800,
+   "first_candle_close": 8.119594225044887e-05,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 7.187151044161653e-06,
    "first_seen": "2026-07-22T15:14:50Z",
    "desc": "Ansem + Jimothy = Himothy\nSizable supply has been airdropped to some of the bigg",
-   "attempts": 1
+   "attempts": 2
   },
   "Cnm8PaGvGFPT1dDqvRLYRZLwqdTN8dUTtQZT1BTKpump": {
    "pools_http": 200,
@@ -1809,8 +1809,8 @@
   }
  },
  "cohort_size": 121,
- "updated": "2026-07-31T00:19:21Z",
+ "updated": "2026-07-31T00:24:20Z",
  "probed": 121,
  "remaining": 0,
- "unresolved": 23
+ "unresolved": 20
 }
