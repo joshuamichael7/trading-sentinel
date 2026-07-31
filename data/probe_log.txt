@@ -570,3 +570,6 @@
 17:12:09 watcher module loaded
 17:12:15 rc=0 out='probe CJEmbJRr pools=200/1 ohlcv=200/22 liq=1887.5434\nsurvivor_probe: +1 this run, 125/125 done, 0 still unresolved' err=''
 17:12:16 hl_probe.py rc=0 out='hl_probe: complete, 8/8 request types resolved' err=''
+17:17:09 watcher module loaded
+17:17:11 rc=0 out='survivor_probe: complete, 125/125 probed, 0 unresolved after 5 tries, nothing to do' err=''
+17:17:11 hl_probe.py rc=0 out='hl_probe: complete, 8/8 request types resolved' err=''
