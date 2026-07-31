@@ -734,3 +734,5 @@
 23:11:51 hl_crawl.py rc=0 out='hl_crawl: 263 vaults, 661 users read, 4 vaults / 3979 users pending, 924 requests total, complete=False' err=''
 23:16:12 rc=0 out='survivor_probe: complete, 130/130 probed, 0 unresolved after 5 tries, nothing to do' err=''
 23:16:51 hl_crawl.py rc=0 out='hl_crawl: 267 vaults, 679 users read, 5 vaults / 3982 users pending, 946 requests total, complete=False' err=''
+23:21:12 rc=0 out='survivor_probe: complete, 130/130 probed, 0 unresolved after 5 tries, nothing to do' err=''
+23:21:51 hl_crawl.py rc=0 out='hl_crawl: 272 vaults, 696 users read, 13 vaults / 3983 users pending, 968 requests total, complete=False' err=''
