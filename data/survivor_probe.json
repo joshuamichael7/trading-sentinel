@@ -1287,15 +1287,15 @@
    "n_pools": 6,
    "pool": "Guz1tBNJQGKuVFRta7oe9NmoRnAPSwZpHr83YG1Sjwpy",
    "live_liquidity_usd": 6422.5689,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "ohlcv_http": 200,
+   "n_candles": 74,
+   "first_candle_ts": 1785186000,
+   "first_candle_close": 0.0002242987074904352,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 1.0027838772836644e-05,
    "first_seen": "2026-07-27T22:30:56Z",
    "desc": "Solana launchpad. 70% locked on every token. You pick your lock. Trading fees fl",
-   "attempts": 2
+   "attempts": 3
   },
   "EGS9ugXmxLNg1y3NHV6x8iriCaSBBBEhMqmUpqwQpump": {
    "pools_http": 200,
@@ -1406,16 +1406,16 @@
    "pools_http": 200,
    "n_pools": 2,
    "pool": "A6p5CJUFGdzkSPVMT7rsRFCwizfBoj8BEsoMLqPygvBN",
-   "live_liquidity_usd": 1483.4976,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 1478.6525,
+   "ohlcv_http": 200,
+   "n_candles": 24,
+   "first_candle_ts": 1785214800,
+   "first_candle_close": 0.00011474602717691282,
+   "last_candle_ts": 1785423600,
+   "last_candle_close": 1.4526352023990864e-06,
    "first_seen": "2026-07-28T20:08:12Z",
    "desc": "The Bullish Philosophy The market is unpredictable, but your energy doesn't have",
-   "attempts": 1
+   "attempts": 2
   },
   "BezdJrtJxz83mewWwcKBjFctGC26ECNaGXo6vMDPpump": {
    "pools_http": 200,
@@ -1466,7 +1466,7 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "3YQmhq9AscmuEqBjR4Vvmybt1t4iRCg37wXdsMQsMi15",
-   "live_liquidity_usd": 1820.3515,
+   "live_liquidity_usd": 1892.789,
    "ohlcv_http": "transport_error",
    "n_candles": 0,
    "first_candle_ts": null,
@@ -1475,7 +1475,7 @@
    "last_candle_close": null,
    "first_seen": "2026-07-29T04:26:05Z",
    "desc": "CIGCAT",
-   "attempts": 1
+   "attempts": 2
   },
   "euXT5wMLfGs1zu2zfgeTUSXhjZNuMMiUZLsLsDKpump": {
    "pools_http": 200,
@@ -1526,16 +1526,16 @@
    "pools_http": 200,
    "n_pools": 2,
    "pool": "AdKP2YYsnThZtTZ5o84YeF5ybxaU9woNzx5ULMrpdBXY",
-   "live_liquidity_usd": 1558.5683,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 1898.6048,
+   "ohlcv_http": 200,
+   "n_candles": 37,
+   "first_candle_ts": 1785312000,
+   "first_candle_close": 4.301698485798206e-05,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 1.899599710427832e-06,
    "first_seen": "2026-07-29T10:02:02Z",
    "desc": "",
-   "attempts": 1
+   "attempts": 2
   },
   "6YCYaiuXQubALutWr1eJB8HZ9i72hpTKgAvjR6qzpump": {
    "pools_http": 200,
@@ -1809,8 +1809,8 @@
   }
  },
  "cohort_size": 121,
- "updated": "2026-07-31T00:44:20Z",
+ "updated": "2026-07-31T00:49:20Z",
  "probed": 121,
  "remaining": 0,
- "unresolved": 8
+ "unresolved": 5
 }
