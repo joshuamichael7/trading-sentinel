@@ -1466,16 +1466,16 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "3YQmhq9AscmuEqBjR4Vvmybt1t4iRCg37wXdsMQsMi15",
-   "live_liquidity_usd": 1892.789,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 1890.4443,
+   "ohlcv_http": 200,
+   "n_candles": 39,
+   "first_candle_ts": 1785286800,
+   "first_candle_close": 3.6119423357746433e-05,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 1.717842108620186e-06,
    "first_seen": "2026-07-29T04:26:05Z",
    "desc": "CIGCAT",
-   "attempts": 2
+   "attempts": 3
   },
   "euXT5wMLfGs1zu2zfgeTUSXhjZNuMMiUZLsLsDKpump": {
    "pools_http": 200,
@@ -1586,16 +1586,16 @@
    "pools_http": 200,
    "n_pools": 2,
    "pool": "5xdVJp6rSZ3TnfcY2SCmefy74TdwhSGewkxJ3yGqkqE6",
-   "live_liquidity_usd": 3825.1969,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 3955.1816,
+   "ohlcv_http": 200,
+   "n_candles": 33,
+   "first_candle_ts": 1785340800,
+   "first_candle_close": 0.00019465264000485244,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 4.063828892141353e-06,
    "first_seen": "2026-07-29T17:44:37Z",
    "desc": "Trump is going insanely viral right now, as Dr. MAGA, he psyoped an entire natio",
-   "attempts": 1
+   "attempts": 2
   },
   "DaaRHW5f9Ue4fEct797kUC8GoLf2Jw3scTuTey9Apump": {
    "pools_http": 200,
@@ -1646,7 +1646,7 @@
    "pools_http": 200,
    "n_pools": 3,
    "pool": "HcLYLxSXRFcXv5fh5GCNdqTEWduFBujH9SZMs7J5dC1D",
-   "live_liquidity_usd": 2412.9067,
+   "live_liquidity_usd": 2394.8587,
    "ohlcv_http": "transport_error",
    "n_candles": 0,
    "first_candle_ts": null,
@@ -1655,7 +1655,7 @@
    "last_candle_close": null,
    "first_seen": "2026-07-30T08:48:58Z",
    "desc": "i plead the fifth amendment",
-   "attempts": 1
+   "attempts": 2
   },
   "2qfZAMXswJbmTS7nRkc1U8boETWmgCRzyCQt2iAzpump": {
    "pools_http": 200,
@@ -1706,16 +1706,16 @@
    "pools_http": 200,
    "n_pools": 4,
    "pool": "AApYA4qoisy7i8QkDbee54vn5g9YT6JbtJFdBhiH4tr",
-   "live_liquidity_usd": 4142.4251,
-   "ohlcv_http": "transport_error",
-   "n_candles": 0,
-   "first_candle_ts": null,
-   "first_candle_close": null,
-   "last_candle_ts": null,
-   "last_candle_close": null,
+   "live_liquidity_usd": 4017.565,
+   "ohlcv_http": 200,
+   "n_candles": 33,
+   "first_candle_ts": 1785340800,
+   "first_candle_close": 4.3413794055025135e-05,
+   "last_candle_ts": 1785456000,
+   "last_candle_close": 4.9952969813752265e-06,
    "first_seen": "2026-07-30T14:42:45Z",
    "desc": "The CAT token is more than just a memecoin; it\u2019s a gateway to a broader Web3 com",
-   "attempts": 1
+   "attempts": 2
   },
   "6xycyGrZRxXcsAoX722kZwvy9evQEJ69d36puN15pump": {
    "pools_http": 200,
@@ -1809,8 +1809,8 @@
   }
  },
  "cohort_size": 121,
- "updated": "2026-07-31T00:49:20Z",
+ "updated": "2026-07-31T00:54:20Z",
  "probed": 121,
  "remaining": 0,
- "unresolved": 5
+ "unresolved": 2
 }
