@@ -126307,29 +126307,161 @@
     }
    ],
    "seen": "2026-08-01T00:26:23Z"
+  },
+  "0xc9fb40b71d0596918136f92525ff470d3619d45c": {
+   "name": "btfd",
+   "leader": "0x90d4e0ab580851410d3b2f6b55c19c37a2040e33",
+   "apr": 0.0,
+   "leaderFraction": 1.0,
+   "leaderCommission": 0.1,
+   "isClosed": false,
+   "n_followers": 1,
+   "followers": [
+    {
+     "user": "Leader",
+     "vaultEquity": "101.162998",
+     "pnl": "-1779.864891",
+     "allTimePnl": "-1885.333217",
+     "daysFollowing": 549,
+     "vaultEntryTime": 1738042120955
+    }
+   ],
+   "seen": "2026-08-01T00:31:14Z"
+  },
+  "0xf052eb0d59a3979248ea0f6c81e17e047ccf42cf": {
+   "name": "okane autelier \u304a\u91d1\u5916\u308c\u5024",
+   "leader": "0x90d4e0ab580851410d3b2f6b55c19c37a2040e33",
+   "apr": 0.0,
+   "leaderFraction": 0.5980074334812608,
+   "leaderCommission": 0.1,
+   "isClosed": true,
+   "n_followers": 15,
+   "followers": [
+    {
+     "user": "0x052c405b0291dbac72c6a106db8c65580c53241f",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "212.047433",
+     "daysFollowing": 960,
+     "vaultEntryTime": 1702565979799
+    },
+    {
+     "user": "0x25a15a43e0069c87c007e8a483d67d733fcd29e7",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "6.681033",
+     "daysFollowing": 972,
+     "vaultEntryTime": 1701530052943
+    },
+    {
+     "user": "0x302d5db5f4b665122ffe48d4b717a83948e858e0",
+     "vaultEquity": "0.0000000746",
+     "pnl": "0.0000000746",
+     "allTimePnl": "-106.9094929254",
+     "daysFollowing": 945,
+     "vaultEntryTime": 1703831569519
+    },
+    {
+     "user": "0x53b77b9a06dd7e11aee247957784d76484fff540",
+     "vaultEquity": "0.0000000271",
+     "pnl": "0.0000000271",
+     "allTimePnl": "-44.5568039729",
+     "daysFollowing": 965,
+     "vaultEntryTime": 1702161572494
+    },
+    {
+     "user": "0x5689f5b572c509e02577531cbcfee55e65484c7a",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "-470.388565",
+     "daysFollowing": 943,
+     "vaultEntryTime": 1704037537791
+    },
+    {
+     "user": "0x5b3f1a3749f3ba031d4e866250a39f9a0766f089",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "-81.315553",
+     "daysFollowing": 976,
+     "vaultEntryTime": 1701137910146
+    },
+    {
+     "user": "0x625e239e46d3ad052e23f396de3a569f6fd504e7",
+     "vaultEquity": "0.0000000526",
+     "pnl": "0.0000000526",
+     "allTimePnl": "-45.4462579474",
+     "daysFollowing": 963,
+     "vaultEntryTime": 1702301361634
+    },
+    {
+     "user": "0x6edd59d6f241e6cae65f2daab687996848a89740",
+     "vaultEquity": "0.0000000057",
+     "pnl": "0.0000000057",
+     "allTimePnl": "-4.4966699943",
+     "daysFollowing": 970,
+     "vaultEntryTime": 1701726942011
+    },
+    {
+     "user": "Leader",
+     "vaultEquity": "0.00000299",
+     "pnl": "0.00000299",
+     "allTimePnl": "-2433.84364101",
+     "daysFollowing": 983,
+     "vaultEntryTime": 1700546001807
+    },
+    {
+     "user": "0x9d07e31f7e013b28fa152b27b529bf0a2051b552",
+     "vaultEquity": "0.0000001138",
+     "pnl": "0.0000001138",
+     "allTimePnl": "-94.8130608862",
+     "daysFollowing": 961,
+     "vaultEntryTime": 1702465569423
+    },
+    {
+     "user": "0xab8ed41c11279636170896fcd2569e97b12f73ae",
+     "vaultEquity": "0.0000000587",
+     "pnl": "0.0000000587",
+     "allTimePnl": "-94.7718199413",
+     "daysFollowing": 942,
+     "vaultEntryTime": 1704135032086
+    },
+    {
+     "user": "0xb9665b1364538cdd6bd3419042348a1cd636a122",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "-178.53538",
+     "daysFollowing": 975,
+     "vaultEntryTime": 1701264862486
+    },
+    {
+     "user": "0xc4f6e94928876b7dddb9f52b0af625896b7c5375",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "-47.020082",
+     "daysFollowing": 943,
+     "vaultEntryTime": 1704037931717
+    },
+    {
+     "user": "0xc80a38405f929b92bd889f3e5d438c342e498aca",
+     "vaultEquity": "0.0000011626",
+     "pnl": "0.0000011626",
+     "allTimePnl": "-896.5086518374",
+     "daysFollowing": 968,
+     "vaultEntryTime": 1701875418595
+    },
+    {
+     "user": "0xcb853ffa789123eb034d381716c44d638eb2a39a",
+     "vaultEquity": "0.0000005149",
+     "pnl": "0.0000005149",
+     "allTimePnl": "-954.1708484851",
+     "daysFollowing": 941,
+     "vaultEntryTime": 1704200995904
+    }
+   ],
+   "seen": "2026-08-01T00:31:16Z"
   }
  },
  "users_pending": [
-  "0x9702219a295801852357994dbfaea84fce3590ca",
-  "0x9a817db3d9421b87c33af98b7d5b33fab536bfbd",
-  "0x9ef1e1f26a1c46a3daf4e499bde6ac7664cc907e",
-  "0xa4c4c0ccef62a3abab4dcd2f8548e132612d3ea3",
-  "0xab930e565cad29ece7d143fc81ab876c68088fdd",
-  "0xac65e5471ad6fa25a6b176397510eccd87af4fcd",
-  "0xb045458c8bc244d67dc40f07e2c75a22dc403f4b",
-  "0xb4655628dfdac2b3bf9ce49b6ffb1c638bd41587",
-  "0xb9cd7f45785eb6162fa50bae78607256c2fdeb23",
-  "0xb9d450933ee25697721dcd6d3548f000bd221f88",
-  "0xbc5b3c01f39e18283ab259e1060d3a8c9f5a87aa",
-  "0xbcfbbf38789d63721e800f1f8595af816e52c417",
-  "0xbe30d6a642a9a5f7c06cffcc401fb9e0218260ab",
-  "0xbf75adc8653d53fe1e5509a37f423942c60ec153",
-  "0xc1b05f59ba8650533f49c9a46955ae5a6d17a1e7",
-  "0xc407d60f6337d6d1ccd45b20a82ea86682462dc7",
-  "0xc5809e75cb3e3192e7d1b8df4435fe18447c47ea",
-  "0xc95cb8bd812a59af1faa61a3f8a29341271dc204",
-  "0xc9ac2940e99c00d4c188c3b446b08c03502ee568",
-  "0xca748cb3e3de6ceab581db13bb9362d4d55353b9",
   "0xd399202bac2e31eb6f45bc2ea994d1fc589d13d6",
   "0xdb1d0861df72d75be2289092b35de2afd2076a6d",
   "0xdec6d5bda5ffee3c5f5080c63cce22396442ece0",
@@ -130293,7 +130425,17 @@
   "0x311f2b05f8c9dacf4443da9951443664368e726b",
   "0x371bb03fc2699027e75123da05f20b6d190ece42",
   "0x400f5c1bdeb47072ea13c26f2c83fb0d2fb9905d",
-  "0x47ac83df48b7253e69d13b2e89d8c0edb38af5ae"
+  "0x47ac83df48b7253e69d13b2e89d8c0edb38af5ae",
+  "0x052c405b0291dbac72c6a106db8c65580c53241f",
+  "0x25a15a43e0069c87c007e8a483d67d733fcd29e7",
+  "0x302d5db5f4b665122ffe48d4b717a83948e858e0",
+  "0x5689f5b572c509e02577531cbcfee55e65484c7a",
+  "0x625e239e46d3ad052e23f396de3a569f6fd504e7",
+  "0x6edd59d6f241e6cae65f2daab687996848a89740",
+  "0x9d07e31f7e013b28fa152b27b529bf0a2051b552",
+  "0xab8ed41c11279636170896fcd2569e97b12f73ae",
+  "0xb9665b1364538cdd6bd3419042348a1cd636a122",
+  "0xcb853ffa789123eb034d381716c44d638eb2a39a"
  ],
  "users_done": [
   "0x007a16b6b9dd24f0d0185b94ca2be172ec8210f3",
@@ -130841,6 +130983,7 @@
   "0x96c7fa149255c8908e7462a0e20d32c262d4f1f3",
   "0x96c937521e82aa53762dccfb2bf96c716bcee389",
   "0x96f0cd31e972e86a77921e27bf06cf7ded45cc8a",
+  "0x9702219a295801852357994dbfaea84fce3590ca",
   "0x9725a45e058e6c0d10fc63332f591e40b5b1a360",
   "0x97a52ba390d394e3bff5758a1f57b3ac3cec5281",
   "0x97ef26ca1aa9bd8ab58c4667c8148005ebcebe01",
@@ -130853,6 +130996,7 @@
   "0x9a476eb479c89ee054872b8042152847310efe50",
   "0x9a5ce24f7e0924655898f0389cdbd1d1f962116e",
   "0x9a6b82de5442e760c9f817dd741fe545869ee4f5",
+  "0x9a817db3d9421b87c33af98b7d5b33fab536bfbd",
   "0x9add0dba179acb744ac7155140801d9ef40b86d4",
   "0x9afc6cb720275e1b033f307cd0bd49215df5e8b8",
   "0x9b1b7726ad20f1b5e839518df3debc5d65fcc87e",
@@ -130873,6 +131017,7 @@
   "0x9d8af808b7564df876364ef6bbc431bc5918f646",
   "0x9e4f9e32c9b4f9dcc0f52185aa4f6faca60fcad4",
   "0x9eab1d168950f9f4633c9aad105c0f1625d525f1",
+  "0x9ef1e1f26a1c46a3daf4e499bde6ac7664cc907e",
   "0x9f16c79de8163119f520c4ec4b230b552e7f50de",
   "0x9fba9e1816da6f9aa9e67ca1a367205168c7312a",
   "0xa0824734badd1d9fdaaf39480d082643b626641d",
@@ -130896,6 +131041,7 @@
   "0xa475a6906a9ee602aa9f42fabc7f9c0ce9ec6ed0",
   "0xa48228e5b12942ee4cb47bcdedd8420b60f09a3d",
   "0xa495ff84d8778182007f00fcd80272dd56a6517b",
+  "0xa4c4c0ccef62a3abab4dcd2f8548e132612d3ea3",
   "0xa509e92186e33551fc13cd512841e9ae341d0e25",
   "0xa52090c48e88afeac9af137f6fb50c62f1a5a575",
   "0xa55ecdbd394b6c612046eda2f1ba97d8b8a71e47",
@@ -130923,7 +131069,9 @@
   "0xaa41f7a7b032170c08b1aef3c4cee8f1645c587a",
   "0xab18913e732754d2977348f2c824f6bc32b216e4",
   "0xab7500c64ed624e6423ff8143481b0b411cf790d",
+  "0xab930e565cad29ece7d143fc81ab876c68088fdd",
   "0xac158aeee890ab95918dc39cb16db547dd581499",
+  "0xac65e5471ad6fa25a6b176397510eccd87af4fcd",
   "0xac6f5349131fd65c76b6901cdbab53de405e2966",
   "0xacac090ed87c72c804566f1db8dc4ddfad7a8be6",
   "0xacb821c926792032ae9434357648f9f3447d9fcd",
@@ -130934,6 +131082,7 @@
   "0xaefc4be7717368877d4755c4f24cd1729a73049a",
   "0xaf18bbc069ad1ad70db68c77269bae28d87f0411",
   "0xafd4561db7274410c3e7e44ebad13d7b96fa4cf6",
+  "0xb045458c8bc244d67dc40f07e2c75a22dc403f4b",
   "0xb07ab31d88be549ae78a3a3f60889124ebea0af6",
   "0xb10b2d545ce53ddad0c4b2fcaa77241300118698",
   "0xb159f9049d439d5b63c7b6dca590dd36db89a545",
@@ -130946,6 +131095,7 @@
   "0xb3abe0777aa9685941e54744e704378b4b33eeaa",
   "0xb3d8a9722371a7499a6a7827fd54ba0f834eb223",
   "0xb3fe34bfb501665f4329915a7024ba5a6bec495f",
+  "0xb4655628dfdac2b3bf9ce49b6ffb1c638bd41587",
   "0xb4fa71b8f299fcd8d60b6bbbf3767a296bb2d76c",
   "0xb4fdc34180893deef49f0215b89071a50eb82943",
   "0xb4ff197c59044d4579991668c071762bc66f997e",
@@ -130967,6 +131117,8 @@
   "0xb821b8cb42022b70d5c20854be43381d5a02aab2",
   "0xb8ecd4af80fcaf1a49a7608d408209cc6c7075d4",
   "0xb935bd023b31608a881a31fc522f4d488a8e597a",
+  "0xb9cd7f45785eb6162fa50bae78607256c2fdeb23",
+  "0xb9d450933ee25697721dcd6d3548f000bd221f88",
   "0xb9fee87ada5100e29afaad51a2c60096010154c2",
   "0xba28afcec17e6c04610247a32d84596a168adcd0",
   "0xba2c38c3a5d15b0300567ffe2ab493144a8fb9df",
@@ -130978,9 +131130,11 @@
   "0xbb840c34815398104da3b32e1ad8d98947fc5b1d",
   "0xbc0b3fc22e236ad83d50815dad85cf1d217d96f4",
   "0xbc5751db4625944af0a4db8a51a1677983476376",
+  "0xbc5b3c01f39e18283ab259e1060d3a8c9f5a87aa",
   "0xbc5ecceebcfbdd1451e5261340ad5e36dc639cee",
   "0xbc806928576a6291071c722d08d2b7608b7b5835",
   "0xbce0f10eb44451bab4ebfbdbe67748f9c70d0234",
+  "0xbcfbbf38789d63721e800f1f8595af816e52c417",
   "0xbd10be434b5ab78d829842abd681802fd9f731fa",
   "0xbd1ea540f5192d75af91a1c94f473cc24da662d5",
   "0xbd2f46fd5ef6cac735dc7d86aa470337b8f0cc23",
@@ -130990,7 +131144,9 @@
   "0xbdfa4f4492dd7b7cf211209c4791af8d52bf5c50",
   "0xbe0d4c3542cb75132817ca68c1e3f02729ea1d17",
   "0xbe28327cb5bd679853d87d7279544f59a955c415",
+  "0xbe30d6a642a9a5f7c06cffcc401fb9e0218260ab",
   "0xbf5b44ee1e3fbbb50da5048b3856f9ac7eb76867",
+  "0xbf75adc8653d53fe1e5509a37f423942c60ec153",
   "0xbfc61a24522e4470e85f168af684ac5ce0cd13b0",
   "0xbfe550064b53230ae022f83cd3b138e192478a7c",
   "0xc036de8a73785be27709b091344d5fdd5587fa7e",
@@ -131001,6 +131157,7 @@
   "0xc0eac0d9108a7c9675b6777a939ead9308e2c3fa",
   "0xc11ff8d6df0796d01a390c4568fb573b6391434e",
   "0xc131abbee8f164f60174130730e954683caef937",
+  "0xc1b05f59ba8650533f49c9a46955ae5a6d17a1e7",
   "0xc1ce5593f550d7d30e5f67dee00cf2a71e8c1333",
   "0xc1fa56961e33755aa4dc4b930b1a23f45f56ab22",
   "0xc21fec2d7f8cd9d1b17de913e74b87769b48251b",
@@ -131011,12 +131168,14 @@
   "0xc2f104f3724b97045f55de4c34e65fa1a5b8e606",
   "0xc31d8c27a172e7d7a049053585bee7e13dede2e1",
   "0xc3ac8d5f0ae4a47cdccd0652216bf9d5aeafdeac",
+  "0xc407d60f6337d6d1ccd45b20a82ea86682462dc7",
   "0xc47a5bf3366313a485ef07f79ce87a33775fffbd",
   "0xc4c090a03238757322d251a07c55b9f44aa086ba",
   "0xc4de610b7813fcf3a68dfda8779ecac6b3b779b9",
   "0xc4e8a65ce4237ae49110b42f76cbf7bba90df2e8",
   "0xc5150ee35bbd51f9b1a6ee0d7a0a6f9bd8e96e75",
   "0xc546ae6019ae60df5bdea2486bcd0a43054a938d",
+  "0xc5809e75cb3e3192e7d1b8df4435fe18447c47ea",
   "0xc5a0034486820e79f704ad2827486e15c63a004a",
   "0xc5d9744b0a02ae6013c597cb448a8f744b98b4bc",
   "0xc604faf510aa5b617c9fb1556d02d6d22c9644be",
@@ -131026,8 +131185,11 @@
   "0xc83c9f6907180b3efc54ef2032d66ef211854a10",
   "0xc89c6950f4710de82ecf05c6a877f0949b1afb0d",
   "0xc8d8634abbea97c94bb9174a3cb8b7c6c740bf03",
+  "0xc95cb8bd812a59af1faa61a3f8a29341271dc204",
   "0xc999ca63c68c34837fbc947c923099565bbfcb26",
   "0xc99c24d8d88243f0f9761bb81079f19c5a5e15c9",
+  "0xc9ac2940e99c00d4c188c3b446b08c03502ee568",
+  "0xca748cb3e3de6ceab581db13bb9362d4d55353b9",
   "0xca7bec05a68a37f0644d7790e709b5fc2a6112ac",
   "0xca9ae7de98e79950982b3c750392f688ac65021c",
   "0xcabc7b665ceb4068459eabdd98e953b286d8c549",
@@ -131203,15 +131365,15 @@
   "leader"
  ],
  "vaults_pending": [
-  "0xc9fb40b71d0596918136f92525ff470d3619d45c",
-  "0xf052eb0d59a3979248ea0f6c81e17e047ccf42cf"
+  "0xf100bfc63618d479f65020407be78532c71f0a36",
+  "0xbde1eea047b28cac2123c2e95598a16a365c457c"
  ],
  "errors": {
   "leader": "http_422"
  },
- "requests_total": 1254,
+ "requests_total": 1276,
  "started": "2026-07-31T19:27:12Z",
- "updated": "2026-08-01T00:26:51Z",
+ "updated": "2026-08-01T00:31:51Z",
  "complete": false,
  "bias_note": "Living vaults only; seeded from HLP; followers lists show CURRENT depositors. Three upward biases. A positive step-1 result from this sample is not evidence. A negative one is."
 }
