@@ -1168,3 +1168,5 @@
 19:43:51 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
 19:48:51 rc=0 out='survivor_probe: complete, 132/132 probed, 0 unresolved after 5 tries, nothing to do' err=''
 19:48:52 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
+19:53:57 rc=0 out='probe 7bqhXptz pools=200/1 ohlcv=200/104 liq=3954.0032\nsurvivor_probe: +1 this run, 133/133 done, 0 still unresolved' err=''
+19:53:57 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
