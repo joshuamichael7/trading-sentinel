@@ -123211,29 +123211,1161 @@
     }
    ],
    "seen": "2026-08-01T00:16:18Z"
+  },
+  "0x018f70ba9bcd695760f69d83f03c769e2de8ce88": {
+   "name": "Short Term Holder Crossover Vault (STH)",
+   "leader": "0x05cef0858578b419091af98062b153ca0f2103d0",
+   "apr": 0.0,
+   "leaderFraction": 0.5334594962194275,
+   "leaderCommission": 0.1,
+   "isClosed": true,
+   "n_followers": 9,
+   "followers": [
+    {
+     "user": "Leader",
+     "vaultEquity": "0.0000016004",
+     "pnl": "0.0000016004",
+     "allTimePnl": "500.8519426004",
+     "daysFollowing": 1019,
+     "vaultEntryTime": 1697440264137
+    },
+    {
+     "user": "0x0a0c5c0a0dfa8be4cb13da1e0875984912f8450d",
+     "vaultEquity": "0.0000013081",
+     "pnl": "0.0000013081",
+     "allTimePnl": "171.2532283081",
+     "daysFollowing": 1000,
+     "vaultEntryTime": 1699106236406
+    },
+    {
+     "user": "0x46f2c3ce0c4c8b7ebb34809acaa1cc236b90dac4",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "-0.439132",
+     "daysFollowing": 994,
+     "vaultEntryTime": 1699637694874
+    },
+    {
+     "user": "0x4bdfd3ce7bfb07b75a2a59a8f723910dd7147b9c",
+     "vaultEquity": "0.0000000119",
+     "pnl": "0.0000000119",
+     "allTimePnl": "7.4294150119",
+     "daysFollowing": 1012,
+     "vaultEntryTime": 1698106338989
+    },
+    {
+     "user": "0x6356e04a624d3c01f1f08df32cc54aa768508b46",
+     "vaultEquity": "0.0000000013",
+     "pnl": "0.0000000013",
+     "allTimePnl": "0.0822600013",
+     "daysFollowing": 974,
+     "vaultEntryTime": 1701319484978
+    },
+    {
+     "user": "0x8483b759625b17867c8dce0ebd2a6f2fbe357cf7",
+     "vaultEquity": "0.0000000027",
+     "pnl": "0.0000000027",
+     "allTimePnl": "0.2959350027",
+     "daysFollowing": 998,
+     "vaultEntryTime": 1699296973041
+    },
+    {
+     "user": "0xd0d628acf9e985c94a4542cae88e0af7b2378c81",
+     "vaultEquity": "0.0000000007",
+     "pnl": "0.0000000007",
+     "allTimePnl": "38.4873770007",
+     "daysFollowing": 1012,
+     "vaultEntryTime": 1698041807368
+    },
+    {
+     "user": "0xd7ceecc70693b8268ab3652f8358ed19a36f7aae",
+     "vaultEquity": "0.000000068",
+     "pnl": "0.000000068",
+     "allTimePnl": "6.641730068",
+     "daysFollowing": 986,
+     "vaultEntryTime": 1700305716201
+    },
+    {
+     "user": "0xed0e8870ac5f4c53ccc7afd41903e62b3d94f6ad",
+     "vaultEquity": "0.0000000068",
+     "pnl": "0.0000000068",
+     "allTimePnl": "0.7067160068",
+     "daysFollowing": 996,
+     "vaultEntryTime": 1699406352165
+    }
+   ],
+   "seen": "2026-08-01T00:21:14Z"
+  },
+  "0x219d8e8cd429861de50629393bbcb5d1cbe54722": {
+   "name": "Evil Empire",
+   "leader": "0xf034364a93edd7c38a1c59b8700b6613e0623e77",
+   "apr": -1.833563318201747e-05,
+   "leaderFraction": 0.21481498332435522,
+   "leaderCommission": 0.1,
+   "isClosed": false,
+   "n_followers": 132,
+   "followers": [
+    {
+     "user": "0x02eb67d0b18fc7fb31971f230cc0a12cbacd6f75",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-1212.534581",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270573956
+    },
+    {
+     "user": "0x0608f5ec58a9c7f853a8db91e3f887d62d4d9ddc",
+     "vaultEquity": "34.6534245249",
+     "pnl": "-5962.9465754751",
+     "allTimePnl": "-5962.9465754751",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270533456
+    },
+    {
+     "user": "0x069caa85233ac4f9b3902d3a9c55f2c2879bf7c3",
+     "vaultEquity": "21.7082447843",
+     "pnl": "-4089.6717552157",
+     "allTimePnl": "-4089.6717552157",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739273772247
+    },
+    {
+     "user": "0x0766bb96f79815a3369567f70b6b2bf5802de74b",
+     "vaultEquity": "0.0000004951",
+     "pnl": "-0.0000795049",
+     "allTimePnl": "-2563.9693325049",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270896287
+    },
+    {
+     "user": "0x0873ad6d7976f716a917a6a69af4d0e15306c950",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000011",
+     "allTimePnl": "-993.86364",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740165803067
+    },
+    {
+     "user": "0x0c1680a9f0675710c2a5cfef3dd3a3ddf55c008a",
+     "vaultEquity": "4.4071583037",
+     "pnl": "-760.8060566963",
+     "allTimePnl": "-760.8060566963",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739276647921
+    },
+    {
+     "user": "0x0c28da4883cd1baa73df88fa1ce0e9c64c5b8e16",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-5.645828",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739293712199
+    },
+    {
+     "user": "0x0ce32224eba835d914a8bf8c1f0b3d1413ae6a13",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-242.622109",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739272266575
+    },
+    {
+     "user": "0x0e414c1c4780df6c09c2f1070990768d44b70b1d",
+     "vaultEquity": "2.9907431915",
+     "pnl": "-478.2840068085",
+     "allTimePnl": "-478.2840068085",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739286901724
+    },
+    {
+     "user": "0x0ea0ccf75e9ab5c988d08c6923fbec5332e5eb88",
+     "vaultEquity": "2.9015830676",
+     "pnl": "-588.1768889324",
+     "allTimePnl": "-588.1768889324",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740248863023
+    },
+    {
+     "user": "0x0f037370db1a16e5564c011661eb7c472949015e",
+     "vaultEquity": "11.0755883617",
+     "pnl": "-1730.9768286383",
+     "allTimePnl": "-1730.9768286383",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740182598190
+    },
+    {
+     "user": "0x0fe6a48278aa234e5c7cf6c5e587084fc08c66c9",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-1702.435509",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269710434
+    },
+    {
+     "user": "0x1205948fa229c370c18cdb17d34411a481309822",
+     "vaultEquity": "0.0000009368",
+     "pnl": "-0.0001600632",
+     "allTimePnl": "-520.0987630632",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739277009227
+    },
+    {
+     "user": "0x13d649ed8f4a7104711e7dd72d6e2ecc2b313222",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-1896.382768",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270332052
+    },
+    {
+     "user": "0x172ddb6d5fac7bf9dff779f45882b3d41377a513",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-4.126504",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739280153549
+    },
+    {
+     "user": "0x18067883b8d657c58517004cc961de65ddf7ef24",
+     "vaultEquity": "0.0000003732",
+     "pnl": "-0.0000586268",
+     "allTimePnl": "-248.4142576268",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739292989348
+    },
+    {
+     "user": "0x18c1269c5ee21575c38c164617c63679ebef405b",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-1293.076063",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739274506304
+    },
+    {
+     "user": "0x18e3cd6e83adc4cda754c93496423b1cd04e1957",
+     "vaultEquity": "2.8960863675",
+     "pnl": "-497.1039136325",
+     "allTimePnl": "-497.1039136325",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270143871
+    },
+    {
+     "user": "0x212dd068053ff2e7f83c317d61d2b9a1ce0e38a7",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-2143.745841",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271685608
+    },
+    {
+     "user": "0x22d125cdba95a5606a0c2828d015964ab5395f5a",
+     "vaultEquity": "7.4783057053",
+     "pnl": "-992.5216942947",
+     "allTimePnl": "-992.5216942947",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740099730988
+    },
+    {
+     "user": "0x22e3c19f8e2d72cf0365e0f36ebc70bb6234537d",
+     "vaultEquity": "19.6415045061",
+     "pnl": "-3402.6556134939",
+     "allTimePnl": "-3402.6556134939",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739274257132
+    },
+    {
+     "user": "0x256c808ab8a871e67f14bbddf182ef111aaf9c20",
+     "vaultEquity": "0.5805498361",
+     "pnl": "-99.0794501639",
+     "allTimePnl": "-99.0794501639",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739276753928
+    },
+    {
+     "user": "0x258fbed0ff2f2c286eb7c9a2cbe35ed23bdd4fe4",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-454.416695",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740159187109
+    },
+    {
+     "user": "0x2936440903439edbc9a9ca65ba8d4dff97078805",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-2553.094328",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270503373
+    },
+    {
+     "user": "0x2af713e9fd430333d9f7c5d60cc4d74888f3b4b1",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-6526.18907",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270525485
+    },
+    {
+     "user": "0x2b8a85ad94e02c1ec7d78d98ffb0bd9a3e9f1411",
+     "vaultEquity": "1.6008586128",
+     "pnl": "-248.3991413872",
+     "allTimePnl": "-248.3991413872",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739296023071
+    },
+    {
+     "user": "0x2e8959c8fc0735f969ecbc21d5b40ce0a4006072",
+     "vaultEquity": "11.5733450348",
+     "pnl": "-203.4266549652",
+     "allTimePnl": "-203.4266549652",
+     "daysFollowing": 522,
+     "vaultEntryTime": 1740426867172
+    },
+    {
+     "user": "0x2f149756501c387d9254a93f1a7ac674562f0a39",
+     "vaultEquity": "0.0000009518",
+     "pnl": "-0.0001640482",
+     "allTimePnl": "-987.7099580482",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269787915
+    },
+    {
+     "user": "0x2f6df8d7df8bb58bfb6b555ff0be573ea1148ae8",
+     "vaultEquity": "0.121860657",
+     "pnl": "-19.878139343",
+     "allTimePnl": "-19.878139343",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739289218162
+    },
+    {
+     "user": "0x3009deb6e9fe713946468c32f8a22afaece7f1a5",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-54.972289",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270384779
+    },
+    {
+     "user": "0x311ef08626709a0de3aa84d396437773340e022d",
+     "vaultEquity": "0.0000014834",
+     "pnl": "-0.0000625166",
+     "allTimePnl": "-8033.0154195166",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269803893
+    },
+    {
+     "user": "0x3bfd184bd142539177f3166aae42a01b1856c04d",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-2516.948568",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270016304
+    },
+    {
+     "user": "0x436f4d431f928864fce13cadd1e4576e4e8f4378",
+     "vaultEquity": "0.0000009009",
+     "pnl": "-0.0000340991",
+     "allTimePnl": "-730.2901440991",
+     "daysFollowing": 522,
+     "vaultEntryTime": 1740389345606
+    },
+    {
+     "user": "0x43e1306b5d05fb5d95279fb26dcd6d25f2a11253",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-4233.258286",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271091954
+    },
+    {
+     "user": "0x44fb24ffc2c7384ceada953d278bd87776c548b9",
+     "vaultEquity": "0.0000014701",
+     "pnl": "-0.0000715299",
+     "allTimePnl": "-6167.4901895299",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740194751491
+    },
+    {
+     "user": "0x4717b581875607ca09a19834cc770ae23e563ea4",
+     "vaultEquity": "6.4464633824",
+     "pnl": "-157.6618666176",
+     "allTimePnl": "-217.9027046176",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275538241
+    },
+    {
+     "user": "0x4851ae25872c530829d1677f99c429797beee736",
+     "vaultEquity": "4.2649865428",
+     "pnl": "-653.2047364572",
+     "allTimePnl": "-653.2047364572",
+     "daysFollowing": 534,
+     "vaultEntryTime": 1739320712433
+    },
+    {
+     "user": "0x493210103ace77acd645dfb0c616d20cab83e947",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-808.618728",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269695685
+    },
+    {
+     "user": "0x4b392a91fe947d83697d8715124e110868a98bd9",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-161.36268",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739272179775
+    },
+    {
+     "user": "0x4ce430a29496f3187eca4111e0a748f3d4f86dd3",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-1427.00101",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739272628025
+    },
+    {
+     "user": "0x4e0b07b8aee12be8b5cdff57f6dba322c129a4cd",
+     "vaultEquity": "1.4249445435",
+     "pnl": "-243.4891154565",
+     "allTimePnl": "-243.4891154565",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739276149954
+    },
+    {
+     "user": "0x52e4698d41c3cec38627b65a73c2bf5fdb18d425",
+     "vaultEquity": "0.0000009125",
+     "pnl": "-0.0000350875",
+     "allTimePnl": "-730.7059950875",
+     "daysFollowing": 522,
+     "vaultEntryTime": 1740383401526
+    },
+    {
+     "user": "0x536fb976250d00fcab7f21791b170f56305d60d8",
+     "vaultEquity": "0.0000008782",
+     "pnl": "-0.0000211218",
+     "allTimePnl": "-19.2006861218",
+     "daysFollowing": 522,
+     "vaultEntryTime": 1740431427315
+    },
+    {
+     "user": "0x54d7b68d6f5d389a6dc3a49a14d88ba91f5a3455",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-1197.62908",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271517606
+    },
+    {
+     "user": "0x576c61a9a573e24080074c8253e513a119dd28db",
+     "vaultEquity": "0.0000008052",
+     "pnl": "-0.0001391948",
+     "allTimePnl": "-397.6838081948",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270652125
+    },
+    {
+     "user": "0x583892693059fbdb3d318e46b15201285fb1e45f",
+     "vaultEquity": "6.043923717",
+     "pnl": "-1190.616077283",
+     "allTimePnl": "-1192.647032283",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739282318861
+    },
+    {
+     "user": "0x5bd30393eda013ceaa88f5066354266f1cc43866",
+     "vaultEquity": "2.8510468709",
+     "pnl": "-497.1489531291",
+     "allTimePnl": "-497.1489531291",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739273302898
+    },
+    {
+     "user": "0x5cdd9233f43e8fe08242fa8ffbc6ab888787ad79",
+     "vaultEquity": "0.0000005633",
+     "pnl": "-0.0000724367",
+     "allTimePnl": "-5.2986674367",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740114216430
+    },
+    {
+     "user": "0x5de0c18ad34e2895aa6b7088e4e42305909d409d",
+     "vaultEquity": "0.0000005935",
+     "pnl": "-0.0000804065",
+     "allTimePnl": "-2800.5588184065",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740115955623
+    },
+    {
+     "user": "0x65c07cbfbfec93bac8ef8e8286fc262e50ebf787",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-720.959662",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270979544
+    },
+    {
+     "user": "0x6611c522f2edf4eababd559dc686326481d43157",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000003",
+     "allTimePnl": "-174.781469",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275066879
+    },
+    {
+     "user": "0x67e99a402549c59098895240331ec246f451de63",
+     "vaultEquity": "0.0000004912",
+     "pnl": "-0.0000125088",
+     "allTimePnl": "-240.1239915088",
+     "daysFollowing": 522,
+     "vaultEntryTime": 1740430515176
+    },
+    {
+     "user": "0x6c77c05b06f4581cbac3d649dc62854e381c0fe0",
+     "vaultEquity": "0.0000019777",
+     "pnl": "-0.0000390223",
+     "allTimePnl": "-114.9528000223",
+     "daysFollowing": 534,
+     "vaultEntryTime": 1739326586688
+    },
+    {
+     "user": "0x6d361440dd4746387eff1ae65ddbfe891059e0ce",
+     "vaultEquity": "0.0000018024",
+     "pnl": "-0.0000741976",
+     "allTimePnl": "-213.9842201976",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739287421367
+    },
+    {
+     "user": "0x6f7ad73133f59489003510df53dce1c55f215c39",
+     "vaultEquity": "0.0000002202",
+     "pnl": "-0.0000087798",
+     "allTimePnl": "-19450.1504537798",
+     "daysFollowing": 522,
+     "vaultEntryTime": 1740373929101
+    },
+    {
+     "user": "0x7309e1582d611d3ef9dba6fce709f177240e0fd9",
+     "vaultEquity": "0.1016150906",
+     "pnl": "-19.8983849094",
+     "allTimePnl": "-19.8983849094",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740246537590
+    },
+    {
+     "user": "0x74814553b94a722fc4e3b7b6dfb850db494e514d",
+     "vaultEquity": "0.0000007338",
+     "pnl": "-0.0001292662",
+     "allTimePnl": "-2155.5173082662",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739277494460
+    },
+    {
+     "user": "0x758dce1c4f800f4d0b30a381c88298b8765a163f",
+     "vaultEquity": "2.8952397565",
+     "pnl": "-497.1047602435",
+     "allTimePnl": "-497.1047602435",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270668342
+    },
+    {
+     "user": "0x77375a8c9d13bf79afb2a87f1b0ac1dfd5f5bf66",
+     "vaultEquity": "5.7724526682",
+     "pnl": "-994.2275473318",
+     "allTimePnl": "-994.2275473318",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271620267
+    },
+    {
+     "user": "0x77b1ff2da3b187d69be3c5c97dfcaae360443ae5",
+     "vaultEquity": "4.1143642957",
+     "pnl": "-275.3036267043",
+     "allTimePnl": "-275.3036267043",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269758094
+    },
+    {
+     "user": "0x78eb0aa1a3556300ef244a5bb87f21f43b0f9f0d",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000009",
+     "allTimePnl": "-992.559531",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740101414703
+    },
+    {
+     "user": "0x798a59cb1ef7110e91640fc6a8056d029ba8a42e",
+     "vaultEquity": "0.0000006438",
+     "pnl": "-0.0001033562",
+     "allTimePnl": "-298.1313933562",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739286663659
+    },
+    {
+     "user": "0x7c78ef9df081fce301f1dc7d9802aef4f65bf5db",
+     "vaultEquity": "0.0000002686",
+     "pnl": "-0.0000417314",
+     "allTimePnl": "-4967.9031817314",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739298751747
+    },
+    {
+     "user": "0x7e799c969ea204a8b5f4d938407d9dc64dcc09e5",
+     "vaultEquity": "0.0512681862",
+     "pnl": "-9.9487318138",
+     "allTimePnl": "-9.9487318138",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740263662247
+    },
+    {
+     "user": "0x7e8da72ba1656f62a5a07b18b23e5d23bcd5ed3d",
+     "vaultEquity": "0.0000002652",
+     "pnl": "-0.0000467348",
+     "allTimePnl": "-1491.3712477348",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271423761
+    },
+    {
+     "user": "0x7fa9236ae6ba315be83e66178fff9662fa7b02ab",
+     "vaultEquity": "3.0180092038",
+     "pnl": "-521.8382287962",
+     "allTimePnl": "-521.8382287962",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270758873
+    },
+    {
+     "user": "0x80e48748f7471a6d7137a4d5a9852f2cc999d741",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-959.792556",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739273859376
+    },
+    {
+     "user": "0x820434b35943bef0514eef8c3db69329ca39506e",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-67.585912",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275685543
+    },
+    {
+     "user": "0x8532aaec2109f84df8d37fb7e69c0b98fce7e739",
+     "vaultEquity": "0.0000008525",
+     "pnl": "-0.0001131475",
+     "allTimePnl": "-148.9455231475",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270008398
+    },
+    {
+     "user": "0x8743dfe3a4936c6e0b6b018054191a007645e205",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-147.721129",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269749680
+    },
+    {
+     "user": "0x887299cf58a3f0ba1f6ee59122e19a65eefe2bb0",
+     "vaultEquity": "0.000000584",
+     "pnl": "-0.000095416",
+     "allTimePnl": "-1489.889459416",
+     "daysFollowing": 532,
+     "vaultEntryTime": 1739532969018
+    },
+    {
+     "user": "0x89db5569a4eb2cbf6ec94fe899fe61fc24f59d1b",
+     "vaultEquity": "65.2476231453",
+     "pnl": "-9934.7523768547",
+     "allTimePnl": "-9934.7523768547",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739293978793
+    },
+    {
+     "user": "0x8b67e1cb7a75f819a59fcd0d8a4f3d27c4fc1412",
+     "vaultEquity": "0.00000108",
+     "pnl": "-0.00000092",
+     "allTimePnl": "-9577.13470092",
+     "daysFollowing": 522,
+     "vaultEntryTime": 1740429916886
+    },
+    {
+     "user": "0x8cbe8f8c7669a04a211decc2dcfba48311a307de",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-374.275923",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739283315056
+    },
+    {
+     "user": "0x8d5e5b39415ba6e74f8aff14a8498fc4a87cfff9",
+     "vaultEquity": "0.6308755928",
+     "pnl": "-108.1162024072",
+     "allTimePnl": "-108.1162024072",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269766321
+    },
+    {
+     "user": "0x90519359772717891816c56defa62fb7f37b6950",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-2.753668",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739300721754
+    },
+    {
+     "user": "0x9120093120474d4aee881f0d35be1e30404ef271",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-662.578213",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269907456
+    },
+    {
+     "user": "0x92e64506cccb34a8f422f8ea6e7ece29f36d592f",
+     "vaultEquity": "0.0000003177",
+     "pnl": "-0.0000016823",
+     "allTimePnl": "-21.9342966823",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269998681
+    },
+    {
+     "user": "0x92ec1dd166d6271a4f2780e8223d00f4ba3d3f44",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "6.142533",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271667422
+    },
+    {
+     "user": "0x93da543ced8d8ee6b278fce03832584f80658e0b",
+     "vaultEquity": "0.0000006771",
+     "pnl": "-0.0001203229",
+     "allTimePnl": "-4936.9834773229",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739277998213
+    },
+    {
+     "user": "0x94bd1bd3c8abbc52b29668a65930d4575fa4caac",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000015",
+     "allTimePnl": "-2382.088272",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739273493038
+    },
+    {
+     "user": "0x96b002fd141fc2ebc1b1d18915f2b09bc6d3d623",
+     "vaultEquity": "5.8013107517",
+     "pnl": "-994.1986892483",
+     "allTimePnl": "-994.1986892483",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269685907
+    },
+    {
+     "user": "0x998f96b3f67dd1388ad17d3923f07bb928713862",
+     "vaultEquity": "1.5579146028",
+     "pnl": "-266.9873623972",
+     "allTimePnl": "-266.9873623972",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269901376
+    },
+    {
+     "user": "0x9b40458b9f30ff7bcf1dff791809e4c5d8cdb0dc",
+     "vaultEquity": "26.4941996153",
+     "pnl": "-949.0358003847",
+     "allTimePnl": "-949.0358003847",
+     "daysFollowing": 523,
+     "vaultEntryTime": 1740327311589
+    },
+    {
+     "user": "0x9e5bc0f8f01c841d8c1dd3443a7de211aca9b8b0",
+     "vaultEquity": "5.8732618769",
+     "pnl": "-994.1267381231",
+     "allTimePnl": "-994.1267381231",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739277191619
+    },
+    {
+     "user": "0xa4ee2c2558d3480703d5db54ba64094cc04d011a",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-225.627888",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270139356
+    },
+    {
+     "user": "0xaa3747dc68e3bdcce2b12cecd3ee3f88c175b74f",
+     "vaultEquity": "0.000001759",
+     "pnl": "-0.000102241",
+     "allTimePnl": "-496.348290241",
+     "daysFollowing": 531,
+     "vaultEntryTime": 1739641130686
+    },
+    {
+     "user": "0xaca93fb167f6c4e0ab42b955161ea76cd67ac832",
+     "vaultEquity": "0.6385773744",
+     "pnl": "-100.5981726256",
+     "allTimePnl": "-100.5981726256",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739294493531
+    },
+    {
+     "user": "0xacfa29396e7e52a0bf9eb1bca072809a6e495afe",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-21.556622",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270025346
+    },
+    {
+     "user": "0xb08a8ff9cdf4aa3cf360ecd209c221571a1066c8",
+     "vaultEquity": "0.0000002373",
+     "pnl": "-0.0000347627",
+     "allTimePnl": "-9930.5243807627",
+     "daysFollowing": 534,
+     "vaultEntryTime": 1739347716454
+    },
+    {
+     "user": "0xb1bcc3b44fd0e7c07a3beb785eed6faa87f76737",
+     "vaultEquity": "0.0000010543",
+     "pnl": "-0.0000089457",
+     "allTimePnl": "-979.9781909457",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275339083
+    },
+    {
+     "user": "0xb44b8f1f521d4b0f6643481eebd43e4583232c76",
+     "vaultEquity": "0.0854962411",
+     "pnl": "-14.9145037589",
+     "allTimePnl": "-14.9145037589",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739273587957
+    },
+    {
+     "user": "0xb4e38fadbe8c15142e9aa6e7c745806bc401dfc7",
+     "vaultEquity": "0.6920839357",
+     "pnl": "-117.1479160643",
+     "allTimePnl": "-117.1479160643",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739280019499
+    },
+    {
+     "user": "0xb9e91ae536df6cf462c670d2cc681d480d6476f5",
+     "vaultEquity": "0.1040942429",
+     "pnl": "-19.8959057571",
+     "allTimePnl": "-19.8959057571",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740253721713
+    },
+    {
+     "user": "0xba9435d4b5b9bce0ec5ab18049abc7434013d545",
+     "vaultEquity": "0.5065237919",
+     "pnl": "-89.4984152081",
+     "allTimePnl": "-89.4984152081",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275214716
+    },
+    {
+     "user": "0xc327aed10380a9ccf12727796d0d4553001edc13",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-806.204783",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275684069
+    },
+    {
+     "user": "0xc3d57402e590fa4f83009c450a3078bb7fcdb9b2",
+     "vaultEquity": "14.5064687895",
+     "pnl": "-2486.0437362105",
+     "allTimePnl": "-2486.0437362105",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269781966
+    },
+    {
+     "user": "0xc6c1f4434b5548972f4813845dc84de1ab19a051",
+     "vaultEquity": "14.3479475954",
+     "pnl": "-2494.8362214046",
+     "allTimePnl": "-2494.8362214046",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739277927371
+    },
+    {
+     "user": "0xc7f0559f21d521254865bc95e158bbc89c200649",
+     "vaultEquity": "1.5479047554",
+     "pnl": "-293.9959632446",
+     "allTimePnl": "-293.9959632446",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740208013566
+    },
+    {
+     "user": "0xcae2a975e16a2ffa2a8186f06cd61892f2601b0f",
+     "vaultEquity": "0.000000408",
+     "pnl": "-0.000017592",
+     "allTimePnl": "-629.894494592",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739283292261
+    },
+    {
+     "user": "0xcb0ae71f21f1e49fc4d94024cfefa64da0d92aa8",
+     "vaultEquity": "1.0646028097",
+     "pnl": "-217.1053971903",
+     "allTimePnl": "-217.1053971903",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740229721074
+    },
+    {
+     "user": "0xcc97c4aa473876af178af4f2505774c2991160d3",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-2198.527762",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269793250
+    },
+    {
+     "user": "0xce99e6de98f2ef302927d816d542a1f8cf1ba0f6",
+     "vaultEquity": "0.0365341686",
+     "pnl": "-4.9634658314",
+     "allTimePnl": "-4.9634658314",
+     "daysFollowing": 531,
+     "vaultEntryTime": 1739655588213
+    },
+    {
+     "user": "0xcfa4c316d16f6eb8821c2e729e68acbef746b331",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-115.705118",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275397359
+    },
+    {
+     "user": "0xd164ff4c786d851a0e2d2fc1bf78370dc9cc1d80",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-351.792138",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739305175158
+    },
+    {
+     "user": "0xd190e1273b70a406d8d72f2ff10ea75edd58cc1b",
+     "vaultEquity": "3.043796907",
+     "pnl": "-496.956205093",
+     "allTimePnl": "-2747.591786093",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269720894
+    },
+    {
+     "user": "0xd1f2b9ebd97b0af6ed2627439ced29fc210bc91e",
+     "vaultEquity": "0.0000012933",
+     "pnl": "-0.0000497067",
+     "allTimePnl": "-993.2174307067",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270182196
+    },
+    {
+     "user": "0xd7af5ea14fad145b2d9fd57e321d7bf8301980b5",
+     "vaultEquity": "0.0000008787",
+     "pnl": "-0.0001511213",
+     "allTimePnl": "-795.3676081213",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270528504
+    },
+    {
+     "user": "0xda1d1a5382949f4d40501b0a6079bc24269e3713",
+     "vaultEquity": "0.0000007522",
+     "pnl": "-0.0001282478",
+     "allTimePnl": "-1781.4159132478",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270035917
+    },
+    {
+     "user": "0xdc1016c1ab13899d204986bdca1fa92519298815",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-424.636459",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739278427492
+    },
+    {
+     "user": "0xdc90cebb0dbb08556a334537c7db6d9c4e7fe603",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-13014.826771",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739278560541
+    },
+    {
+     "user": "0xdf34fdd925c74e099faf50714a4138cddbf60a59",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "-710.427472",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739272601233
+    },
+    {
+     "user": "0xe09fa9fa2a261b4e2b594d3161352e9c494bb8ee",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "290.642046",
+     "daysFollowing": 525,
+     "vaultEntryTime": 1740106480585
+    },
+    {
+     "user": "0xe0a4a8528894006ad2cbf07da1e51c4fdb712096",
+     "vaultEquity": "37.6913484801",
+     "pnl": "-6500.8486515199",
+     "allTimePnl": "-6500.8486515199",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270746432
+    },
+    {
+     "user": "0xe4c84bee4af477d2fcc8521e1b980bfb83fe1ed0",
+     "vaultEquity": "1.2831567285",
+     "pnl": "-222.6368432715",
+     "allTimePnl": "-222.6368432715",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739278544823
+    },
+    {
+     "user": "0xe71775afbe475bd88d44e27f4bf1f94118e33e6d",
+     "vaultEquity": "0.5755556757",
+     "pnl": "-99.4244443243",
+     "allTimePnl": "-99.4244443243",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271149706
+    },
+    {
+     "user": "0xe84c0f56840a61e4df1f04509df2972c41b684bf",
+     "vaultEquity": "22.595684459",
+     "pnl": "-3935.924769541",
+     "allTimePnl": "-3935.924769541",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739273283488
+    },
+    {
+     "user": "0xe8d81a5cedde5e406a0790a11275202bc9804339",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "2.177032",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739303761942
+    },
+    {
+     "user": "0xe9cb923a3481ca3a2e17665669ca182295b1949e",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000001",
+     "allTimePnl": "13.975845",
+     "daysFollowing": 534,
+     "vaultEntryTime": 1739370422321
+    },
+    {
+     "user": "0xea2d41ac6c5e530f98f41913d609a7e21fce955e",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-97.662881",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739272116728
+    },
+    {
+     "user": "0xebeb108e923160c3a975b196673baba4b3ff62ff",
+     "vaultEquity": "0.5783370563",
+     "pnl": "-108.5587819437",
+     "allTimePnl": "-108.5587819437",
+     "daysFollowing": 523,
+     "vaultEntryTime": 1740291965936
+    },
+    {
+     "user": "0xeca345b5c749b8a9299b154fb036020e13394eb7",
+     "vaultEquity": "0.000000783",
+     "pnl": "-0.000136217",
+     "allTimePnl": "-994.283443217",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739273446075
+    },
+    {
+     "user": "0xef51c6b7eff0d16038743bf924879d295a4b971f",
+     "vaultEquity": "0.000000354",
+     "pnl": "-0.000050646",
+     "allTimePnl": "-2830.154178646",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739284693097
+    },
+    {
+     "user": "Leader",
+     "vaultEquity": "100.00000017",
+     "pnl": "-15987.71877783",
+     "allTimePnl": "-993093.14030583",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739269588348
+    },
+    {
+     "user": "0xf2aa371c795bff33c06220c799025d8279d7298a",
+     "vaultEquity": "0.0000007327",
+     "pnl": "-0.0000972673",
+     "allTimePnl": "-72.8588152673",
+     "daysFollowing": 533,
+     "vaultEntryTime": 1739465538494
+    },
+    {
+     "user": "0xf59e0a0d1c97a0eb26fc58354a81f4a563e60a25",
+     "vaultEquity": "0.0",
+     "pnl": "-0.000002",
+     "allTimePnl": "-678.083694",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739270087386
+    },
+    {
+     "user": "0xf8b21eb4f619da524b4dd04228d0dfde4527ad08",
+     "vaultEquity": "0.0864096623",
+     "pnl": "-15.3291933377",
+     "allTimePnl": "-15.3291933377",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740187169940
+    },
+    {
+     "user": "0xf9498b049a9d6b9cf6f791532b6e96b1f79c95ee",
+     "vaultEquity": "0.0000014596",
+     "pnl": "-0.0000895404",
+     "allTimePnl": "-397.9615505404",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740245101199
+    },
+    {
+     "user": "0xf98afa5c3758781ae9f7fe679347cf331e89044c",
+     "vaultEquity": "1.1024818311",
+     "pnl": "-190.2275181689",
+     "allTimePnl": "-190.2275181689",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739271281135
+    },
+    {
+     "user": "0xfc4e8097949be93d6b1d51304e39fe489f85972b",
+     "vaultEquity": "0.1002678843",
+     "pnl": "-19.8997321157",
+     "allTimePnl": "-19.8997321157",
+     "daysFollowing": 524,
+     "vaultEntryTime": 1740236428856
+    },
+    {
+     "user": "0xfe886c330b72ba5e4f4a51106c4f5d8fbb91653f",
+     "vaultEquity": "0.0310182878",
+     "pnl": "-5.3158267122",
+     "allTimePnl": "-5.3158267122",
+     "daysFollowing": 535,
+     "vaultEntryTime": 1739275930398
+    },
+    {
+     "user": "0xfe9f971235307fec6f1b51dc4af86db1e89eec90",
+     "vaultEquity": "0.6798028706",
+     "pnl": "-132.1362171294",
+     "allTimePnl": "-132.1362171294",
+     "daysFollowing": 523,
+     "vaultEntryTime": 1740298030556
+    }
+   ],
+   "seen": "2026-08-01T00:21:16Z"
   }
  },
  "users_pending": [
-  "0x43c462663cb620eabceaa9c32b95b20cf55ea0c6",
-  "0x47502b8a0544e7a5fb989c03e2086d4a5f339a47",
-  "0x4ae916cd0f13cf88d91459500ff54bca1ef0fc2a",
-  "0x4d98f4e933504f009b9eaf85a81961e9e9dc1f1d",
-  "0x4e106d5e97b59c6b0cd84bb9c65ea67570502176",
-  "0x4fc4ba7c30a22ba8b0c0049d2a8730cfd49c9c05",
-  "0x51611638fae11f14bf1b363eb5c9891573d7b8fb",
-  "0x531fb7439651469b9bf6300c998b87ad97fcb6dd",
-  "0x53b77b9a06dd7e11aee247957784d76484fff540",
-  "0x541622f9093cfd45390d9354a31614e5bbefcbd1",
-  "0x54fc870391505f9902809cdf5a99e56ea92cbeac",
-  "0x59ed72c7a3abef790022ec0bb368fddd17b99637",
-  "0x5aceb63d52d0d7081a72f254401893ffcf81381a",
-  "0x603347e1faa2b7d73ba0e885fd74b6bef1b5d266",
-  "0x61100690c228ce49481199d8757478061f0506c4",
-  "0x6b4b08a879dc41484438b3a6eaaa628f0ae8d79f",
-  "0x6d0bbe84eba47434a0004fc65797b87ef1c913b7",
-  "0x700deb006cc46c4b80e4bad4eb0a4a5fb4683e0c",
-  "0x71affd3da39f3e2fa09ac0edb4b7850c3d00cdad",
-  "0x73ddb14abf93ec0fa0e9d55df0f14ed4a7228dbf",
   "0x7420309ffc7f504f340e949b2c495025d147ce81",
   "0x7a099bf4fe65f86756924fbed6fbd92af487a737",
   "0x7d7c6bf9e67de49d9a3514b4484d7ab41d056f2e",
@@ -127194,7 +128326,26 @@
   "0xb108f1b1aaef8bff2d2bce5469631b9d250e44b7",
   "0xc248fdbbe057330a46013b7b32bb702a121834ef",
   "0xca9ad076f2c25571c719df64b2ec1d4087e15f57",
-  "0xd076e27b7df277b1a24761e119b43659288b55ce"
+  "0xd076e27b7df277b1a24761e119b43659288b55ce",
+  "0x46f2c3ce0c4c8b7ebb34809acaa1cc236b90dac4",
+  "0x6356e04a624d3c01f1f08df32cc54aa768508b46",
+  "0x8483b759625b17867c8dce0ebd2a6f2fbe357cf7",
+  "0xd0d628acf9e985c94a4542cae88e0af7b2378c81",
+  "0xd7ceecc70693b8268ab3652f8358ed19a36f7aae",
+  "0x02eb67d0b18fc7fb31971f230cc0a12cbacd6f75",
+  "0x0608f5ec58a9c7f853a8db91e3f887d62d4d9ddc",
+  "0x069caa85233ac4f9b3902d3a9c55f2c2879bf7c3",
+  "0x0766bb96f79815a3369567f70b6b2bf5802de74b",
+  "0x0873ad6d7976f716a917a6a69af4d0e15306c950",
+  "0x0c1680a9f0675710c2a5cfef3dd3a3ddf55c008a",
+  "0x0c28da4883cd1baa73df88fa1ce0e9c64c5b8e16",
+  "0x0ce32224eba835d914a8bf8c1f0b3d1413ae6a13",
+  "0x0e414c1c4780df6c09c2f1070990768d44b70b1d",
+  "0x0ea0ccf75e9ab5c988d08c6923fbec5332e5eb88",
+  "0x0f037370db1a16e5564c011661eb7c472949015e",
+  "0x0fe6a48278aa234e5c7cf6c5e587084fc08c66c9",
+  "0x1205948fa229c370c18cdb17d34411a481309822",
+  "0x13d649ed8f4a7104711e7dd72d6e2ecc2b313222"
  ],
  "users_done": [
   "0x007a16b6b9dd24f0d0185b94ca2be172ec8210f3",
@@ -127455,6 +128606,7 @@
   "0x424b0eead456dbc3ab5783a4947a895decb364c6",
   "0x4290663241858d877265b13a6a80941f1cbbaf67",
   "0x438035d528d3ce165b178c4e4374ec49e28a41a8",
+  "0x43c462663cb620eabceaa9c32b95b20cf55ea0c6",
   "0x43ccbf842bba3f6b5c72a52a63cccf29c376d4eb",
   "0x45b8a9da6a2eb3962ea6fe15d546a9f1c4d3bdef",
   "0x45f65b4306863e29405b82b2cfb219cf0791b54f",
@@ -127463,6 +128615,7 @@
   "0x46ce0081d6b668ed948f3892e6b9c7ce38143b8e",
   "0x46eb06d5f4c8e69593ad72f81c8e61197b83807a",
   "0x470a5f416a0f380e228cb8f5439c91b0c98c81a6",
+  "0x47502b8a0544e7a5fb989c03e2086d4a5f339a47",
   "0x47fa1e9f51dcc5cfaf96951cfa6d5e9627aebd89",
   "0x4822dc42de4ca0130a1c11ab2ee569bd3a2d8006",
   "0x48477241abd1ac217024ae62643a841490a41b45",
@@ -127474,26 +128627,35 @@
   "0x4995d9e93ff133b47c25a10ed72b346ce50e7c84",
   "0x49f8c8558dce904bfc5564795c6fdcc1d46745f7",
   "0x4adab952d0e5c11ef5296a040cce5d5f1169e56f",
+  "0x4ae916cd0f13cf88d91459500ff54bca1ef0fc2a",
   "0x4b9ce9f95ff25476704125502f82af65dd976861",
   "0x4c009c6fe9d2637c0658a6c57b39e45eeae317a3",
   "0x4c1ccfdb67c29d36cae766653c1cd02174d06eb6",
   "0x4cca811b7e10097306d33a25b6bf7ddce53b44d9",
   "0x4d72dcd0403ef2d01b3cf86df7a993202eb2f69a",
+  "0x4d98f4e933504f009b9eaf85a81961e9e9dc1f1d",
   "0x4daedd0c7906b0d5e7e5805f283b0d8805735971",
+  "0x4e106d5e97b59c6b0cd84bb9c65ea67570502176",
   "0x4ec1d5827757b795925b711f87e1e664ab71d946",
   "0x4f231797b00fe099aaaefad845dec1f5a68962a0",
   "0x4f387a9f01c9d03024e787b4ac7534b7b290a95c",
+  "0x4fc4ba7c30a22ba8b0c0049d2a8730cfd49c9c05",
   "0x4fdb601aebf2c6ad947d97a00b7eeaf71cc5bf93",
+  "0x51611638fae11f14bf1b363eb5c9891573d7b8fb",
   "0x520d775be3aede960140aafe27ce5a860c0e0db8",
   "0x52d222beaac5b1ce93f94778a672d143f150052f",
   "0x52fcfb85a868550bf8228789e071ce4bd770e3ef",
+  "0x531fb7439651469b9bf6300c998b87ad97fcb6dd",
   "0x5320ddfd64e51cad5c91b8df672cae2ae8f353f0",
   "0x53631762f2d62325a9d09c12d42bdd752aa39546",
   "0x53a8a759e7428fbb6a7ae67756f22e3e23397ba3",
   "0x53b45344c6eb8aaa97f842a6efb10afc801ea6b5",
+  "0x53b77b9a06dd7e11aee247957784d76484fff540",
+  "0x541622f9093cfd45390d9354a31614e5bbefcbd1",
   "0x5454a4ed7c7c188b9f278965056c188dc138abbe",
   "0x5464c3abbf47b881bd23396825c67c06210810d1",
   "0x54b27a2be90475e6a46448b5e963810dc752d410",
+  "0x54fc870391505f9902809cdf5a99e56ea92cbeac",
   "0x55086f715ca142b34db9af614611ebd853224582",
   "0x5527e66ce4abfe29ec938f3c0bef9ca7a54da059",
   "0x55457674aeda75dbbd87ee90e92dc6ded192856d",
@@ -127507,9 +128669,11 @@
   "0x596af8632c7808429293deb9c164999e509b8a14",
   "0x59907390ae00efeb37e035b16aea9a975eed2ad9",
   "0x59ac3b0320786c6dea281faa6040b1e32bc9b08e",
+  "0x59ed72c7a3abef790022ec0bb368fddd17b99637",
   "0x5a1a286c19801040f02234513467dfa5f81fa47b",
   "0x5a4e648e7a2f353fb4826c1cce34c7ce4d8bcce2",
   "0x5a5087de87eaf8844b375bc7aca6abec158abee1",
+  "0x5aceb63d52d0d7081a72f254401893ffcf81381a",
   "0x5b075a8085b13f1a4b94fc5d67a1a530b4d098e3",
   "0x5b7c1f89763d00799af07f8536af0de2f8d0df7d",
   "0x5bd01309fe16e36768e15b2ee0b6158a95f5a41c",
@@ -127527,6 +128691,7 @@
   "0x5ff2ebe49242a0d83db1d50a6315c224a1a2e094",
   "0x5ffbfdf267733fe031c80da53a2ac3b7c64bee9e",
   "0x602d11dbaa3db334fcb59e9ca3a3a056b543d3dd",
+  "0x603347e1faa2b7d73ba0e885fd74b6bef1b5d266",
   "0x605541780aa81bef0e575a55f6557994f9b68e4b",
   "0x605572243c30af7493707c9c8e8aa2ee25537e9a",
   "0x6086caa5dbe7b2ad15f94a92617c9cf9e50c3297",
@@ -127534,6 +128699,7 @@
   "0x60c205d7ecc30c0457e9297780f16dc3476e3fc0",
   "0x60e4d60854da1242b264e34d7f5b2fa6294b0783",
   "0x60fb8dc2b10f009b0e0d6b5081c68a0339251454",
+  "0x61100690c228ce49481199d8757478061f0506c4",
   "0x617cc76686f17e545aff640d9927965cf8a60a06",
   "0x61c99333282aad40cb23a80eb583f3e9ce1d5658",
   "0x61f4a54b21f206288bce2f759ae7bef91abd1efe",
@@ -127566,9 +128732,11 @@
   "0x6af82de4c8ca42835e1383b00ff808e9211056c6",
   "0x6b0bca0e14c49ed0cc9665b725754d521251da47",
   "0x6b3e43c362f701514be760ffe714b5af962b1a78",
+  "0x6b4b08a879dc41484438b3a6eaaa628f0ae8d79f",
   "0x6bad0884fb5279a577ca9213680b7bfab812c1c1",
   "0x6c091b883875c0f27e863b556b3756bdf573a03b",
   "0x6cf9128f7d3fbe86d074dd098ebe9d9515f4a97a",
+  "0x6d0bbe84eba47434a0004fc65797b87ef1c913b7",
   "0x6d4beed1e50231cc0fe835a810b3efde3ae9cbbf",
   "0x6d66437bc9d728ea81278260004ce864c1492052",
   "0x6d97573ea38c0ed172d07fc8167ae7ce1317af8e",
@@ -127586,12 +128754,15 @@
   "0x6f948f8bf0689c5cc5ceb2f29e62f51149919087",
   "0x6fb04ff5687fc8229ecea7288935291527f9515c",
   "0x6fe72812637a40808c7515cc14adf62212d9c2bd",
+  "0x700deb006cc46c4b80e4bad4eb0a4a5fb4683e0c",
   "0x7124b928e0d3ee06675531ba7821952ff8dacfa4",
+  "0x71affd3da39f3e2fa09ac0edb4b7850c3d00cdad",
   "0x72000e04129aff5495ebb7c4dd5771926d94ffba",
   "0x725adfc19135af5b1730d7a283c2257ea06ed57e",
   "0x73689765a9b628e607969d8bd8e709a54a0ae45d",
   "0x737b923e4a42362d05ba98ca2fc0732ef2fcdede",
   "0x73ce0b03b2f2ef2a9956269206b8315abfe5c694",
+  "0x73ddb14abf93ec0fa0e9d55df0f14ed4a7228dbf",
   "0x73f48493c20efd0c24ac5ad8a05b4154acdb3041",
   "0x74d9eee6bf7d13af879b18e914e59b0695cfd8ce",
   "0x756fcc15a2f4fa135b60db459a862c8c3862cd6a",
@@ -128068,15 +129239,19 @@
   "leader"
  ],
  "vaults_pending": [
-  "0x018f70ba9bcd695760f69d83f03c769e2de8ce88",
-  "0x219d8e8cd429861de50629393bbcb5d1cbe54722"
+  "0x97a7da11f713627f5d2e6ea67f97cafd715e84df",
+  "0x2e0038b0a68a87631f1530a1ca2154f711a89e2f",
+  "0x72fbecc2946c4e3ab5fd64aff61cfb3a3d3711e1",
+  "0x122fa77095c352203fe3d8962f1e5c96e23113bc",
+  "0x696671bec753999cfb16d3d0dbf3f1f8c3b0a838",
+  "0xc272633775e01a07f579d9ed3cc5a6040e9f195b"
  ],
  "errors": {
   "leader": "http_422"
  },
- "requests_total": 1210,
+ "requests_total": 1232,
  "started": "2026-07-31T19:27:12Z",
- "updated": "2026-08-01T00:16:51Z",
+ "updated": "2026-08-01T00:21:51Z",
  "complete": false,
  "bias_note": "Living vaults only; seeded from HLP; followers lists show CURRENT depositors. Three upward biases. A positive step-1 result from this sample is not evidence. A negative one is."
 }
