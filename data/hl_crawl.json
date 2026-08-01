@@ -139443,6 +139443,42 @@
     }
    ],
    "seen": "2026-08-01T01:36:14Z"
+  },
+  "0xcabb68a332cc0cdd3c49974dc197169deee6196d": {
+   "name": "SNIPE",
+   "leader": "0x9c97ce67d9beea8cc700e394319bc025244132b0",
+   "apr": 0.0,
+   "leaderFraction": 0.7830197722883361,
+   "leaderCommission": 0.1,
+   "isClosed": true,
+   "n_followers": 3,
+   "followers": [
+    {
+     "user": "0x55c50221012d6ccff5be7ef47ce5d68752360cf0",
+     "vaultEquity": "0.000000434",
+     "pnl": "0.000000434",
+     "allTimePnl": "-79.433193566",
+     "daysFollowing": 665,
+     "vaultEntryTime": 1728049462579
+    },
+    {
+     "user": "0x9106ab4e32bf3b22815adc10b45126ce83c65268",
+     "vaultEquity": "0.0",
+     "pnl": "0.0",
+     "allTimePnl": "-61.319328",
+     "daysFollowing": 665,
+     "vaultEntryTime": 1728021824121
+    },
+    {
+     "user": "Leader",
+     "vaultEquity": "0.000001566",
+     "pnl": "0.000001566",
+     "allTimePnl": "-25.780254434",
+     "daysFollowing": 667,
+     "vaultEntryTime": 1727909917447
+    }
+   ],
+   "seen": "2026-08-01T01:41:13Z"
   }
  },
  "users_pending": [
@@ -143388,7 +143424,8 @@
   "0xcbf973df90828bdc47c7040fcf3fc384a82654a1",
   "0xd20abb73d8b1265f9f4ce60ce448679af14a803c",
   "0xd5dffc2e61901039cdeb4f4810edd4a4a1bf7380",
-  "0xed20c540d659e552967d2854c11b93f30fb470cc"
+  "0xed20c540d659e552967d2854c11b93f30fb470cc",
+  "0x55c50221012d6ccff5be7ef47ce5d68752360cf0"
  ],
  "users_done": [
   "0x0000b9ceefe45e8156b9b2bd7c5c6b5ce2b80000",
@@ -144556,7 +144593,6 @@
   "leader"
  ],
  "vaults_pending": [
-  "0xcabb68a332cc0cdd3c49974dc197169deee6196d",
   "0x1ff650ae36c5f2e8fe51d6088fbabb7061a932e3",
   "0x5338fab05c8012848a5e31dfc951a85947c0a094",
   "0x5787e8f3dfbcd7ba40ba59f674fd424c3dff725f",
@@ -144567,9 +144603,9 @@
  "errors": {
   "leader": "http_422"
  },
- "requests_total": 1562,
+ "requests_total": 1563,
  "started": "2026-07-31T19:27:12Z",
- "updated": "2026-08-01T01:36:51Z",
- "complete": false,
+ "updated": "2026-08-01T01:41:13Z",
+ "complete": true,
  "bias_note": "Living vaults only; seeded from HLP; followers lists show CURRENT depositors. Three upward biases. A positive step-1 result from this sample is not evidence. A negative one is."
 }
