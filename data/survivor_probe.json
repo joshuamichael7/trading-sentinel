@@ -2001,11 +2001,26 @@
    "first_seen": "2026-08-01T20:58:49Z",
    "desc": "EvilShib",
    "attempts": 1
+  },
+  "A6mrpBeeNKm743fiNg8Mrz7pj7uGML5rgDjWo4nrpump": {
+   "pools_http": 200,
+   "n_pools": 5,
+   "pool": "HjKtrMkSU3nxR9Puocgy3vyBWsnr8GLKb4whrJdYcjVJ",
+   "live_liquidity_usd": 57395.7584,
+   "ohlcv_http": 200,
+   "n_candles": 82,
+   "first_candle_ts": 1785330000,
+   "first_candle_close": 9.344818708181006e-06,
+   "last_candle_ts": 1785621600,
+   "last_candle_close": 0.00039495574599826945,
+   "first_seen": "2026-08-01T22:34:02Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 134,
- "updated": "2026-08-01T20:58:56Z",
- "probed": 134,
+ "cohort_size": 135,
+ "updated": "2026-08-01T22:34:09Z",
+ "probed": 135,
  "remaining": 0,
  "unresolved": 0
 }
