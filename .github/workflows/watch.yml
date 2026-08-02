@@ -70,6 +70,19 @@ jobs:
           git config user.name  "sentinel-bot"
           git config user.email "sentinel@users.noreply.github.com"
 
+          # SECOND-ORDER BUG, found 2026-08-02: removing `set -e` above stopped the
+          # job dying, but the crash had been doing useful work -- it was the only
+          # thing that got a wedged job out of the way so a fresh one could take
+          # over. Run #264, the first to carry the set+e fix, ran its full 335-min
+          # budget from 03:44Z to 09:19Z and committed NOTHING: 5.67 hours dark,
+          # worse than any failure it replaced, and it exited "success" so nothing
+          # flagged it. A silent hang is strictly worse than a loud crash.
+          # So the loop now watches itself: if it stops making progress it exits 0
+          # on purpose, handing off to the queued run. Exit 0 (not a crash) so the
+          # handoff does not pollute the failure statistics.
+          STALL=0                    # consecutive cycles that landed nothing on the remote
+          STALL_MAX=3                # ~15 min of no progress is a wedge, not a blip
+
           START=$(date +%s)
           BUDGET=$((335 * 60))       # leave ~15 min of headroom under the 350 timeout
           CYCLE=300                  # 5 minutes
@@ -93,6 +106,13 @@ jobs:
             # and becomes a no-op once the cohort is exhausted.
             python3 survivor_probe.py || echo "survivor_probe.py exited $? -- continuing"
 
+            # Clear any state a previous cycle's interrupted rebase/merge left behind.
+            # A half-finished rebase makes every later commit and push fail forever,
+            # which is the most likely way #264 wedged itself.
+            git rebase --abort  >/dev/null 2>&1
+            git merge  --abort  >/dev/null 2>&1
+            rm -f .git/index.lock
+
             # Pick up code pushed since this job started, so the next such fix
             # does not have to be smuggled in through watcher.py.
             git pull --rebase -q || echo "pull failed -- continuing on local copy"
@@ -100,8 +120,14 @@ jobs:
             git add data/ || echo "git add failed -- continuing"
             if git diff --cached --quiet; then
               echo "no data change"
+              STALL=$((STALL + 1))
             else
-              git commit -q -m "sample $(date -u +%Y-%m-%dT%H:%M)" || echo "commit failed -- continuing"
+              if git commit -q -m "sample $(date -u +%Y-%m-%dT%H:%M)"; then
+                COMMITTED=1
+              else
+                COMMITTED=0
+                echo "commit failed -- continuing"
+              fi
               # Three tries, then give up until the next cycle. Losing the push race
               # to an external PAT push is normal and must never end the job -- the
               # commit is local and the next cycle will carry it.
@@ -110,7 +136,22 @@ jobs:
                 if git push -q; then PUSHED=1; break; fi
                 git pull --rebase -q || echo "rebase during push retry failed"
               done
-              [ "$PUSHED" = "1" ] || echo "push did not land this cycle -- will retry next cycle"
+              if [ "$PUSHED" = "1" ]; then
+                STALL=0
+              else
+                STALL=$((STALL + 1))
+                echo "push did not land this cycle (commit=$COMMITTED, stall=$STALL)"
+                git status --short --branch 2>&1 | head -20
+              fi
+            fi
+
+            # The self-monitor. Nothing has reached the remote for STALL_MAX cycles,
+            # so this job is not doing its job. Stand down and let the next one try
+            # with a clean checkout, rather than burning the rest of the budget dark.
+            if [ "$STALL" -ge "$STALL_MAX" ]; then
+              echo "STALLED: $STALL cycles with nothing landed on the remote."
+              echo "Exiting 0 at $(date -u +%H:%M:%S) so the queued run takes over."
+              break
             fi
 
             # sleep to the next cycle boundary, not a flat 300s, so drift does not
