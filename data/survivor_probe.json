@@ -2061,11 +2061,26 @@
    "first_seen": "2026-08-02T21:49:05Z",
    "desc": "Armara OS \u2014 Sovereign AI Operating System\n\nYour AI. Your machine. Your rules.\n\nP",
    "attempts": 1
+  },
+  "HsUJxURpAtdYpvppxbwZTBinRnqY7Fpv4sFHD8F9pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6477Y16MpvgLCKXA2QV1gBQoFyQqcpQDUXMKiWKjj7rn",
+   "live_liquidity_usd": 18121.4847,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1785708000,
+   "first_candle_close": 7.496809972095875e-05,
+   "last_candle_ts": 1785708000,
+   "last_candle_close": 7.496809972095875e-05,
+   "first_seen": "2026-08-02T22:19:05Z",
+   "desc": "This might be the craziest lore in crypto.\n\nThousands of dog and cat coins are l",
+   "attempts": 1
   }
  },
- "cohort_size": 138,
- "updated": "2026-08-02T21:49:11Z",
- "probed": 138,
+ "cohort_size": 139,
+ "updated": "2026-08-02T22:19:12Z",
+ "probed": 139,
  "remaining": 0,
  "unresolved": 0
 }
