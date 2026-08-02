@@ -2031,11 +2031,26 @@
    "first_seen": "2026-08-02T16:40:33Z",
    "desc": "BEARS HAVE NO CHANCE\n\nthe market has spent months asking when the bull returns\n\n",
    "attempts": 1
+  },
+  "6wfbCEwBDE8D75QaQCSgawiNfKwJDCyAYA32F768pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "BRfcbtYCZuiLDJ3m3Ektho442ARkAa1bhnZFYvpEmQrC",
+   "live_liquidity_usd": 25531.3544,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1785693600,
+   "first_candle_close": 8.169041971323243e-05,
+   "last_candle_ts": 1785697200,
+   "last_candle_close": 0.00013673502179688618,
+   "first_seen": "2026-08-02T19:15:33Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 136,
- "updated": "2026-08-02T16:40:40Z",
- "probed": 136,
+ "cohort_size": 137,
+ "updated": "2026-08-02T19:15:40Z",
+ "probed": 137,
  "remaining": 0,
  "unresolved": 0
 }
