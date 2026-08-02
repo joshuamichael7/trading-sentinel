@@ -55,6 +55,17 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
+          # DELIBERATELY NOT `set -e`. GitHub runs `run:` blocks as `bash -e {0}`,
+          # and that killed this job 7 times between 07-30 and 08-01 (runs #229,
+          # #231, #234, #241, #245, #249, #254). Root cause: the last statement of
+          # the loop body used to be `[ $SPENT -lt $CYCLE ] && sleep ...`. When a
+          # cycle overran 300s the test returned 1, the AND-list returned 1, it was
+          # the last command in the body, and `set -e` exited the step. Every one of
+          # those 7 deaths landed 5.2-7.8 min after a sample written on a perfect
+          # 5.0-min cadence -- i.e. always mid-cycle, always just over budget. Each
+          # cost 10-98 min of blind coverage, because an unplanned death leaves no
+          # queued run to take over and the next honoured `*/5` tick is ~1h away.
+          set +e
           set -u
           git config user.name  "sentinel-bot"
           git config user.email "sentinel@users.noreply.github.com"
@@ -65,7 +76,10 @@ jobs:
 
           while :; do
             NOW=$(date +%s)
-            [ $((NOW - START)) -ge $BUDGET ] && { echo "budget spent, exiting for the next run"; break; }
+            if [ $((NOW - START)) -ge $BUDGET ]; then
+              echo "budget spent, exiting for the next run"
+              break
+            fi
 
             # A failing watcher must not kill the loop -- one bad upstream response
             # should cost one sample, not 5.6 hours of coverage.
@@ -83,16 +97,30 @@ jobs:
             # does not have to be smuggled in through watcher.py.
             git pull --rebase -q || echo "pull failed -- continuing on local copy"
 
-            git add data/
+            git add data/ || echo "git add failed -- continuing"
             if git diff --cached --quiet; then
               echo "no data change"
             else
-              git commit -q -m "sample $(date -u +%Y-%m-%dT%H:%M)"
-              for i in 1 2 3; do git push -q && break || git pull --rebase -q; done
+              git commit -q -m "sample $(date -u +%Y-%m-%dT%H:%M)" || echo "commit failed -- continuing"
+              # Three tries, then give up until the next cycle. Losing the push race
+              # to an external PAT push is normal and must never end the job -- the
+              # commit is local and the next cycle will carry it.
+              PUSHED=0
+              for i in 1 2 3; do
+                if git push -q; then PUSHED=1; break; fi
+                git pull --rebase -q || echo "rebase during push retry failed"
+              done
+              [ "$PUSHED" = "1" ] || echo "push did not land this cycle -- will retry next cycle"
             fi
 
             # sleep to the next cycle boundary, not a flat 300s, so drift does not
-            # accumulate over 68 iterations
+            # accumulate over 68 iterations. An overrunning cycle simply skips the
+            # sleep -- it must NOT be expressible as a failing command.
             SPENT=$(( $(date +%s) - NOW ))
-            [ $SPENT -lt $CYCLE ] && sleep $((CYCLE - SPENT))
+            if [ $SPENT -lt $CYCLE ]; then
+              sleep $((CYCLE - SPENT))
+            else
+              echo "cycle overran ($SPENT s) -- skipping sleep, continuing"
+            fi
           done
+          echo "loop finished cleanly"
