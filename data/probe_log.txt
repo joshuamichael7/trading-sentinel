@@ -1762,3 +1762,5 @@
 04:51:27 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
 04:56:27 rc=0 out='survivor_probe: complete, 140/140 probed, 0 unresolved after 5 tries, nothing to do' err=''
 04:56:27 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
+05:01:32 rc=0 out='probe DeNGDha5 pools=200/2 ohlcv=200/9 liq=29718.9508\nsurvivor_probe: +1 this run, 141/141 done, 0 still unresolved' err=''
+05:01:33 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
