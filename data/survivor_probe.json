@@ -2181,11 +2181,26 @@
    "first_seen": "2026-08-03T18:26:17Z",
    "desc": "The goat version of Doge.\n\nBorn from the same pure meme energy that turned a Shi",
    "attempts": 1
+  },
+  "E4XcM3x3m1xWT6shrEApT57SKMm4UjNZjbWGdieFpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "HqhAPmZwcuY2bBSeNZRjK8qEdszjrAJAvFF19LmQxb6J",
+   "live_liquidity_usd": 21374.1357,
+   "ohlcv_http": 200,
+   "n_candles": 7,
+   "first_candle_ts": 1785758400,
+   "first_candle_close": 0.0002081983427391522,
+   "last_candle_ts": 1785780000,
+   "last_candle_close": 8.821893340629335e-05,
+   "first_seen": "2026-08-03T18:56:17Z",
+   "desc": "The bull version of Doge.",
+   "attempts": 1
   }
  },
- "cohort_size": 146,
- "updated": "2026-08-03T18:26:30Z",
- "probed": 146,
+ "cohort_size": 147,
+ "updated": "2026-08-03T18:56:25Z",
+ "probed": 147,
  "remaining": 0,
  "unresolved": 0
 }
