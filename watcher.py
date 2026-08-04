@@ -424,3 +424,10 @@ _survivor_probe()
 # in hl_crawl.py's docstring and pre-registered in the ledger BEFORE any data
 # came back, which is what makes a negative result usable and a positive one not.
 _side_car("hl_crawl.py", budget_s=100)
+#
+# Josh asked (2026-08-04) whether a "$100 into everything, cut losses small, let
+# one moonshot pay for the rest" portfolio works. That is a path-dependent rule,
+# so it needs candle ARRAYS -- survivor_probe.py stored only first/last summary
+# fields, which cannot express a stop-loss. This harvests the arrays for the same
+# 154-token cohort it already resolved. Resumable, ~50s/cycle, no-op when done.
+_side_car("candle_harvest.py", budget_s=70)
