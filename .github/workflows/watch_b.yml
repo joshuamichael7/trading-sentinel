@@ -1,0 +1,59 @@
+name: market-sentinel-b
+# SECOND ENTRY POINT, added 2026-08-04. Not a second sampler -- a second chance
+# at being STARTED.
+#
+# The problem: when a run ends normally the concurrency group already holds one
+# pending run, so handoff is instant. But when a run dies UNEXPECTEDLY there is
+# nothing queued, and GitHub honours only ~3% of a `*/5` schedule, so the next
+# tick that actually fires can be ~1h away. That gap -- 10 to 98 minutes of dark
+# coverage -- was the real cost of every failure in the #229..#254 series.
+#
+# The fix is not a faster cron (GitHub ignores that) but a SECOND independent
+# schedule. Two workflows each rolling the ~3% dice roughly halves the expected
+# wait for a honoured tick. They share `concurrency: sentinel`, so at most one
+# can hold the runner and at most one more can be pending: double-sampling is
+# impossible by construction, not by convention.
+#
+# The offset cron below is cosmetic (GitHub does not honour the minute either);
+# it is written this way so the two schedules are visibly distinct in the UI.
+#
+# NOTE: the `push` trigger is deliberately ABSENT here. watch.yml already fires
+# on push; adding it to both would make every PAT push queue a run against the
+# same group and cancel the other, which manufactures noise rather than uptime.
+on:
+  schedule:
+    - cron: "2,7,12,17,22,27,32,37,42,47,52,57 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sentinel
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Record recent run history
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/actions/runs?per_page=60" \
+            --jq '[.workflow_runs[] | {id, n: .run_number, ev: .event, st: .status,
+                   concl: .conclusion, start: .run_started_at, upd: .updated_at}]' \
+            > data/run_log.json || echo '[]' > data/run_log.json
+
+      - name: Sample loop
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        # `bash` not `bash -e {0}` -- see the header of scripts/sample_loop.sh.
+        shell: bash {0}
+        run: bash scripts/sample_loop.sh
