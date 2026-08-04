@@ -430,4 +430,4 @@ _side_car("hl_crawl.py", budget_s=100)
 # so it needs candle ARRAYS -- survivor_probe.py stored only first/last summary
 # fields, which cannot express a stop-loss. This harvests the arrays for the same
 # 154-token cohort it already resolved. Resumable, ~50s/cycle, no-op when done.
-_side_car("candle_harvest.py", budget_s=70)
+_side_car("candle_harvest.py", budget_s=200)

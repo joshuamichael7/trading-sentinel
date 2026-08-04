@@ -30,7 +30,10 @@ OUT = os.path.join(D, "candles.jsonl")
 STATE = os.path.join(D, "candle_harvest_state.json")
 GT = "https://api.geckoterminal.com/api/v2"
 UA = {"User-Agent": "trading-sentinel/1.0 (research probe)"}
-BUDGET_S = 50
+BUDGET_S = 170       # temporary: raised 2026-08-04 to finish the harvest in ~5
+                     # cycles instead of ~20. Cycle is 300s and the other probes
+                     # are no-ops now, so this cannot starve the price sample.
+                     # Becomes irrelevant the moment the harvest completes.
 START = time.time()
 
 
@@ -89,7 +92,7 @@ def main():
             "ohlcv": [[int(c[0])] + [float(x) if x is not None else None for x in c[1:]] for c in lst],
         }) + "\n")
         done.add(addr); n += 1
-        time.sleep(2.2)          # GeckoTerminal free tier: ~30 calls/min
+        time.sleep(2.0)          # GeckoTerminal free tier: ~30 calls/min
     fh.close()
     json.dump({"done": sorted(done), "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())},
               open(STATE, "w"))
