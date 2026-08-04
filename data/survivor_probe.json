@@ -2211,11 +2211,26 @@
    "first_seen": "2026-08-03T21:56:17Z",
    "desc": "",
    "attempts": 1
+  },
+  "CdB1d5hhSs4SfnLKaZA3db6g2d1mR9AgwL8wcF1Tpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "5S61AhGEaNQwnAFnsywLvwTY6G6tekgez9FwsX35gyAj",
+   "live_liquidity_usd": 38651.5467,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1785805200,
+   "first_candle_close": 0.00020741681266142267,
+   "last_candle_ts": 1785812400,
+   "last_candle_close": 0.00027243485690762694,
+   "first_seen": "2026-08-04T03:13:25Z",
+   "desc": "$KATE isn\u2019t just a Black Cat.\n\nKATE is a movement for the community. $ANSEM & $C",
+   "attempts": 1
   }
  },
- "cohort_size": 148,
- "updated": "2026-08-03T21:56:25Z",
- "probed": 148,
+ "cohort_size": 149,
+ "updated": "2026-08-04T03:13:32Z",
+ "probed": 149,
  "remaining": 0,
  "unresolved": 0
 }
