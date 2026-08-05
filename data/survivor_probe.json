@@ -2466,11 +2466,41 @@
    "first_seen": "2026-08-05T14:21:56Z",
    "desc": "OG MySpace is coming back and this is the token for it. Community takeover.",
    "attempts": 1
+  },
+  "3zyBhfJrMrXJrWG8n4LJdUnoASfgQrBZ2SjtzQeqpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "5nHhhV9HXBKz2DQN4nrnxBP7PfBQxmQMRJyEW38M8xj1",
+   "live_liquidity_usd": 19562.4951,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1785938400,
+   "first_candle_close": 8.398066828803225e-05,
+   "last_candle_ts": 1785942000,
+   "last_candle_close": 0.00022231556452126844,
+   "first_seen": "2026-08-05T15:34:51Z",
+   "desc": "$CUPSEY is on an absolute generational run.\n\nRumors are spreading that it could ",
+   "attempts": 1
+  },
+  "5SjKqDsHT35k9nJPVpJ5fbrPHqooVWoDGpESniEvpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "FEF726t5pL9c6agiX4xbvK3z7nqtUsZ93RqGk7S3VSEV",
+   "live_liquidity_usd": 14805.4275,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1785938400,
+   "first_candle_close": 3.787691150371184e-05,
+   "last_candle_ts": 1785942000,
+   "last_candle_close": 5.1596781633784774e-05,
+   "first_seen": "2026-08-05T15:34:51Z",
+   "desc": "Let's moooooooon it.",
+   "attempts": 1
   }
  },
- "cohort_size": 165,
- "updated": "2026-08-05T14:22:03Z",
- "probed": 165,
+ "cohort_size": 167,
+ "updated": "2026-08-05T15:35:02Z",
+ "probed": 167,
  "remaining": 0,
  "unresolved": 0
 }
