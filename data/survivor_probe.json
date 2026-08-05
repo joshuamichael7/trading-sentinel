@@ -2346,11 +2346,26 @@
    "first_seen": "2026-08-04T21:35:38Z",
    "desc": "",
    "attempts": 1
+  },
+  "GfGAWAp7fdmiaCEK9fqWQXwJ342wN9eY4NMqeN2Fpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "ACF8uHb8PNCmcnKvwAZZMjuAc3y4xjG6cXLJFDhh7on4",
+   "live_liquidity_usd": 34330.7941,
+   "ohlcv_http": 200,
+   "n_candles": 4,
+   "first_candle_ts": 1785877200,
+   "first_candle_close": 9.530250342094412e-05,
+   "last_candle_ts": 1785888000,
+   "last_candle_close": 0.0002105349597429041,
+   "first_seen": "2026-08-05T00:10:39Z",
+   "desc": "All fees are used to pay people to post about X Coin on @X. Drop your post in th",
+   "attempts": 1
   }
  },
- "cohort_size": 157,
- "updated": "2026-08-04T21:35:45Z",
- "probed": 157,
+ "cohort_size": 158,
+ "updated": "2026-08-05T00:10:45Z",
+ "probed": 158,
  "remaining": 0,
  "unresolved": 0
 }
