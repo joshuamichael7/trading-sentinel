@@ -3055,3 +3055,6 @@
 11:17:02 rc=0 out='probe Yv2taGqR pools=200/2 ohlcv=200/8 liq=58222.8601\nsurvivor_probe: +1 this run, 162/162 done, 0 still unresolved' err=''
 11:17:02 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
 11:17:04 candle_harvest.py rc=0 out='candle_harvest: +1 pools this cycle, 162/162 done' err=''
+11:21:57 rc=0 out='survivor_probe: complete, 162/162 probed, 0 unresolved after 5 tries, nothing to do' err=''
+11:21:57 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
+11:21:58 candle_harvest.py rc=0 out='candle_harvest: complete (162 pools harvested)' err=''
