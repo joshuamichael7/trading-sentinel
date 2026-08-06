@@ -2556,11 +2556,26 @@
    "first_seen": "2026-08-06T13:20:28Z",
    "desc": "\u201cCome on, buddy, I want to dance too!\u201d",
    "attempts": 1
+  },
+  "Hk8qqvyYU5gfAB5QCZCcJq3gR3TZ8LtvNmA1EM3bpump": {
+   "pools_http": 200,
+   "n_pools": 12,
+   "pool": "4dtPPur4Cp7eKsn57BS2cNxAY3E98fJTz5KCe8V5juu2",
+   "live_liquidity_usd": 15228.7335,
+   "ohlcv_http": 200,
+   "n_candles": 642,
+   "first_candle_ts": 1783458000,
+   "first_candle_close": 0.00010221285741454766,
+   "last_candle_ts": 1786028400,
+   "last_candle_close": 3.237029433620645e-05,
+   "first_seen": "2026-08-06T15:35:58Z",
+   "desc": "Baby Cupsey is small, fluffy, and already following the path of his father, Cups",
+   "attempts": 1
   }
  },
- "cohort_size": 171,
- "updated": "2026-08-06T13:20:35Z",
- "probed": 171,
+ "cohort_size": 172,
+ "updated": "2026-08-06T15:36:05Z",
+ "probed": 172,
  "remaining": 0,
  "unresolved": 0
 }
