@@ -2541,11 +2541,26 @@
    "first_seen": "2026-08-06T12:35:28Z",
    "desc": "Paperbag Cat | $JINPACHI \nA coin about a cat who found a paper bag and simply de",
    "attempts": 1
+  },
+  "HcNWQPmvtCSZSXPsbGDx6FSRfscnauKPTP2v7C6Jpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "CFX5Tej4Yy9wKxQAXHaU2EGKMvRkrs1sXizctgnPNLo1",
+   "live_liquidity_usd": 1639.9076,
+   "ohlcv_http": 200,
+   "n_candles": 10,
+   "first_candle_ts": 1785985200,
+   "first_candle_close": 0.00010916067366969954,
+   "last_candle_ts": 1786017600,
+   "last_candle_close": 1.5763392542253696e-06,
+   "first_seen": "2026-08-06T13:20:28Z",
+   "desc": "\u201cCome on, buddy, I want to dance too!\u201d",
+   "attempts": 1
   }
  },
- "cohort_size": 170,
- "updated": "2026-08-06T12:35:35Z",
- "probed": 170,
+ "cohort_size": 171,
+ "updated": "2026-08-06T13:20:35Z",
+ "probed": 171,
  "remaining": 0,
  "unresolved": 0
 }
