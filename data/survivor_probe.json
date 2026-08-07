@@ -2721,11 +2721,26 @@
    "first_seen": "2026-08-07T13:57:46Z",
    "desc": "Robinhood has CASHCAT with 100M+ but Solana is and  always will be the market le",
    "attempts": 1
+  },
+  "DVw1nc4WiqHk1foNtEbWgW4cCkvGRKc1rJ522EBWpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "DtMjjTVkdBk8WuNapDNyQSwueCmfn1Ck1EQPjoZKbzp1",
+   "live_liquidity_usd": 10923.2552,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1786140000,
+   "first_candle_close": 3.170777915640808e-05,
+   "last_candle_ts": 1786140000,
+   "last_candle_close": 3.170777915640808e-05,
+   "first_seen": "2026-08-07T22:48:48Z",
+   "desc": "Kissing Party, the viral animated TV show with 500k followers and 100M+ views. C",
+   "attempts": 1
   }
  },
- "cohort_size": 182,
- "updated": "2026-08-07T13:57:52Z",
- "probed": 182,
+ "cohort_size": 183,
+ "updated": "2026-08-07T22:48:55Z",
+ "probed": 183,
  "remaining": 0,
  "unresolved": 0
 }
