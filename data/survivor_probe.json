@@ -2706,11 +2706,26 @@
    "first_seen": "2026-08-07T10:27:16Z",
    "desc": "An authoritarian meme? No problem.",
    "attempts": 1
+  },
+  "9nXkTPZETP9hrntNYgxQSeDzwbhrExhFqKJPb5Z6pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "AaUmxdiSzWfbEwywTbvREKWTUt32hMjfRJGFkWs9oikZ",
+   "live_liquidity_usd": 35146.4745,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786104000,
+   "first_candle_close": 0.0002178503239278691,
+   "last_candle_ts": 1786107600,
+   "last_candle_close": 0.0002508500902124462,
+   "first_seen": "2026-08-07T13:57:46Z",
+   "desc": "Robinhood has CASHCAT with 100M+ but Solana is and  always will be the market le",
+   "attempts": 1
   }
  },
- "cohort_size": 181,
- "updated": "2026-08-07T10:27:23Z",
- "probed": 181,
+ "cohort_size": 182,
+ "updated": "2026-08-07T13:57:52Z",
+ "probed": 182,
  "remaining": 0,
  "unresolved": 0
 }
