@@ -2646,11 +2646,26 @@
    "first_seen": "2026-08-07T00:14:03Z",
    "desc": "",
    "attempts": 1
+  },
+  "8GjpHHrRxKxg5vx6RimG3ZkFmLL9918YU6a7Tnscpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "E2xqJLspgJ13rK1imyEZ1LM6wEqfFvqLZH7KGhajRFQD",
+   "live_liquidity_usd": 26383.2793,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1786057200,
+   "first_candle_close": 3.289120677217223e-05,
+   "last_candle_ts": 1786064400,
+   "last_candle_close": 0.00014716884386786768,
+   "first_seen": "2026-08-07T01:29:03Z",
+   "desc": "One thing to say, Every Legend has a sister She Is Pure Gold.\n\nLet\u2019s Welcome Pee",
+   "attempts": 1
   }
  },
- "cohort_size": 177,
- "updated": "2026-08-07T00:16:40Z",
- "probed": 177,
+ "cohort_size": 178,
+ "updated": "2026-08-07T01:29:10Z",
+ "probed": 178,
  "remaining": 0,
  "unresolved": 0
 }
