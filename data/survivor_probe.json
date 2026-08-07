@@ -2691,11 +2691,26 @@
    "first_seen": "2026-08-07T07:52:16Z",
    "desc": "Red or green candles, total composure remains. Zero panic, zero FOMO, just pure ",
    "attempts": 1
+  },
+  "BD5wSmuNysbBWTDrnNxfUqtzTvrYfJwgRS8MHroEpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "7gRE4sccLwyqX4DTZLbmTgni54fkN7xVF1wCz7p5K13",
+   "live_liquidity_usd": 32268.3487,
+   "ohlcv_http": 200,
+   "n_candles": 13,
+   "first_candle_ts": 1786053600,
+   "first_candle_close": 8.789097081421853e-05,
+   "last_candle_ts": 1786096800,
+   "last_candle_close": 0.00019330295725739625,
+   "first_seen": "2026-08-07T10:27:16Z",
+   "desc": "An authoritarian meme? No problem.",
+   "attempts": 1
   }
  },
- "cohort_size": 180,
- "updated": "2026-08-07T07:52:22Z",
- "probed": 180,
+ "cohort_size": 181,
+ "updated": "2026-08-07T10:27:23Z",
+ "probed": 181,
  "remaining": 0,
  "unresolved": 0
 }
