@@ -2751,11 +2751,26 @@
    "first_seen": "2026-08-08T01:29:00Z",
    "desc": "Gato Donato",
    "attempts": 1
+  },
+  "gAshQBpVGDRAtL9y6C5fJvVkA5cMWVR6c58w4XWpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "DK9eb8GFPE4tntDJu7kZnbd5xktB1aZJCEQeBwm7S9ij",
+   "live_liquidity_usd": 96791.9807,
+   "ohlcv_http": 200,
+   "n_candles": 16,
+   "first_candle_ts": 1786100400,
+   "first_candle_close": 4.9649691801811277e-05,
+   "last_candle_ts": 1786154400,
+   "last_candle_close": 0.001640670165648005,
+   "first_seen": "2026-08-08T02:54:00Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 184,
- "updated": "2026-08-08T01:29:07Z",
- "probed": 184,
+ "cohort_size": 185,
+ "updated": "2026-08-08T02:54:07Z",
+ "probed": 185,
  "remaining": 0,
  "unresolved": 0
 }
