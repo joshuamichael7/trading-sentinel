@@ -2886,11 +2886,26 @@
    "first_seen": "2026-08-08T19:24:54Z",
    "desc": "$TOAD is going crazy, as you all know I ran up BABYTROLL to 3M! \nLet\u2019s do the sa",
    "attempts": 1
+  },
+  "C1Muxy2B9LfgdMzQJezSKiAywJXhg4KKQwEK82Y6pump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "EEazEm2ikXSftir8d6pcahc3n8s8Dz3Jm7vqQuyDpL1K",
+   "live_liquidity_usd": 14510.7747,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786219200,
+   "first_candle_close": 5.608995164132968e-05,
+   "last_candle_ts": 1786222800,
+   "last_candle_close": 4.810027278725148e-05,
+   "first_seen": "2026-08-08T21:29:54Z",
+   "desc": "El Sapo Pepe's Wife Pepa. Since El Sapo Is the real pepe that means La Sapa Is T",
+   "attempts": 1
   }
  },
- "cohort_size": 193,
- "updated": "2026-08-08T19:25:01Z",
- "probed": 193,
+ "cohort_size": 194,
+ "updated": "2026-08-08T21:30:01Z",
+ "probed": 194,
  "remaining": 0,
  "unresolved": 0
 }
