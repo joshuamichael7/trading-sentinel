@@ -2871,11 +2871,26 @@
    "first_seen": "2026-08-08T18:34:54Z",
    "desc": "i'm toad pepe's wife \ud83d\udc38\ud83d\udc85",
    "attempts": 1
+  },
+  "HCwUogUGGjSHqrp9hNfN2VEpAqPvgV86MU5fxB7Epump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "H7LF5dV3Qv83XXK5H4rvWQoSA5t3GHaA9inMY9V2G7zi",
+   "live_liquidity_usd": 19219.4874,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1786215600,
+   "first_candle_close": 7.643433265821005e-05,
+   "last_candle_ts": 1786215600,
+   "last_candle_close": 7.643433265821005e-05,
+   "first_seen": "2026-08-08T19:24:54Z",
+   "desc": "$TOAD is going crazy, as you all know I ran up BABYTROLL to 3M! \nLet\u2019s do the sa",
+   "attempts": 1
   }
  },
- "cohort_size": 192,
- "updated": "2026-08-08T18:35:01Z",
- "probed": 192,
+ "cohort_size": 193,
+ "updated": "2026-08-08T19:25:01Z",
+ "probed": 193,
  "remaining": 0,
  "unresolved": 0
 }
