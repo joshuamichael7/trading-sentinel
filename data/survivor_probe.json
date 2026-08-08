@@ -2796,11 +2796,26 @@
    "first_seen": "2026-08-08T04:09:00Z",
    "desc": "meowcoin",
    "attempts": 1
+  },
+  "6movt4acyBDZwnmDCJyQ4Z4HWtjgSW3jp2WsTaHzpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6keAXUASPxoSGf8BddJFyNu5EJxEDbt1bF68q8eyXTrh",
+   "live_liquidity_usd": 7466.735,
+   "ohlcv_http": 200,
+   "n_candles": 11,
+   "first_candle_ts": 1786125600,
+   "first_candle_close": 9.713003508620828e-06,
+   "last_candle_ts": 1786161600,
+   "last_candle_close": 1.3690443161136981e-05,
+   "first_seen": "2026-08-08T05:14:00Z",
+   "desc": "the encyclopedia of a dying coin, written by the coin",
+   "attempts": 1
   }
  },
- "cohort_size": 187,
- "updated": "2026-08-08T04:09:07Z",
- "probed": 187,
+ "cohort_size": 188,
+ "updated": "2026-08-08T05:14:07Z",
+ "probed": 188,
  "remaining": 0,
  "unresolved": 0
 }
