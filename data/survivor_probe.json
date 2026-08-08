@@ -2736,11 +2736,26 @@
    "first_seen": "2026-08-07T22:48:48Z",
    "desc": "Kissing Party, the viral animated TV show with 500k followers and 100M+ views. C",
    "attempts": 1
+  },
+  "3S5mGWH54YAtjoWNHEEA6rhCC6vFTzpFVzAGiwyepump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "FFbKLZjpc8FgLBsM2CzdFTuovaZQ1nc3d6hTZpyUpQ6d",
+   "live_liquidity_usd": 2140.7873,
+   "ohlcv_http": 200,
+   "n_candles": 24,
+   "first_candle_ts": 1786068000,
+   "first_candle_close": 7.553154118840555e-05,
+   "last_candle_ts": 1786150800,
+   "last_candle_close": 2.10680959328002e-06,
+   "first_seen": "2026-08-08T01:29:00Z",
+   "desc": "Gato Donato",
+   "attempts": 1
   }
  },
- "cohort_size": 183,
- "updated": "2026-08-07T22:48:55Z",
- "probed": 183,
+ "cohort_size": 184,
+ "updated": "2026-08-08T01:29:07Z",
+ "probed": 184,
  "remaining": 0,
  "unresolved": 0
 }
