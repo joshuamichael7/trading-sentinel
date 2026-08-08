@@ -2826,11 +2826,26 @@
    "first_seen": "2026-08-08T14:14:43Z",
    "desc": "Ploddy The Humping Turtle",
    "attempts": 1
+  },
+  "3RoinFB8cgCTcYvSJd1bsGjd27YaNBL1tz9eCbSupump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "GSHgowUFtfpSFWfnutc7AYwsiQANVAEokY4qRyzHCcMD",
+   "live_liquidity_usd": 2574.1389,
+   "ohlcv_http": 200,
+   "n_candles": 10,
+   "first_candle_ts": 1786168800,
+   "first_candle_close": 1.4195830742438596e-05,
+   "last_candle_ts": 1786201200,
+   "last_candle_close": 2.7902569240806945e-06,
+   "first_seen": "2026-08-08T15:49:43Z",
+   "desc": "Bingus",
+   "attempts": 1
   }
  },
- "cohort_size": 189,
- "updated": "2026-08-08T14:14:49Z",
- "probed": 189,
+ "cohort_size": 190,
+ "updated": "2026-08-08T15:49:49Z",
+ "probed": 190,
  "remaining": 0,
  "unresolved": 0
 }
