@@ -2946,11 +2946,26 @@
    "first_seen": "2026-08-09T06:59:26Z",
    "desc": "toad wif hat",
    "attempts": 1
+  },
+  "6rQ7AUNfsKopHvQiiscKK1PjPcYb3Pi2y9Y61gETpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7Xoh8t8wqLEWXFrxLL4hsKbDHT7iuUbUqTttYGGJW5wT",
+   "live_liquidity_usd": 23143.3107,
+   "ohlcv_http": 200,
+   "n_candles": 12,
+   "first_candle_ts": 1786244400,
+   "first_candle_close": 0.00012952753800101537,
+   "last_candle_ts": 1786284000,
+   "last_candle_close": 0.00010451090567535058,
+   "first_seen": "2026-08-09T14:39:51Z",
+   "desc": "Colonel Toad",
+   "attempts": 1
   }
  },
- "cohort_size": 197,
- "updated": "2026-08-09T06:59:33Z",
- "probed": 197,
+ "cohort_size": 198,
+ "updated": "2026-08-09T14:39:58Z",
+ "probed": 198,
  "remaining": 0,
  "unresolved": 0
 }
