@@ -2961,11 +2961,26 @@
    "first_seen": "2026-08-09T14:39:51Z",
    "desc": "Colonel Toad",
    "attempts": 1
+  },
+  "zajhNffGDCgWG7pT1wRKPvHcCgD3jtf8QZY1XX9pump": {
+   "pools_http": 200,
+   "n_pools": 1,
+   "pool": "GYG3SAQEvUaXvLdNf3p62znfgppwB5jp8xMnxk8CNdqP",
+   "live_liquidity_usd": 6383.4812,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1786287600,
+   "first_candle_close": 2.274714867939501e-05,
+   "last_candle_ts": 1786287600,
+   "last_candle_close": 2.274714867939501e-05,
+   "first_seen": "2026-08-09T15:44:51Z",
+   "desc": "CASHCAT on Robinhood is currently at 122M how is it possible that CASHCAT on Sol",
+   "attempts": 1
   }
  },
- "cohort_size": 198,
- "updated": "2026-08-09T14:39:58Z",
- "probed": 198,
+ "cohort_size": 199,
+ "updated": "2026-08-09T15:44:57Z",
+ "probed": 199,
  "remaining": 0,
  "unresolved": 0
 }
