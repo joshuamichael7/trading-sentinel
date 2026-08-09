@@ -2931,11 +2931,26 @@
    "first_seen": "2026-08-09T05:14:26Z",
    "desc": "National Hold Hands Day - $HODL",
    "attempts": 1
+  },
+  "7j8Z9q3QSiCXhK9STddcFocEy1RZHxSHockMicKUpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "5ZBFHftvPKzZYzUXA2t3AN41TyErtegNvPhnCnEwpr7B",
+   "live_liquidity_usd": 22174.807,
+   "ohlcv_http": 200,
+   "n_candles": 9,
+   "first_candle_ts": 1786226400,
+   "first_candle_close": 8.559264403000594e-05,
+   "last_candle_ts": 1786255200,
+   "last_candle_close": 9.580266466904647e-05,
+   "first_seen": "2026-08-09T06:59:26Z",
+   "desc": "toad wif hat",
+   "attempts": 1
   }
  },
- "cohort_size": 196,
- "updated": "2026-08-09T05:14:32Z",
- "probed": 196,
+ "cohort_size": 197,
+ "updated": "2026-08-09T06:59:33Z",
+ "probed": 197,
  "remaining": 0,
  "unresolved": 0
 }
