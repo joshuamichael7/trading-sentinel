@@ -2976,11 +2976,26 @@
    "first_seen": "2026-08-09T15:44:51Z",
    "desc": "CASHCAT on Robinhood is currently at 122M how is it possible that CASHCAT on Sol",
    "attempts": 1
+  },
+  "EHuJuRhEi8vZiajJGm4w1o2aA1vftwSZajaWfcQwpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "F4DQg7qN4zMaazombjm6AWEHG5Byhqitg2WnMfGGPFS1",
+   "live_liquidity_usd": 34295.0607,
+   "ohlcv_http": 200,
+   "n_candles": 8,
+   "first_candle_ts": 1786276800,
+   "first_candle_close": 3.745872732412093e-05,
+   "last_candle_ts": 1786302000,
+   "last_candle_close": 0.00021814709635769125,
+   "first_seen": "2026-08-09T19:05:06Z",
+   "desc": "The true origin and inspiration for the beloved PEPE the frog. Born in 1964.",
+   "attempts": 1
   }
  },
- "cohort_size": 199,
- "updated": "2026-08-09T15:44:57Z",
- "probed": 199,
+ "cohort_size": 200,
+ "updated": "2026-08-09T19:05:13Z",
+ "probed": 200,
  "remaining": 0,
  "unresolved": 0
 }
