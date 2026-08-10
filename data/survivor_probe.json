@@ -3111,11 +3111,26 @@
    "first_seen": "2026-08-10T15:52:27Z",
    "desc": "Bingus will fulfill GCR\u2019s prophecy - Murad.",
    "attempts": 1
+  },
+  "7Syw6tu4Jx692uhoryjok5yBwTqje1oftit9E3LHpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7SQSPWeHuR97HgSKhhuKuzS9p5zrEPUYz1zfLw9KG6Se",
+   "live_liquidity_usd": 38111.068,
+   "ohlcv_http": 200,
+   "n_candles": 5,
+   "first_candle_ts": 1786363200,
+   "first_candle_close": 0.00021923447200397617,
+   "last_candle_ts": 1786377600,
+   "last_candle_close": 0.0002688796953094244,
+   "first_seen": "2026-08-10T16:52:05Z",
+   "desc": "The newest trend. PARKIFY your PFP and be part of the South Park movement",
+   "attempts": 1
   }
  },
- "cohort_size": 208,
- "updated": "2026-08-10T15:52:33Z",
- "probed": 208,
+ "cohort_size": 209,
+ "updated": "2026-08-10T16:52:12Z",
+ "probed": 209,
  "remaining": 0,
  "unresolved": 0
 }
