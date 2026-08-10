@@ -3141,11 +3141,26 @@
    "first_seen": "2026-08-10T17:47:05Z",
    "desc": "\ud83d\udc02 + \ud83d\udc33",
    "attempts": 1
+  },
+  "BdmpcoZpRyKXHzEBKcrW2Vpq3cDY45xVPPJuPMQNpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "3b9jYaK9muJDDD9VBqE9wEhH9F2SVfawemxVQUnFg7tr",
+   "live_liquidity_usd": 20770.5908,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1786392000,
+   "first_candle_close": 8.032631368463189e-05,
+   "last_candle_ts": 1786392000,
+   "last_candle_close": 8.032631368463189e-05,
+   "first_seen": "2026-08-10T20:17:05Z",
+   "desc": "Donating all fees directly to help support Zeus",
+   "attempts": 1
   }
  },
- "cohort_size": 210,
- "updated": "2026-08-10T17:47:11Z",
- "probed": 210,
+ "cohort_size": 211,
+ "updated": "2026-08-10T20:17:12Z",
+ "probed": 211,
  "remaining": 0,
  "unresolved": 0
 }
