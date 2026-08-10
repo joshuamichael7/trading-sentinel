@@ -3066,11 +3066,26 @@
    "first_seen": "2026-08-10T10:01:04Z",
    "desc": "pepe made the frog one of the main characters of internet culture\n\nyears later, ",
    "attempts": 1
+  },
+  "HpZSFUgEbzXe9AP2xdCik3pYBTifTr5tPTMrq65bpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "G6dG1ddxuNVeTtoZR8Kn5ycYfsxmm1mt4HCT9vEjRp4N",
+   "live_liquidity_usd": 37619.7689,
+   "ohlcv_http": 200,
+   "n_candles": 4,
+   "first_candle_ts": 1786345200,
+   "first_candle_close": 7.409438874949767e-05,
+   "last_candle_ts": 1786356000,
+   "last_candle_close": 0.0002654163131537775,
+   "first_seen": "2026-08-10T10:47:27Z",
+   "desc": "Toady doesn't need to go anywhere to be happy. Hop on the lily pad, enjoy the si",
+   "attempts": 1
   }
  },
- "cohort_size": 205,
- "updated": "2026-08-10T10:01:12Z",
- "probed": 205,
+ "cohort_size": 206,
+ "updated": "2026-08-10T10:47:34Z",
+ "probed": 206,
  "remaining": 0,
  "unresolved": 0
 }
