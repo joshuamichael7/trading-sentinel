@@ -3081,11 +3081,26 @@
    "first_seen": "2026-08-10T10:47:27Z",
    "desc": "Toady doesn't need to go anywhere to be happy. Hop on the lily pad, enjoy the si",
    "attempts": 1
+  },
+  "8Bq4XvNTgGTjkZxtU9hsxPnVabtJsKJ7bj2Cq1r1pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "D3z93pBRbMr353jXz33NqdfVWm7krvfzLyHSj6AGafkv",
+   "live_liquidity_usd": 21809.7255,
+   "ohlcv_http": 200,
+   "n_candles": 6,
+   "first_candle_ts": 1786356000,
+   "first_candle_close": 6.847676134511793e-05,
+   "last_candle_ts": 1786374000,
+   "last_candle_close": 9.793713510488134e-05,
+   "first_seen": "2026-08-10T15:47:27Z",
+   "desc": "Maci The Cat",
+   "attempts": 1
   }
  },
- "cohort_size": 206,
- "updated": "2026-08-10T10:47:34Z",
- "probed": 206,
+ "cohort_size": 207,
+ "updated": "2026-08-10T15:47:33Z",
+ "probed": 207,
  "remaining": 0,
  "unresolved": 0
 }
