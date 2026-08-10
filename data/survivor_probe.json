@@ -3126,11 +3126,26 @@
    "first_seen": "2026-08-10T16:52:05Z",
    "desc": "The newest trend. PARKIFY your PFP and be part of the South Park movement",
    "attempts": 1
+  },
+  "B4G24zZRUjZcuu4d5QTLpGFcaptXUUNmrLL4VBEmpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "49JM8rKhB11jbJPn1KkLz5YX87B97rWg2WfGisZKJYw4",
+   "live_liquidity_usd": 77494.7659,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1786374000,
+   "first_candle_close": 0.00046491115292277013,
+   "last_candle_ts": 1786381200,
+   "last_candle_close": 0.0010869591369014615,
+   "first_seen": "2026-08-10T17:47:05Z",
+   "desc": "\ud83d\udc02 + \ud83d\udc33",
+   "attempts": 1
   }
  },
- "cohort_size": 209,
- "updated": "2026-08-10T16:52:12Z",
- "probed": 209,
+ "cohort_size": 210,
+ "updated": "2026-08-10T17:47:11Z",
+ "probed": 210,
  "remaining": 0,
  "unresolved": 0
 }
