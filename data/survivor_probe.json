@@ -3216,11 +3216,26 @@
    "first_seen": "2026-08-11T13:13:27Z",
    "desc": "Never sell your orange.",
    "attempts": 1
+  },
+  "Ep8Er6t5gKgFRWvesgZMJdNkNmw2bcGjkez687Qmpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7Ut4nWiDSKQ6ZVrK296gRvDyQPsVXq8UMzNNZUdBJJrN",
+   "live_liquidity_usd": 32229.6897,
+   "ohlcv_http": 200,
+   "n_candles": 24,
+   "first_candle_ts": 1786374000,
+   "first_candle_close": 0.00017720145079399953,
+   "last_candle_ts": 1786456800,
+   "last_candle_close": 0.0001852819144479376,
+   "first_seen": "2026-08-11T14:43:27Z",
+   "desc": "Tuzki is one of Asia\u2019s most famous internet icons, an iconic Chinese rabbit whos",
+   "attempts": 1
   }
  },
- "cohort_size": 215,
- "updated": "2026-08-11T13:13:33Z",
- "probed": 215,
+ "cohort_size": 216,
+ "updated": "2026-08-11T14:43:34Z",
+ "probed": 216,
  "remaining": 0,
  "unresolved": 0
 }
