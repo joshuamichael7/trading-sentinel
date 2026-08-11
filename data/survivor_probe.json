@@ -3171,11 +3171,26 @@
    "first_seen": "2026-08-10T20:47:05Z",
    "desc": "Call it. Hold it. Get paid. 90% of all creator fees get shared EVERY SINGLE DAY ",
    "attempts": 1
+  },
+  "2uXzdgiVtuD3TFutqxu2mCKYBytuARkHhJMy7iWkpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "soHisoG5znaWQ32PwfBKZ5ZrsQjQJCMT8tGP7jVjsFU",
+   "live_liquidity_usd": 51139.3462,
+   "ohlcv_http": 200,
+   "n_candles": 25,
+   "first_candle_ts": 1786338000,
+   "first_candle_close": 0.00017121808707123298,
+   "last_candle_ts": 1786424400,
+   "last_candle_close": 0.0003630718513486734,
+   "first_seen": "2026-08-11T05:03:12Z",
+   "desc": "The flock is loud, friendly and always online. Come for the memes, stay for the ",
+   "attempts": 1
   }
  },
- "cohort_size": 212,
- "updated": "2026-08-10T20:47:12Z",
- "probed": 212,
+ "cohort_size": 213,
+ "updated": "2026-08-11T05:03:19Z",
+ "probed": 213,
  "remaining": 0,
  "unresolved": 0
 }
