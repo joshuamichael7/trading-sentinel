@@ -3276,11 +3276,26 @@
    "first_seen": "2026-08-11T18:52:46Z",
    "desc": "the first pepe was a giga toad",
    "attempts": 1
+  },
+  "DDqRBZQS8TtwdGtCfr8UinByTtWFeaUiRiY1tJwJpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "G2HxyUF8uUPTvBPvL9B3ntoEq9ZeJ4dXipVxZ4QkH7Ht",
+   "live_liquidity_usd": 21221.5988,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1786467600,
+   "first_candle_close": 3.0639118271738156e-05,
+   "last_candle_ts": 1786474800,
+   "last_candle_close": 9.412214561405948e-05,
+   "first_seen": "2026-08-11T19:47:46Z",
+   "desc": "bearwifcone",
+   "attempts": 1
   }
  },
- "cohort_size": 219,
- "updated": "2026-08-11T18:52:54Z",
- "probed": 219,
+ "cohort_size": 220,
+ "updated": "2026-08-11T19:47:53Z",
+ "probed": 220,
  "remaining": 0,
  "unresolved": 0
 }
