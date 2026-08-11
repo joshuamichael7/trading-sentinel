@@ -3231,11 +3231,26 @@
    "first_seen": "2026-08-11T14:43:27Z",
    "desc": "Tuzki is one of Asia\u2019s most famous internet icons, an iconic Chinese rabbit whos",
    "attempts": 1
+  },
+  "Ffvk8vcvnLiyRejQYpM3gr6KZTb5P8Eq5iFVCSzXpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "bp7hGEjyVjoxskrikM7sKE6ony5ne96pBaqfnWpjVsT",
+   "live_liquidity_usd": 3571.9124,
+   "ohlcv_http": 200,
+   "n_candles": 17,
+   "first_candle_ts": 1786402800,
+   "first_candle_close": 7.986281877895263e-05,
+   "last_candle_ts": 1786460400,
+   "last_candle_close": 3.960805667683044e-06,
+   "first_seen": "2026-08-11T15:42:46Z",
+   "desc": "Just a chill SeAl\u2071on",
+   "attempts": 1
   }
  },
- "cohort_size": 216,
- "updated": "2026-08-11T14:43:34Z",
- "probed": 216,
+ "cohort_size": 217,
+ "updated": "2026-08-11T15:42:53Z",
+ "probed": 217,
  "remaining": 0,
  "unresolved": 0
 }
