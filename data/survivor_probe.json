@@ -3201,11 +3201,26 @@
    "first_seen": "2026-08-11T09:48:27Z",
    "desc": "same chill less guy more frog\n\nfrogs have had the internet since pepe\nmight as w",
    "attempts": 1
+  },
+  "C6ASDsxzqBvF5bCQFVAGMRWwfgZNhfozbb9DkgiKpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6XH4qVc9eGbxeQe2ojA4yZfMzDE6xLsnVAYXMKcsRrtq",
+   "live_liquidity_usd": 85656.4333,
+   "ohlcv_http": 200,
+   "n_candles": 7,
+   "first_candle_ts": 1786431600,
+   "first_candle_close": 0.0002531385638385165,
+   "last_candle_ts": 1786453200,
+   "last_candle_close": 0.0012145948800561745,
+   "first_seen": "2026-08-11T13:13:27Z",
+   "desc": "Never sell your orange.",
+   "attempts": 1
   }
  },
- "cohort_size": 214,
- "updated": "2026-08-11T09:48:34Z",
- "probed": 214,
+ "cohort_size": 215,
+ "updated": "2026-08-11T13:13:33Z",
+ "probed": 215,
  "remaining": 0,
  "unresolved": 0
 }
