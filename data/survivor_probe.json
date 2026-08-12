@@ -3291,11 +3291,26 @@
    "first_seen": "2026-08-11T19:47:46Z",
    "desc": "bearwifcone",
    "attempts": 1
+  },
+  "6WMszYPHAxEFgstkEpyRRwzaVtA9eM5pWvSf8v7qpump": {
+   "pools_http": 200,
+   "n_pools": 5,
+   "pool": "GbPw6T2qDs6V4p61sVX2o71nWMbboqdPoiS2foD8q4Mk",
+   "live_liquidity_usd": 21420.2027,
+   "ohlcv_http": 200,
+   "n_candles": 12,
+   "first_candle_ts": 1786456800,
+   "first_candle_close": 5.0688260365311105e-05,
+   "last_candle_ts": 1786496400,
+   "last_candle_close": 8.648725752485097e-05,
+   "first_seen": "2026-08-12T01:20:41Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 220,
- "updated": "2026-08-11T19:47:53Z",
- "probed": 220,
+ "cohort_size": 221,
+ "updated": "2026-08-12T01:20:48Z",
+ "probed": 221,
  "remaining": 0,
  "unresolved": 0
 }
