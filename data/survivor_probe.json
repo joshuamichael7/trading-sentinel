@@ -3381,11 +3381,26 @@
    "first_seen": "2026-08-12T18:54:07Z",
    "desc": "The cuter version of our beloved SHIB",
    "attempts": 1
+  },
+  "38Yai6pCdeXkixtHUxFutsWK2vKNLZfPa8tW2HAhpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "CAxngWqxS3ziQsJHSvSNzug4rCb4a6Bt4FKUP8jQ6eBH",
+   "live_liquidity_usd": 34279.5716,
+   "ohlcv_http": 200,
+   "n_candles": 5,
+   "first_candle_ts": 1786546800,
+   "first_candle_close": 4.213133214458808e-05,
+   "last_candle_ts": 1786561200,
+   "last_candle_close": 0.00021675037277440716,
+   "first_seen": "2026-08-12T19:45:33Z",
+   "desc": "Autonomous liquidity infrastructure - $seedcoin. Deep, efficient, sustainable li",
+   "attempts": 1
   }
  },
- "cohort_size": 226,
- "updated": "2026-08-12T18:54:15Z",
- "probed": 226,
+ "cohort_size": 227,
+ "updated": "2026-08-12T19:45:40Z",
+ "probed": 227,
  "remaining": 0,
  "unresolved": 0
 }
