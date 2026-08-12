@@ -3306,11 +3306,26 @@
    "first_seen": "2026-08-12T01:20:41Z",
    "desc": "",
    "attempts": 1
+  },
+  "7xwJQh4jX5pgkLrKCcij4UXcdyXWxDwzeVr65NmKpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "8U1RzPnWJqBovTF937bSBm39rk5jJ1UpGPUgD9MCC7M8",
+   "live_liquidity_usd": 39291.704,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786492800,
+   "first_candle_close": 3.9457201285622e-05,
+   "last_candle_ts": 1786496400,
+   "last_candle_close": 0.0003060195646142981,
+   "first_seen": "2026-08-12T01:45:41Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 221,
- "updated": "2026-08-12T01:20:48Z",
- "probed": 221,
+ "cohort_size": 222,
+ "updated": "2026-08-12T01:45:48Z",
+ "probed": 222,
  "remaining": 0,
  "unresolved": 0
 }
