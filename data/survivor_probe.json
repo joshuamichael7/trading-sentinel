@@ -3366,11 +3366,26 @@
    "first_seen": "2026-08-12T12:44:05Z",
    "desc": "Tinkerbull ($TINKBULL)\nWhere Pixie Dust Meets Bull Power.\n\nTinkerbull isn't just",
    "attempts": 1
+  },
+  "5nZMRLSFnA3oWXXswKyyaW5or2FFy34tkTUhtkWPpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "DSiMBS1ueSLmjpt9WB9XKMFeuUjUK1YKcrSn7R2etQDX",
+   "live_liquidity_usd": 25610.1738,
+   "ohlcv_http": 200,
+   "n_candles": 6,
+   "first_candle_ts": 1786539600,
+   "first_candle_close": 0.0002642173345439689,
+   "last_candle_ts": 1786557600,
+   "last_candle_close": 0.00013143793581519114,
+   "first_seen": "2026-08-12T18:54:07Z",
+   "desc": "The cuter version of our beloved SHIB",
+   "attempts": 1
   }
  },
- "cohort_size": 225,
- "updated": "2026-08-12T12:44:12Z",
- "probed": 225,
+ "cohort_size": 226,
+ "updated": "2026-08-12T18:54:15Z",
+ "probed": 226,
  "remaining": 0,
  "unresolved": 0
 }
