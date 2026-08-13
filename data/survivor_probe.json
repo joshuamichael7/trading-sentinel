@@ -3441,11 +3441,26 @@
    "first_seen": "2026-08-13T13:42:24Z",
    "desc": "THINK LESS  FROG MORE\n\nsee something you like? frog it\ngot a feeling? frog it\nst",
    "attempts": 1
+  },
+  "FM7btH3zydALWGs2fAX2EA4g6sDAUxgXdb3UcMdMpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7LA6sPo4MFxzB4nEaXhwYcXBAQNMeoZfeKuoHJtKgR3F",
+   "live_liquidity_usd": 28991.9141,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1786651200,
+   "first_candle_close": 0.0001587774547374654,
+   "last_candle_ts": 1786651200,
+   "last_candle_close": 0.0001587774547374654,
+   "first_seen": "2026-08-13T20:48:31Z",
+   "desc": "$GATTO. The cat to save the trenches.",
+   "attempts": 1
   }
  },
- "cohort_size": 230,
- "updated": "2026-08-13T13:42:30Z",
- "probed": 230,
+ "cohort_size": 231,
+ "updated": "2026-08-13T20:48:39Z",
+ "probed": 231,
  "remaining": 0,
  "unresolved": 0
 }
