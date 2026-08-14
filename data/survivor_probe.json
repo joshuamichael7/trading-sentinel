@@ -3531,11 +3531,26 @@
    "first_seen": "2026-08-14T09:54:59Z",
    "desc": "why would you cat",
    "attempts": 1
+  },
+  "J6xVFRZTX8Q5pd8tdxRcM7D43EmpAyXrCCpXh9TRpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "4dLc1yECD1STU1RzE2hVTzp4riKTfo6RTiFA7kgNHUBV",
+   "live_liquidity_usd": 46806.5251,
+   "ohlcv_http": 200,
+   "n_candles": 24,
+   "first_candle_ts": 1786622400,
+   "first_candle_close": 0.00016183251035162448,
+   "last_candle_ts": 1786705200,
+   "last_candle_close": 0.000431998928148204,
+   "first_seen": "2026-08-14T11:59:59Z",
+   "desc": "NETBOY is a nostalgic meme-driven token inspired by a kid who first logged onto ",
+   "attempts": 1
   }
  },
- "cohort_size": 236,
- "updated": "2026-08-14T09:55:06Z",
- "probed": 236,
+ "cohort_size": 237,
+ "updated": "2026-08-14T12:00:05Z",
+ "probed": 237,
  "remaining": 0,
  "unresolved": 0
 }
