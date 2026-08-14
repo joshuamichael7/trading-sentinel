@@ -3501,11 +3501,26 @@
    "first_seen": "2026-08-14T03:14:01Z",
    "desc": "Somewhere between looking effortlessly put together and doing absolutely nothing",
    "attempts": 1
+  },
+  "Edpcd9aYh6BVRKV5hYrgnEuJ3MHAFcdnHtSL9yvopump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "BraoeZS1ZhzdQwQWKwNH3z4ouyLxvLCvgLpfHhBVZChT",
+   "live_liquidity_usd": 27714.8761,
+   "ohlcv_http": 200,
+   "n_candles": 119,
+   "first_candle_ts": 1786118400,
+   "first_candle_close": 3.5261576334686884e-05,
+   "last_candle_ts": 1786698000,
+   "last_candle_close": 0.00014349941221451022,
+   "first_seen": "2026-08-14T09:14:59Z",
+   "desc": "Smack the Pi\u00f1ata! Join the Fun!",
+   "attempts": 1
   }
  },
- "cohort_size": 234,
- "updated": "2026-08-14T03:14:08Z",
- "probed": 234,
+ "cohort_size": 235,
+ "updated": "2026-08-14T09:15:05Z",
+ "probed": 235,
  "remaining": 0,
  "unresolved": 0
 }
