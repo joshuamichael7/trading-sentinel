@@ -3576,11 +3576,26 @@
    "first_seen": "2026-08-14T23:20:42Z",
    "desc": "Hold Fart, Receive Fartcoin",
    "attempts": 1
+  },
+  "FovzRhvWDSw6KcCZ7XG76ANXUHRvU4Vuyu8NVhmopump": {
+   "pools_http": 200,
+   "n_pools": 1,
+   "pool": "9iFUf6NcDt7m8Twtnm14yZXNDJug5eQ1daNsjUeEg4dc",
+   "live_liquidity_usd": 6298.7527,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1786748400,
+   "first_candle_close": 2.4030159978881683e-05,
+   "last_candle_ts": 1786748400,
+   "last_candle_close": 2.4030159978881683e-05,
+   "first_seen": "2026-08-14T23:50:42Z",
+   "desc": "The Wall Street betting arena on Solana.",
+   "attempts": 1
   }
  },
- "cohort_size": 239,
- "updated": "2026-08-14T23:20:49Z",
- "probed": 239,
+ "cohort_size": 240,
+ "updated": "2026-08-14T23:50:48Z",
+ "probed": 240,
  "remaining": 0,
  "unresolved": 0
 }
