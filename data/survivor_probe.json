@@ -3516,11 +3516,26 @@
    "first_seen": "2026-08-14T09:14:59Z",
    "desc": "Smack the Pi\u00f1ata! Join the Fun!",
    "attempts": 1
+  },
+  "ESJjRXALCHz2X1rN1djwyUdCwpSYKXM1a15Suugcpump": {
+   "pools_http": 200,
+   "n_pools": 7,
+   "pool": "RvZaL6bBpjnqr6vzexSRpP2E95r6KdyDQGakeRs2bdn",
+   "live_liquidity_usd": 20935.6124,
+   "ohlcv_http": 200,
+   "n_candles": 13,
+   "first_candle_ts": 1786654800,
+   "first_candle_close": 8.613988271826892e-05,
+   "last_candle_ts": 1786698000,
+   "last_candle_close": 8.703358505346782e-05,
+   "first_seen": "2026-08-14T09:54:59Z",
+   "desc": "why would you cat",
+   "attempts": 1
   }
  },
- "cohort_size": 235,
- "updated": "2026-08-14T09:15:05Z",
- "probed": 235,
+ "cohort_size": 236,
+ "updated": "2026-08-14T09:55:06Z",
+ "probed": 236,
  "remaining": 0,
  "unresolved": 0
 }
