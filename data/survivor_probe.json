@@ -3546,11 +3546,26 @@
    "first_seen": "2026-08-14T11:59:59Z",
    "desc": "NETBOY is a nostalgic meme-driven token inspired by a kid who first logged onto ",
    "attempts": 1
+  },
+  "GS2jgH6874i1txo8CUnudz7N1gAuA9CtRHLXN1Npump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "EhqqE4wq1Q6jtaWXvs9GQsaPZr3oLMCxKFUx7smWBu9A",
+   "live_liquidity_usd": 20489.2467,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1786712400,
+   "first_candle_close": 8.520469391797054e-05,
+   "last_candle_ts": 1786712400,
+   "last_candle_close": 8.520469391797054e-05,
+   "first_seen": "2026-08-14T13:49:59Z",
+   "desc": "Cashelon",
+   "attempts": 1
   }
  },
- "cohort_size": 237,
- "updated": "2026-08-14T12:00:05Z",
- "probed": 237,
+ "cohort_size": 238,
+ "updated": "2026-08-14T13:50:06Z",
+ "probed": 238,
  "remaining": 0,
  "unresolved": 0
 }
