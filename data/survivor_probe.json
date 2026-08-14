@@ -3561,11 +3561,26 @@
    "first_seen": "2026-08-14T13:49:59Z",
    "desc": "Cashelon",
    "attempts": 1
+  },
+  "FqNUcgaYN5sgemWVCuZpGvy6EYD3Yuo3amFcM1w51Xk3": {
+   "pools_http": 200,
+   "n_pools": 10,
+   "pool": "sjSCmQA7kBgfugsZNphw5brpPZfFP9RRJktV7W5FvHw",
+   "live_liquidity_usd": 88467.0948,
+   "ohlcv_http": 200,
+   "n_candles": 21,
+   "first_candle_ts": 1786676400,
+   "first_candle_close": 0.0008270177831308609,
+   "last_candle_ts": 1786748400,
+   "last_candle_close": 0.0004463114065310823,
+   "first_seen": "2026-08-14T23:20:42Z",
+   "desc": "Hold Fart, Receive Fartcoin",
+   "attempts": 1
   }
  },
- "cohort_size": 238,
- "updated": "2026-08-14T13:50:06Z",
- "probed": 238,
+ "cohort_size": 239,
+ "updated": "2026-08-14T23:20:49Z",
+ "probed": 239,
  "remaining": 0,
  "unresolved": 0
 }
