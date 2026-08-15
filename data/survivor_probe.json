@@ -3666,11 +3666,26 @@
    "first_seen": "2026-08-15T16:52:02Z",
    "desc": "Most frogs chase whatever is moving on the surface. TOADLAYER begins where the s",
    "attempts": 1
+  },
+  "69tJh32kgR7u6Vqyrw2xnwLoCsjY5AiG8PqNivM7pump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "55DUe1Y7uGCLwKYJWEnAXRkDtA3UCA2cAo7RgTVzg3rB",
+   "live_liquidity_usd": 21436.8518,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786816800,
+   "first_candle_close": 0.00011019593429749339,
+   "last_candle_ts": 1786820400,
+   "last_candle_close": 9.767510110536634e-05,
+   "first_seen": "2026-08-15T19:12:30Z",
+   "desc": "COIN",
+   "attempts": 1
   }
  },
- "cohort_size": 245,
- "updated": "2026-08-15T16:52:09Z",
- "probed": 245,
+ "cohort_size": 246,
+ "updated": "2026-08-15T19:12:37Z",
+ "probed": 246,
  "remaining": 0,
  "unresolved": 0
 }
