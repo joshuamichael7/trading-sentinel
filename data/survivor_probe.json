@@ -3621,11 +3621,26 @@
    "first_seen": "2026-08-15T02:45:55Z",
    "desc": "Observe. Analyze. Execute.\nJust the plan.",
    "attempts": 1
+  },
+  "Cxk8v9T9jJFjjwG1cXrQYsGrhx8FcW9RERXm1hXDpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "2EuhLyM28hK6v4wbEM9hz4tg71qqjmaUq9EutaFbrjSU",
+   "live_liquidity_usd": 24917.0736,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786784400,
+   "first_candle_close": 8.768250878246496e-05,
+   "last_candle_ts": 1786788000,
+   "last_candle_close": 0.00013045372172926516,
+   "first_seen": "2026-08-15T10:51:28Z",
+   "desc": "it\u2019s FORG.\n\na frog spelled wrong \nenough times that eventually it became right",
+   "attempts": 1
   }
  },
- "cohort_size": 242,
- "updated": "2026-08-15T02:46:01Z",
- "probed": 242,
+ "cohort_size": 243,
+ "updated": "2026-08-15T10:51:34Z",
+ "probed": 243,
  "remaining": 0,
  "unresolved": 0
 }
