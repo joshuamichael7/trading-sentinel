@@ -3591,11 +3591,26 @@
    "first_seen": "2026-08-14T23:50:42Z",
    "desc": "The Wall Street betting arena on Solana.",
    "attempts": 1
+  },
+  "6Fjp4SHuPkjJusTxgm2ft6dpyYeGedkBUm7GHzPbpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "eW32AjEwxBML3b7B9HJFKBvxWNpzDZpeZgeDqeZyhGu",
+   "live_liquidity_usd": 19528.4521,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1786748400,
+   "first_candle_close": 5.882512168294892e-05,
+   "last_candle_ts": 1786755600,
+   "last_candle_close": 7.883915679850558e-05,
+   "first_seen": "2026-08-15T01:30:42Z",
+   "desc": "You sold the bottom didn't you",
+   "attempts": 1
   }
  },
- "cohort_size": 240,
- "updated": "2026-08-14T23:50:48Z",
- "probed": 240,
+ "cohort_size": 241,
+ "updated": "2026-08-15T01:30:48Z",
+ "probed": 241,
  "remaining": 0,
  "unresolved": 0
 }
