@@ -3741,11 +3741,26 @@
    "first_seen": "2026-08-16T13:20:24Z",
    "desc": "",
    "attempts": 1
+  },
+  "8TRVDZhYRUHYyrftAfxHjYnsetKFzspUp9qq31pmpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "B7uwaGitsGBoEKBU3Gc1rbzKdCnj6YB4UmJrD46iubsS",
+   "live_liquidity_usd": 25738.2077,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786899600,
+   "first_candle_close": 9.014051063400847e-05,
+   "last_candle_ts": 1786903200,
+   "last_candle_close": 0.00012855551343561483,
+   "first_seen": "2026-08-16T18:28:10Z",
+   "desc": "THE BULL IS COMING",
+   "attempts": 1
   }
  },
- "cohort_size": 250,
- "updated": "2026-08-16T13:20:31Z",
- "probed": 250,
+ "cohort_size": 251,
+ "updated": "2026-08-16T18:28:16Z",
+ "probed": 251,
  "remaining": 0,
  "unresolved": 0
 }
