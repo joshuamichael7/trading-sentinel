@@ -3771,11 +3771,26 @@
    "first_seen": "2026-08-16T21:58:09Z",
    "desc": "",
    "attempts": 1
+  },
+  "G5WsEp3voREADpMVG11LVQGBmvXbH5PpvjQeFMyapump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "9LWad8MvENXQj2fpgtvSqEk5X5XjpTtdAazn5UGPMVxM",
+   "live_liquidity_usd": 4336.4358,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1786910400,
+   "first_candle_close": 0.0001123660221079261,
+   "last_candle_ts": 1786917600,
+   "last_candle_close": 5.444151299760371e-06,
+   "first_seen": "2026-08-16T22:48:09Z",
+   "desc": "WhaleCoin",
+   "attempts": 1
   }
  },
- "cohort_size": 252,
- "updated": "2026-08-16T21:58:15Z",
- "probed": 252,
+ "cohort_size": 253,
+ "updated": "2026-08-16T22:48:15Z",
+ "probed": 253,
  "remaining": 0,
  "unresolved": 0
 }
