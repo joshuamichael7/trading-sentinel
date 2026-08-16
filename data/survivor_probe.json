@@ -3681,11 +3681,26 @@
    "first_seen": "2026-08-15T19:12:30Z",
    "desc": "COIN",
    "attempts": 1
+  },
+  "6WS1NsTCjB1VFvVL8CjqUkB4VtK4fQ3sMPrN5e7rpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "5VrEmR5Ti55BMyWVZh4Qs6R7VH1kT8bkssGUAFZ7CWqm",
+   "live_liquidity_usd": 23389.2755,
+   "ohlcv_http": 200,
+   "n_candles": 14,
+   "first_candle_ts": 1786813200,
+   "first_candle_close": 4.880227866981978e-05,
+   "last_candle_ts": 1786860000,
+   "last_candle_close": 0.00010552147412346429,
+   "first_seen": "2026-08-16T06:04:32Z",
+   "desc": "The first plush toy to make it onto HLTV.\nA joke became a meme.\nThe meme became ",
+   "attempts": 1
   }
  },
- "cohort_size": 246,
- "updated": "2026-08-15T19:12:37Z",
- "probed": 246,
+ "cohort_size": 247,
+ "updated": "2026-08-16T06:04:38Z",
+ "probed": 247,
  "remaining": 0,
  "unresolved": 0
 }
