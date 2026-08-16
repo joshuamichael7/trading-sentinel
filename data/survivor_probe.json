@@ -3696,11 +3696,26 @@
    "first_seen": "2026-08-16T06:04:32Z",
    "desc": "The first plush toy to make it onto HLTV.\nA joke became a meme.\nThe meme became ",
    "attempts": 1
+  },
+  "5upMUvnBmnAKqMoMFADSixXdJU39oxsbSTBWhMVnpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "42rRyeWqaK79ZauuvLydZS2vfE227smHZhPVgxWWZV5g",
+   "live_liquidity_usd": 6351.819,
+   "ohlcv_http": 200,
+   "n_candles": 15,
+   "first_candle_ts": 1786827600,
+   "first_candle_close": 4.2816111765735675e-05,
+   "last_candle_ts": 1786878000,
+   "last_candle_close": 1.0249070571298352e-05,
+   "first_seen": "2026-08-16T11:10:10Z",
+   "desc": "My good friend The Black Bull has told me about the solana community.\n\n10% of th",
+   "attempts": 1
   }
  },
- "cohort_size": 247,
- "updated": "2026-08-16T06:04:38Z",
- "probed": 247,
+ "cohort_size": 248,
+ "updated": "2026-08-16T11:10:16Z",
+ "probed": 248,
  "remaining": 0,
  "unresolved": 0
 }
