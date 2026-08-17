@@ -3846,11 +3846,26 @@
    "first_seen": "2026-08-17T14:21:01Z",
    "desc": "SOLCAT\nAll roads lead to Solana.\nNo other chain deserves a billion-dollar cat co",
    "attempts": 1
+  },
+  "Fi4FaMHyNCbeAatCt3mcesP9UPfuALzCckPVyAFcpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "Gd1nXAueevgbExGs3yxi9eCQS9NmW5oavhAKUZ9AQXdn",
+   "live_liquidity_usd": 59008.115,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786986000,
+   "first_candle_close": 0.0007288537032911516,
+   "last_candle_ts": 1786989600,
+   "last_candle_close": 0.0007214289675317148,
+   "first_seen": "2026-08-17T18:31:01Z",
+   "desc": "official streaming coin. used primarily for streaming.",
+   "attempts": 1
   }
  },
- "cohort_size": 257,
- "updated": "2026-08-17T14:21:07Z",
- "probed": 257,
+ "cohort_size": 258,
+ "updated": "2026-08-17T18:31:08Z",
+ "probed": 258,
  "remaining": 0,
  "unresolved": 0
 }
