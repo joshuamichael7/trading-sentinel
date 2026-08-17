@@ -3861,11 +3861,26 @@
    "first_seen": "2026-08-17T18:31:01Z",
    "desc": "official streaming coin. used primarily for streaming.",
    "attempts": 1
+  },
+  "7MQSupJTpY31HGChEHUAsS1pQhLSrHS5CCsB9bnaN3eS": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "EHDhT6eFDAB3GND6n9sGHYnMR7nw2wV5rZ4w3ZudVLKo",
+   "live_liquidity_usd": 370905.214,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1786989600,
+   "first_candle_close": 0.001014520948170704,
+   "last_candle_ts": 1786993200,
+   "last_candle_close": 0.0008275173940268095,
+   "first_seen": "2026-08-17T19:02:42Z",
+   "desc": "The Z Coin.",
+   "attempts": 1
   }
  },
- "cohort_size": 258,
- "updated": "2026-08-17T18:31:08Z",
- "probed": 258,
+ "cohort_size": 259,
+ "updated": "2026-08-17T19:02:48Z",
+ "probed": 259,
  "remaining": 0,
  "unresolved": 0
 }
