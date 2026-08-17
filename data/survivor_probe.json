@@ -3816,11 +3816,26 @@
    "first_seen": "2026-08-17T06:34:56Z",
    "desc": "A little otter living at its own pace, exploring whatever catches its attention ",
    "attempts": 1
+  },
+  "LFEJTxJ9yi6ojGDFpjbGfABLbH55Fc3oEK8syJJpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "8TbYi38UqcedfptvjN2rURLbGbGub3itp2hgLvvS35hY",
+   "live_liquidity_usd": 180941.3848,
+   "ohlcv_http": 200,
+   "n_candles": 120,
+   "first_candle_ts": 1786543200,
+   "first_candle_close": 0.0001234636580564295,
+   "last_candle_ts": 1786971600,
+   "last_candle_close": 0.004871236654828442,
+   "first_seen": "2026-08-17T13:01:00Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 255,
- "updated": "2026-08-17T06:35:08Z",
- "probed": 255,
+ "cohort_size": 256,
+ "updated": "2026-08-17T13:01:06Z",
+ "probed": 256,
  "remaining": 0,
  "unresolved": 0
 }
