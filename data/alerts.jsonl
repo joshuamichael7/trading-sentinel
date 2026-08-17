@@ -11,3 +11,4 @@
 {"ts": "2026-07-31T15:27:09Z", "alert": "ALERT MAJ-002 (BTC, long): within 2% of stop 61500 \u2014 price 62418.0"}
 {"ts": "2026-08-12T04:45:41Z", "alert": "ALERT MEME-001 (ANSEM): trailing stop hit (40% off high 0.2259) \u2014 price 0.1017"}
 {"ts": "2026-08-12T04:45:41Z", "alert": "ALERT MEME-001 (ANSEM): moved -47.6% since last sample \u2014 price 0.1017"}
+{"ts": "2026-08-17T16:11:01Z", "alert": "ALERT MEME-001 (ANSEM): moved +17.9% since last sample \u2014 price 0.2924"}
