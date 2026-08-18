@@ -3906,11 +3906,26 @@
    "first_seen": "2026-08-18T05:27:53Z",
    "desc": "Let\u2019s dance with Gori, the Japanese gorilla with moves that never stop!",
    "attempts": 1
+  },
+  "H9fikySbqRei3wxMdjtW9GHTdp8r8h4SZma2dsUwpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "Gktfz2vNXKjCnCewNUUStFwuWqL8xfH5Qus6C5TVq7vu",
+   "live_liquidity_usd": 36579.814,
+   "ohlcv_http": 200,
+   "n_candles": 8,
+   "first_candle_ts": 1787036400,
+   "first_candle_close": 0.00012369694384639133,
+   "last_candle_ts": 1787061600,
+   "last_candle_close": 0.0002483146110091178,
+   "first_seen": "2026-08-18T14:57:51Z",
+   "desc": "Got milk to moo(n).\nExperience the world's first dairy-powered financial system.",
+   "attempts": 1
   }
  },
- "cohort_size": 261,
- "updated": "2026-08-18T05:28:00Z",
- "probed": 261,
+ "cohort_size": 262,
+ "updated": "2026-08-18T14:57:58Z",
+ "probed": 262,
  "remaining": 0,
  "unresolved": 0
 }
