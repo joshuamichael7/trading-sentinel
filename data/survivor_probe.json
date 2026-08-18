@@ -3966,11 +3966,26 @@
    "first_seen": "2026-08-18T17:52:52Z",
    "desc": "The bull market's best friend.\nBuilt like a dog.\nRuns like a bull.\n$BULLDOG",
    "attempts": 1
+  },
+  "FqBzU27KvwRKki7ZLzVMBgtKaVjdE64nfEkL1An1pump": {
+   "pools_http": 200,
+   "n_pools": 0,
+   "pool": null,
+   "live_liquidity_usd": null,
+   "ohlcv_http": null,
+   "n_candles": 0,
+   "first_candle_ts": null,
+   "first_candle_close": null,
+   "last_candle_ts": null,
+   "last_candle_close": null,
+   "first_seen": "2026-08-18T19:37:48Z",
+   "desc": "$ZBULL is born. \ud83d\udc02\u26a1\ufe0f\nZ500 brought the speed. The Bull brought the force.",
+   "attempts": 1
   }
  },
- "cohort_size": 265,
- "updated": "2026-08-18T17:52:59Z",
- "probed": 265,
+ "cohort_size": 266,
+ "updated": "2026-08-18T19:37:54Z",
+ "probed": 266,
  "remaining": 0,
  "unresolved": 0
 }
