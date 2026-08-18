@@ -3951,11 +3951,26 @@
    "first_seen": "2026-08-18T17:02:52Z",
    "desc": "",
    "attempts": 1
+  },
+  "3rC1aughedydZfETxDQXtNEfQ4xGZ5oJC1JcLVBspump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "DsXxQw5sxd7tLLwZYLYvH3AHzAj5LRNYjruihTF5jUg2",
+   "live_liquidity_usd": 2166.5391,
+   "ohlcv_http": 200,
+   "n_candles": 19,
+   "first_candle_ts": 1787004000,
+   "first_candle_close": 4.176735733394612e-05,
+   "last_candle_ts": 1787072400,
+   "last_candle_close": 2.1908552335534147e-06,
+   "first_seen": "2026-08-18T17:52:52Z",
+   "desc": "The bull market's best friend.\nBuilt like a dog.\nRuns like a bull.\n$BULLDOG",
+   "attempts": 1
   }
  },
- "cohort_size": 264,
- "updated": "2026-08-18T17:02:59Z",
- "probed": 264,
+ "cohort_size": 265,
+ "updated": "2026-08-18T17:52:59Z",
+ "probed": 265,
  "remaining": 0,
  "unresolved": 0
 }
