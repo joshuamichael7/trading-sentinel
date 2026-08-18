@@ -3876,11 +3876,26 @@
    "first_seen": "2026-08-17T19:02:42Z",
    "desc": "The Z Coin.",
    "attempts": 1
+  },
+  "9pqWPKYYtmPfocSbweWfWRFqv7EKbHtZrhQjBQqMpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "5Kz7amvDgyuQ95fAG4WssRrEsB1GonGNCoVA736jkaLm",
+   "live_liquidity_usd": 23223.8935,
+   "ohlcv_http": 200,
+   "n_candles": 10,
+   "first_candle_ts": 1786982400,
+   "first_candle_close": 7.24703124905235e-05,
+   "last_candle_ts": 1787014800,
+   "last_candle_close": 0.00011122720386045147,
+   "first_seen": "2026-08-18T01:27:53Z",
+   "desc": "Teh Furst Blek Bull",
+   "attempts": 1
   }
  },
- "cohort_size": 259,
- "updated": "2026-08-17T19:02:48Z",
- "probed": 259,
+ "cohort_size": 260,
+ "updated": "2026-08-18T01:28:00Z",
+ "probed": 260,
  "remaining": 0,
  "unresolved": 0
 }
