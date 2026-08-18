@@ -3891,11 +3891,26 @@
    "first_seen": "2026-08-18T01:27:53Z",
    "desc": "Teh Furst Blek Bull",
    "attempts": 1
+  },
+  "Drac2HBT8Fxt9SauZj8yVWUUyZbE5gZ9fNzXqL8Kpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6jCybPJQRXoZz12sCbxE1VotcpiE6udUC1G5kYe6PT7k",
+   "live_liquidity_usd": 32553.5574,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787025600,
+   "first_candle_close": 0.00015595360998863137,
+   "last_candle_ts": 1787029200,
+   "last_candle_close": 0.00023736942701567285,
+   "first_seen": "2026-08-18T05:27:53Z",
+   "desc": "Let\u2019s dance with Gori, the Japanese gorilla with moves that never stop!",
+   "attempts": 1
   }
  },
- "cohort_size": 260,
- "updated": "2026-08-18T01:28:00Z",
- "probed": 260,
+ "cohort_size": 261,
+ "updated": "2026-08-18T05:28:00Z",
+ "probed": 261,
  "remaining": 0,
  "unresolved": 0
 }
