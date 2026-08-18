@@ -3921,11 +3921,26 @@
    "first_seen": "2026-08-18T14:57:51Z",
    "desc": "Got milk to moo(n).\nExperience the world's first dairy-powered financial system.",
    "attempts": 1
+  },
+  "5gkuTAKAskEhhc1D6ACtF6mmstfCg2Ldm5qT4C84pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "EfZSY5rEbGymT6zfBiovR6ty9GosqjEs6bs6hmTkrv1c",
+   "live_liquidity_usd": 38735.4454,
+   "ohlcv_http": 200,
+   "n_candles": 4,
+   "first_candle_ts": 1787054400,
+   "first_candle_close": 0.00010343998533153889,
+   "last_candle_ts": 1787065200,
+   "last_candle_close": 0.00028313181116557394,
+   "first_seen": "2026-08-18T15:22:51Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 262,
- "updated": "2026-08-18T14:57:58Z",
- "probed": 262,
+ "cohort_size": 263,
+ "updated": "2026-08-18T15:22:58Z",
+ "probed": 263,
  "remaining": 0,
  "unresolved": 0
 }
