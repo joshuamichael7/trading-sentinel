@@ -4041,11 +4041,26 @@
    "first_seen": "2026-08-19T09:10:31Z",
    "desc": "Utang a Tiny Monkey with Countless Expressions.\nMeeting confusing moments with r",
    "attempts": 1
+  },
+  "FtateF34Xzawa91bpbVNdX72hZYo9cymRDYqBreHHbJi": {
+   "pools_http": 200,
+   "n_pools": 7,
+   "pool": "6tMVLioTrzW65RWRAftNWPSf1JikYWRVsP87w9h9em2a",
+   "live_liquidity_usd": 32810.3544,
+   "ohlcv_http": 200,
+   "n_candles": 5,
+   "first_candle_ts": 1787130000,
+   "first_candle_close": 0.00024994673499697845,
+   "last_candle_ts": 1787144400,
+   "last_candle_close": 0.0002021102387243943,
+   "first_seen": "2026-08-19T13:24:30Z",
+   "desc": "Before the dog wore a hat, he wore pants. Meme from 2016.",
+   "attempts": 1
   }
  },
- "cohort_size": 270,
- "updated": "2026-08-19T09:10:37Z",
- "probed": 270,
+ "cohort_size": 271,
+ "updated": "2026-08-19T13:24:37Z",
+ "probed": 271,
  "remaining": 0,
  "unresolved": 0
 }
