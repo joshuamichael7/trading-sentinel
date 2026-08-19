@@ -4071,11 +4071,26 @@
    "first_seen": "2026-08-19T14:14:30Z",
    "desc": "$ANSEMBULL \u2014 THE GOLDEN BULL IS HERE \ud83d\udc02\u26a1\ufe0f\nANSEMBULL is a community-powered token ",
    "attempts": 1
+  },
+  "CzymhMxfqWxuf4y5xiAdRYXBK7ozMLLum2g6WDGgpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "2b85UCz6LCcCaZ3YfqnahdcP113KeEQuQgfcgC98T2tg",
+   "live_liquidity_usd": 22230.6688,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787162400,
+   "first_candle_close": 9.613873708129297e-05,
+   "last_candle_ts": 1787166000,
+   "last_candle_close": 0.00010616760693260556,
+   "first_seen": "2026-08-19T19:00:06Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 272,
- "updated": "2026-08-19T14:14:38Z",
- "probed": 272,
+ "cohort_size": 273,
+ "updated": "2026-08-19T19:00:15Z",
+ "probed": 273,
  "remaining": 0,
  "unresolved": 0
 }
