@@ -3996,11 +3996,26 @@
    "first_seen": "2026-08-18T20:32:48Z",
    "desc": "First golden coin on Ansem's launchpad (23.500$ burned)",
    "attempts": 1
+  },
+  "4Xg9qDuEP1vMEwqMr2yWo92Yn9a7xZu5BNQBbXVfpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "CcfmG8AruateK12bhMo2BHNYQiQ1JiWLyTBzmMwKuZip",
+   "live_liquidity_usd": 27407.554,
+   "ohlcv_http": 200,
+   "n_candles": 8,
+   "first_candle_ts": 1787072400,
+   "first_candle_close": 4.6230257819049695e-05,
+   "last_candle_ts": 1787097600,
+   "last_candle_close": 0.00015768609678433877,
+   "first_seen": "2026-08-19T00:22:48Z",
+   "desc": "Newbie is here to onboard the next wave of crypto newbies and bring them into th",
+   "attempts": 1
   }
  },
- "cohort_size": 267,
- "updated": "2026-08-18T20:32:57Z",
- "probed": 267,
+ "cohort_size": 268,
+ "updated": "2026-08-19T00:22:56Z",
+ "probed": 268,
  "remaining": 0,
  "unresolved": 0
 }
