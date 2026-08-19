@@ -4011,11 +4011,26 @@
    "first_seen": "2026-08-19T00:22:48Z",
    "desc": "Newbie is here to onboard the next wave of crypto newbies and bring them into th",
    "attempts": 1
+  },
+  "FJBWgfc8wdEeUc2n7BN9EcmEJQUauvvpp9ZXvmF2pump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "HyPxvGY6wr3f2osi5NDAnAZ2W8wJ185yUKMy37SbHWvC",
+   "live_liquidity_usd": 63224.681,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787108400,
+   "first_candle_close": 0.00013198222691777333,
+   "last_candle_ts": 1787115600,
+   "last_candle_close": 0.0006948971374170779,
+   "first_seen": "2026-08-19T05:25:00Z",
+   "desc": "that's Solug, Solana's Mug.",
+   "attempts": 1
   }
  },
- "cohort_size": 268,
- "updated": "2026-08-19T00:22:56Z",
- "probed": 268,
+ "cohort_size": 269,
+ "updated": "2026-08-19T05:25:07Z",
+ "probed": 269,
  "remaining": 0,
  "unresolved": 0
 }
