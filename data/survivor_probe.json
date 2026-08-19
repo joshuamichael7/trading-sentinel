@@ -4026,11 +4026,26 @@
    "first_seen": "2026-08-19T05:25:00Z",
    "desc": "that's Solug, Solana's Mug.",
    "attempts": 1
+  },
+  "3CCGVkwXXTQLDL3HUqV2fBBzazHopMrWYgqU5wvvpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "HsVXAyoM24AKSq3xdKeR4aDFJ9gKZAN8JNcguj9zHvnn",
+   "live_liquidity_usd": 24452.6485,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787126400,
+   "first_candle_close": 0.00016313931749221,
+   "last_candle_ts": 1787130000,
+   "last_candle_close": 0.00012140011187531813,
+   "first_seen": "2026-08-19T09:10:31Z",
+   "desc": "Utang a Tiny Monkey with Countless Expressions.\nMeeting confusing moments with r",
+   "attempts": 1
   }
  },
- "cohort_size": 269,
- "updated": "2026-08-19T05:25:07Z",
- "probed": 269,
+ "cohort_size": 270,
+ "updated": "2026-08-19T09:10:37Z",
+ "probed": 270,
  "remaining": 0,
  "unresolved": 0
 }
