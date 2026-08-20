@@ -4176,11 +4176,26 @@
    "first_seen": "2026-08-20T11:42:55Z",
    "desc": "Embrace Masculinity. Reject Weakness.\n\nFaith in God. Iron. Family. Legacy. The r",
    "attempts": 1
+  },
+  "897wEhKQtCKXuxxoDA8BH9LWnSpdTKLVzqh1J8xFpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "sDHDad1WveSBsYka6ypwZZVPBwnd6GhfTbh3xDnTVJS",
+   "live_liquidity_usd": 386233.9554,
+   "ohlcv_http": 200,
+   "n_candles": 9,
+   "first_candle_ts": 1787209200,
+   "first_candle_close": 0.00030769569880693693,
+   "last_candle_ts": 1787238000,
+   "last_candle_close": 0.02023277824992732,
+   "first_seen": "2026-08-20T15:04:02Z",
+   "desc": "A pair of massive diamond-hard golden testicles from the original Bullballs that",
+   "attempts": 1
   }
  },
- "cohort_size": 279,
- "updated": "2026-08-20T11:43:02Z",
- "probed": 279,
+ "cohort_size": 280,
+ "updated": "2026-08-20T15:04:12Z",
+ "probed": 280,
  "remaining": 0,
  "unresolved": 0
 }
