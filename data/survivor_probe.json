@@ -4161,11 +4161,26 @@
    "first_seen": "2026-08-20T11:17:55Z",
    "desc": "timeline was bearish\neveryone was waiting lower \n\nthen one green day was enough\n",
    "attempts": 1
+  },
+  "8yCqoKQBxcSt9n3VCMnHuxw2mXHT4F9mMTjzTCA2pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "32t4rKoGC8zjP84YF9cfoTAAqMQhLnBpofgWFJAQZhwP",
+   "live_liquidity_usd": 22076.2617,
+   "ohlcv_http": 200,
+   "n_candles": 38,
+   "first_candle_ts": 1782507600,
+   "first_candle_close": 1.3746743500876934e-05,
+   "last_candle_ts": 1787223600,
+   "last_candle_close": 5.042441486603899e-05,
+   "first_seen": "2026-08-20T11:42:55Z",
+   "desc": "Embrace Masculinity. Reject Weakness.\n\nFaith in God. Iron. Family. Legacy. The r",
+   "attempts": 1
   }
  },
- "cohort_size": 278,
- "updated": "2026-08-20T11:18:01Z",
- "probed": 278,
+ "cohort_size": 279,
+ "updated": "2026-08-20T11:43:02Z",
+ "probed": 279,
  "remaining": 0,
  "unresolved": 0
 }
