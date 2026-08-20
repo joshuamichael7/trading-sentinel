@@ -4146,11 +4146,26 @@
    "first_seen": "2026-08-20T07:12:54Z",
    "desc": "Sir Bullington doesn\u2019t chase green candles. Green candles ask permission to ente",
    "attempts": 1
+  },
+  "cQ1Jye1NiuoC8yvaswdNyfbn7AQn1KdWkAmba65pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7Sr7YhpoPHyiQu1XjLBBXsW9BqSBG4YCzbY25o52z4CJ",
+   "live_liquidity_usd": 28565.1611,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787216400,
+   "first_candle_close": 7.368504630911301e-05,
+   "last_candle_ts": 1787223600,
+   "last_candle_close": 0.0001325381403290646,
+   "first_seen": "2026-08-20T11:17:55Z",
+   "desc": "timeline was bearish\neveryone was waiting lower \n\nthen one green day was enough\n",
+   "attempts": 1
   }
  },
- "cohort_size": 277,
- "updated": "2026-08-20T07:13:01Z",
- "probed": 277,
+ "cohort_size": 278,
+ "updated": "2026-08-20T11:18:01Z",
+ "probed": 278,
  "remaining": 0,
  "unresolved": 0
 }
