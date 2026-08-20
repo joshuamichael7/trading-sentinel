@@ -4116,11 +4116,26 @@
    "first_seen": "2026-08-19T21:55:07Z",
    "desc": "Trade Memecoins.\nGet Funded.\n- MemeFund -",
    "attempts": 1
+  },
+  "6TpjRqHB5BBZH6gtKdqiHDD8u7noVqS85LhtwxySpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "BPY94CxfMdp5DzW79swwi3YP4Xa8gjq3CsdMDKUsHnsf",
+   "live_liquidity_usd": 92149.9407,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787180400,
+   "first_candle_close": 0.0003091643342087407,
+   "last_candle_ts": 1787184000,
+   "last_candle_close": 0.00131664830283512,
+   "first_seen": "2026-08-20T00:57:40Z",
+   "desc": "$MRNA is to deliver the greatest possible impact to people with cancer vaccines",
+   "attempts": 1
   }
  },
- "cohort_size": 275,
- "updated": "2026-08-19T21:55:14Z",
- "probed": 275,
+ "cohort_size": 276,
+ "updated": "2026-08-20T00:57:47Z",
+ "probed": 276,
  "remaining": 0,
  "unresolved": 0
 }
