@@ -4206,11 +4206,26 @@
    "first_seen": "2026-08-20T17:44:03Z",
    "desc": "The first-ever autonomous agent that turns its token's creator fees into real st",
    "attempts": 1
+  },
+  "5vTzYtcUMJvWKMxweLuiyiAoLhXuhWHy8H57F1UPpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "Dzm3yYVo3ztTPdguZ85aDGQEcGdDQRL14X7Ns3xK31EE",
+   "live_liquidity_usd": 20566.6731,
+   "ohlcv_http": 200,
+   "n_candles": 4,
+   "first_candle_ts": 1787238000,
+   "first_candle_close": 5.555408814115222e-05,
+   "last_candle_ts": 1787248800,
+   "last_candle_close": 7.944557574889944e-05,
+   "first_seen": "2026-08-20T18:19:02Z",
+   "desc": "MOMENTUM",
+   "attempts": 1
   }
  },
- "cohort_size": 281,
- "updated": "2026-08-20T17:44:12Z",
- "probed": 281,
+ "cohort_size": 282,
+ "updated": "2026-08-20T18:19:12Z",
+ "probed": 282,
  "remaining": 0,
  "unresolved": 0
 }
