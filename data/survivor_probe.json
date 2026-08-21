@@ -4266,11 +4266,26 @@
    "first_seen": "2026-08-21T04:40:17Z",
    "desc": "catalyst",
    "attempts": 1
+  },
+  "7RuKSuywEi3S4urccQXHgUZRGVYdspwQS9CD4KCJpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7udxGJenppXamoYZr8pVxrWbFrum3Kgb9q5u8UTWiRNU",
+   "live_liquidity_usd": 68667.0879,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787299200,
+   "first_candle_close": 0.0004665050962485739,
+   "last_candle_ts": 1787302800,
+   "last_candle_close": 0.0007184743406490687,
+   "first_seen": "2026-08-21T09:12:01Z",
+   "desc": "TapCat is a contactless CashCat with a nine-life spending limit and exactly one ",
+   "attempts": 1
   }
  },
- "cohort_size": 285,
- "updated": "2026-08-21T04:40:24Z",
- "probed": 285,
+ "cohort_size": 286,
+ "updated": "2026-08-21T09:12:10Z",
+ "probed": 286,
  "remaining": 0,
  "unresolved": 0
 }
