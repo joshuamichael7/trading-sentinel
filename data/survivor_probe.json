@@ -4236,11 +4236,26 @@
    "first_seen": "2026-08-21T01:50:17Z",
    "desc": "Atsuko Sato, owner of Internet icon kabosu, rescues abandoned kitten named Rika ",
    "attempts": 1
+  },
+  "HXD5YL3rwv1mrHC4giBkAb1pxW6ohCQppJsxrzJZpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "DgZLDqcXCfD1WRaXMdiYdD1MJyoYZDPPCYjW8nWbEVHw",
+   "live_liquidity_usd": 2416.4546,
+   "ohlcv_http": 200,
+   "n_candles": 9,
+   "first_candle_ts": 1787245200,
+   "first_candle_close": 0.0003326854375401647,
+   "last_candle_ts": 1787274000,
+   "last_candle_close": 1.991238954691603e-06,
+   "first_seen": "2026-08-21T03:45:17Z",
+   "desc": "A full-size bull with a micro-size parking strategy. Two horns through the roof,",
+   "attempts": 1
   }
  },
- "cohort_size": 283,
- "updated": "2026-08-21T01:50:24Z",
- "probed": 283,
+ "cohort_size": 284,
+ "updated": "2026-08-21T03:45:24Z",
+ "probed": 284,
  "remaining": 0,
  "unresolved": 0
 }
