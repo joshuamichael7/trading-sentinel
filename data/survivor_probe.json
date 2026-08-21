@@ -4281,11 +4281,26 @@
    "first_seen": "2026-08-21T09:12:01Z",
    "desc": "TapCat is a contactless CashCat with a nine-life spending limit and exactly one ",
    "attempts": 1
+  },
+  "7bQQgwnNf1qPBdTcuouKtYthsHaGLxxs2X38fgzBTq2w": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "EnTfBNzFm2GdbeVBV9qyu8pdqogrDTRuoYkGZ5i1ubPu",
+   "live_liquidity_usd": 33250.5346,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1787302800,
+   "first_candle_close": 0.00015438581273732505,
+   "last_candle_ts": 1787302800,
+   "last_candle_close": 0.00015438581273732505,
+   "first_seen": "2026-08-21T09:17:01Z",
+   "desc": "Our mission is simple, flip the stock market!\n$ANSEM6900",
+   "attempts": 1
   }
  },
- "cohort_size": 286,
- "updated": "2026-08-21T09:12:10Z",
- "probed": 286,
+ "cohort_size": 287,
+ "updated": "2026-08-21T09:17:09Z",
+ "probed": 287,
  "remaining": 0,
  "unresolved": 0
 }
