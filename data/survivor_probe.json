@@ -4296,11 +4296,26 @@
    "first_seen": "2026-08-21T09:17:01Z",
    "desc": "Our mission is simple, flip the stock market!\n$ANSEM6900",
    "attempts": 1
+  },
+  "3rjEmJEUM2iwtksduiWQmkiuafZcUojQpmHr4UvUpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "9ASA9K2w4VmcUMWYvNRh861emLxkPPgyS5cDfvCihby6",
+   "live_liquidity_usd": 14130.7973,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787324400,
+   "first_candle_close": 1.549847599142175e-05,
+   "last_candle_ts": 1787328000,
+   "last_candle_close": 3.463612232764942e-05,
+   "first_seen": "2026-08-21T16:13:37Z",
+   "desc": "Backed by $2M+ ATH track record dev. Building the sleepiest ecosystem on Solana.",
+   "attempts": 1
   }
  },
- "cohort_size": 287,
- "updated": "2026-08-21T09:17:09Z",
- "probed": 287,
+ "cohort_size": 288,
+ "updated": "2026-08-21T16:13:45Z",
+ "probed": 288,
  "remaining": 0,
  "unresolved": 0
 }
