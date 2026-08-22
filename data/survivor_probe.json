@@ -4341,11 +4341,26 @@
    "first_seen": "2026-08-22T02:03:34Z",
    "desc": "The \"cat and rabbit\" from Tai\u00f3, who became famous in 2021, reappeared on social ",
    "attempts": 1
+  },
+  "GYFGQXcUFSgGs34BpHJuxSzjMMponA11x28n9pvApump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "DoxBrRTfNNbKt8ZsSyLL45R6oK2UwCUevsk7RohRXN7r",
+   "live_liquidity_usd": 48022.3512,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787360400,
+   "first_candle_close": 0.00023481091544073473,
+   "last_candle_ts": 1787364000,
+   "last_candle_close": 0.0003883594236601148,
+   "first_seen": "2026-08-22T02:08:34Z",
+   "desc": "Meet Puff, the most viral cat across all social media platforms.",
+   "attempts": 1
   }
  },
- "cohort_size": 290,
- "updated": "2026-08-22T02:03:42Z",
- "probed": 290,
+ "cohort_size": 291,
+ "updated": "2026-08-22T02:08:41Z",
+ "probed": 291,
  "remaining": 0,
  "unresolved": 0
 }
