@@ -4416,11 +4416,26 @@
    "first_seen": "2026-08-22T13:54:07Z",
    "desc": "",
    "attempts": 1
+  },
+  "BaBeW6hdxDSenERN6JcxLY9v27YnZqaAQYWuscUjpump": {
+   "pools_http": 200,
+   "n_pools": 7,
+   "pool": "69Y7ZzJdrEqWXSA3qAfmoqxf4EBEDbMRwcnx6r1yjfBi",
+   "live_liquidity_usd": 68067.1931,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787407200,
+   "first_candle_close": 0.00011174836087478065,
+   "last_candle_ts": 1787414400,
+   "last_candle_close": 0.000522560280175174,
+   "first_seen": "2026-08-22T16:14:07Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 295,
- "updated": "2026-08-22T13:54:15Z",
- "probed": 295,
+ "cohort_size": 296,
+ "updated": "2026-08-22T16:14:14Z",
+ "probed": 296,
  "remaining": 0,
  "unresolved": 0
 }
