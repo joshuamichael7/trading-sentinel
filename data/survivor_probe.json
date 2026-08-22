@@ -4506,11 +4506,26 @@
    "first_seen": "2026-08-22T22:20:08Z",
    "desc": "PEPE Parker is an original Solana meme project built on a mission: with great su",
    "attempts": 1
+  },
+  "DDVUsN8sDFxbaX6gNBoD44kjZhFETWJnwAn4EX1dpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "FYNWkGx9f1PLtdtvVw3bnty5bDbGKZ3UirJMcU25VX7c",
+   "live_liquidity_usd": 28729.1347,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787436000,
+   "first_candle_close": 4.774801158283659e-05,
+   "last_candle_ts": 1787439600,
+   "last_candle_close": 0.00013959278960317626,
+   "first_seen": "2026-08-22T23:30:08Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 301,
- "updated": "2026-08-22T22:20:16Z",
- "probed": 301,
+ "cohort_size": 302,
+ "updated": "2026-08-22T23:30:15Z",
+ "probed": 302,
  "remaining": 0,
  "unresolved": 0
 }
