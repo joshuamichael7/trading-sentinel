@@ -4311,11 +4311,26 @@
    "first_seen": "2026-08-21T16:13:37Z",
    "desc": "Backed by $2M+ ATH track record dev. Building the sleepiest ecosystem on Solana.",
    "attempts": 1
+  },
+  "2CrafGwaXQ7tHgw1pdZG3CN6iiUsfeTaZeQA1tpHpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "3DVem7tZK2ATDHuDmU157ZHe5wNgyq9HxNnHmJEvKBPf",
+   "live_liquidity_usd": 2102.2088,
+   "ohlcv_http": 200,
+   "n_candles": 15,
+   "first_candle_ts": 1787302800,
+   "first_candle_close": 0.00010451383849680112,
+   "last_candle_ts": 1787353200,
+   "last_candle_close": 1.9688178205301985e-06,
+   "first_seen": "2026-08-22T01:48:34Z",
+   "desc": "market shifted\nsentiment shifted with it\npeople are showing up again \nlike they ",
+   "attempts": 1
   }
  },
- "cohort_size": 288,
- "updated": "2026-08-21T16:13:45Z",
- "probed": 288,
+ "cohort_size": 289,
+ "updated": "2026-08-22T01:48:41Z",
+ "probed": 289,
  "remaining": 0,
  "unresolved": 0
 }
