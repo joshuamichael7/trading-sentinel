@@ -4491,11 +4491,26 @@
    "first_seen": "2026-08-22T21:10:08Z",
    "desc": "PATE Coin was created by the people and is for the people! If your a hodler, bag",
    "attempts": 1
+  },
+  "6x4G1SqbPTWkqmZ4VAWVgoZ1jmA7TqJUSHnKyqsHpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "HCAZia1gVGy1hrfWR2FyLAXZFzC1REfDcPwC2MHao5rm",
+   "live_liquidity_usd": 34287.0321,
+   "ohlcv_http": 200,
+   "n_candles": 405,
+   "first_candle_ts": 1785805200,
+   "first_candle_close": 7.455109746094967e-05,
+   "last_candle_ts": 1787436000,
+   "last_candle_close": 8.716108538354495e-05,
+   "first_seen": "2026-08-22T22:20:08Z",
+   "desc": "PEPE Parker is an original Solana meme project built on a mission: with great su",
+   "attempts": 1
   }
  },
- "cohort_size": 300,
- "updated": "2026-08-22T21:10:16Z",
- "probed": 300,
+ "cohort_size": 301,
+ "updated": "2026-08-22T22:20:16Z",
+ "probed": 301,
  "remaining": 0,
  "unresolved": 0
 }
