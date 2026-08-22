@@ -4371,11 +4371,26 @@
    "first_seen": "2026-08-22T03:23:34Z",
    "desc": "The cats have arrived, $CATSZN community is growing, and the season has official",
    "attempts": 1
+  },
+  "7Dxr19j2PHovdocuQfvySft7M2XuP5pr6x8YAWHPpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "2Fy4thHKuQTVrTfGAXEYFxFGqQEAxmMmNjAvVQhvnLhD",
+   "live_liquidity_usd": 43504.2541,
+   "ohlcv_http": 200,
+   "n_candles": 5,
+   "first_candle_ts": 1787367600,
+   "first_candle_close": 0.00019133393332105504,
+   "last_candle_ts": 1787382000,
+   "last_candle_close": 0.000300018746608267,
+   "first_seen": "2026-08-22T07:18:52Z",
+   "desc": "Nami will steal all the troubles and sadness from you.",
+   "attempts": 1
   }
  },
- "cohort_size": 292,
- "updated": "2026-08-22T03:23:41Z",
- "probed": 292,
+ "cohort_size": 293,
+ "updated": "2026-08-22T07:18:59Z",
+ "probed": 293,
  "remaining": 0,
  "unresolved": 0
 }
