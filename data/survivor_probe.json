@@ -4476,11 +4476,26 @@
    "first_seen": "2026-08-22T21:05:08Z",
    "desc": "Tsutsuji, the ginger cat Kabosu Mama raised beside Kabosu",
    "attempts": 1
+  },
+  "24EX9CQqEpR9mNUDTjkooKqRTf2pkY2mgbDqwNDwpump": {
+   "pools_http": 200,
+   "n_pools": 5,
+   "pool": "7WRrvCugP1krT6aq9DQwWbeD92V5LaFm5YkSuof7LpKq",
+   "live_liquidity_usd": 56169.0908,
+   "ohlcv_http": 200,
+   "n_candles": 25,
+   "first_candle_ts": 1787346000,
+   "first_candle_close": 8.803700607891789e-06,
+   "last_candle_ts": 1787432400,
+   "last_candle_close": 0.00044098005044286315,
+   "first_seen": "2026-08-22T21:10:08Z",
+   "desc": "PATE Coin was created by the people and is for the people! If your a hodler, bag",
+   "attempts": 1
   }
  },
- "cohort_size": 299,
- "updated": "2026-08-22T21:05:16Z",
- "probed": 299,
+ "cohort_size": 300,
+ "updated": "2026-08-22T21:10:16Z",
+ "probed": 300,
  "remaining": 0,
  "unresolved": 0
 }
