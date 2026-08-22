@@ -4356,11 +4356,26 @@
    "first_seen": "2026-08-22T02:08:34Z",
    "desc": "Meet Puff, the most viral cat across all social media platforms.",
    "attempts": 1
+  },
+  "918p2GRyDLkhsRvtAHaKZg8yrP5kXSe6CYustqTcpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6fgFnwuRY3nBLbrTyER39oCezdm67r5zCAh4DtGBeLmD",
+   "live_liquidity_usd": 87694.7969,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787364000,
+   "first_candle_close": 0.0005756745018384779,
+   "last_candle_ts": 1787367600,
+   "last_candle_close": 0.0009623003494827635,
+   "first_seen": "2026-08-22T03:23:34Z",
+   "desc": "The cats have arrived, $CATSZN community is growing, and the season has official",
+   "attempts": 1
   }
  },
- "cohort_size": 291,
- "updated": "2026-08-22T02:08:41Z",
- "probed": 291,
+ "cohort_size": 292,
+ "updated": "2026-08-22T03:23:41Z",
+ "probed": 292,
  "remaining": 0,
  "unresolved": 0
 }
