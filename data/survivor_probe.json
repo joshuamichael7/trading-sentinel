@@ -4536,11 +4536,26 @@
    "first_seen": "2026-08-23T03:21:04Z",
    "desc": "They keep asking for the next billion. She\u2019s already looking at the first trilli",
    "attempts": 1
+  },
+  "BKaXDgZxUSC9njpX89xpQ5USh2pnK1yzZvgk8Mg7pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "Gyz6RxJfnB3yjP2J2E7HMoNojGQEKZuxEEUjurncQJ1w",
+   "live_liquidity_usd": 58293.8279,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787450400,
+   "first_candle_close": 0.00027058579751291763,
+   "last_candle_ts": 1787454000,
+   "last_candle_close": 0.0004189932514365369,
+   "first_seen": "2026-08-23T03:46:04Z",
+   "desc": "Tonight\u2019s door policy is one word: meow.\n\nVell watches the velvet rope while dog",
+   "attempts": 1
   }
  },
- "cohort_size": 303,
- "updated": "2026-08-23T03:21:11Z",
- "probed": 303,
+ "cohort_size": 304,
+ "updated": "2026-08-23T03:46:11Z",
+ "probed": 304,
  "remaining": 0,
  "unresolved": 0
 }
