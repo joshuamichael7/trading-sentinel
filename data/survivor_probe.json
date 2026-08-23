@@ -4596,11 +4596,26 @@
    "first_seen": "2026-08-23T13:43:16Z",
    "desc": "Cybercat",
    "attempts": 1
+  },
+  "GjdhsggtVueebcbYup6vGVmqeGsvAPVtFgJGcPk6pump": {
+   "pools_http": 200,
+   "n_pools": 1,
+   "pool": "DH4X8SBu2zm5Vp6wQTwPHP2TX9u9d56pE1sA5vhvGJtW",
+   "live_liquidity_usd": 6895.9123,
+   "ohlcv_http": 200,
+   "n_candles": 90,
+   "first_candle_ts": 1786748400,
+   "first_candle_close": 2.3738109479124273e-06,
+   "last_candle_ts": 1787497200,
+   "last_candle_close": 1.2737990668363358e-05,
+   "first_seen": "2026-08-23T15:18:16Z",
+   "desc": "RETROCOIN64 ($RETRO64) is a Solana community meme coin inspired by the golden er",
+   "attempts": 1
   }
  },
- "cohort_size": 307,
- "updated": "2026-08-23T13:43:23Z",
- "probed": 307,
+ "cohort_size": 308,
+ "updated": "2026-08-23T15:18:23Z",
+ "probed": 308,
  "remaining": 0,
  "unresolved": 0
 }
