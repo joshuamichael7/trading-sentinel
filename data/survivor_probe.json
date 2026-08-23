@@ -4566,11 +4566,26 @@
    "first_seen": "2026-08-23T09:31:20Z",
    "desc": "His Majesty \u9ec3\u963f\u746a has issued a royal decree: remove summer. \ud83d\udc51\ud83d\udc08\nThe royal court has",
    "attempts": 1
+  },
+  "4cvZwC17oMiUA7peKX5GhbaUWv4U5Lwrd8118xnFpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "FvYok1cEnymtxGPXbLhyMVUBq2iEVGQ18Uj4K7vKoJ5Q",
+   "live_liquidity_usd": 147367.067,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787482800,
+   "first_candle_close": 0.0005279541486306059,
+   "last_candle_ts": 1787490000,
+   "last_candle_close": 0.00329207564271324,
+   "first_seen": "2026-08-23T13:23:16Z",
+   "desc": "$CATALORIAN \u2014 Elon Musk\u2019s AI prompt brought to life: a self-defense space cat bu",
+   "attempts": 1
   }
  },
- "cohort_size": 305,
- "updated": "2026-08-23T09:31:27Z",
- "probed": 305,
+ "cohort_size": 306,
+ "updated": "2026-08-23T13:23:22Z",
+ "probed": 306,
  "remaining": 0,
  "unresolved": 0
 }
