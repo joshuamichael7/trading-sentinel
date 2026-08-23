@@ -4521,11 +4521,26 @@
    "first_seen": "2026-08-22T23:30:08Z",
    "desc": "",
    "attempts": 1
+  },
+  "FraL7qvcGGSy93vs7xRwJPdyu214iCa6CsuV1Pn4pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "4FR5TeLnfex94nX83RLraWBwNidxx1oTe1egkNQGLGAo",
+   "live_liquidity_usd": 50193.9808,
+   "ohlcv_http": 200,
+   "n_candles": 4,
+   "first_candle_ts": 1787443200,
+   "first_candle_close": 0.0001394386162713386,
+   "last_candle_ts": 1787454000,
+   "last_candle_close": 0.0003472480574797394,
+   "first_seen": "2026-08-23T03:21:04Z",
+   "desc": "They keep asking for the next billion. She\u2019s already looking at the first trilli",
+   "attempts": 1
   }
  },
- "cohort_size": 302,
- "updated": "2026-08-22T23:30:15Z",
- "probed": 302,
+ "cohort_size": 303,
+ "updated": "2026-08-23T03:21:11Z",
+ "probed": 303,
  "remaining": 0,
  "unresolved": 0
 }
