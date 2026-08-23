@@ -4626,11 +4626,26 @@
    "first_seen": "2026-08-23T15:53:16Z",
    "desc": "The most valuable thing in life isn\u2019t money, gold, or any material possession.\n\n",
    "attempts": 1
+  },
+  "9z2x2MaVqhN9AQ65ESA8gAY9Tn5HTq7tGn6CXuppump": {
+   "pools_http": 200,
+   "n_pools": 1,
+   "pool": "4g8oWfUsSWVzo7RgXFpRB3J1L8fyAsP227VZbQ4a8EVz",
+   "live_liquidity_usd": 7109.0951,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787522400,
+   "first_candle_close": 1.273223265775026e-05,
+   "last_candle_ts": 1787526000,
+   "last_candle_close": 1.7933326385664026e-05,
+   "first_seen": "2026-08-23T23:08:56Z",
+   "desc": "Octopepe ($OCTO) is the eight-armed controller entering the original PEPE Parker",
+   "attempts": 1
   }
  },
- "cohort_size": 309,
- "updated": "2026-08-23T15:53:23Z",
- "probed": 309,
+ "cohort_size": 310,
+ "updated": "2026-08-23T23:09:02Z",
+ "probed": 310,
  "remaining": 0,
  "unresolved": 0
 }
