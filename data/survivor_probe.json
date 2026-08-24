@@ -4656,11 +4656,26 @@
    "first_seen": "2026-08-24T03:46:16Z",
    "desc": "Elon's cat, OG",
    "attempts": 1
+  },
+  "9ddBkYDHiqVvxecCG7RM6Tmen9fTeTPPquhLLwTopump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "JBum3NC6Uer1YqA98xVj2XDwWoPeYBZCmqzuPmah42bb",
+   "live_liquidity_usd": 3719.7475,
+   "ohlcv_http": 200,
+   "n_candles": 15,
+   "first_candle_ts": 1787508000,
+   "first_candle_close": 0.0003132296782298636,
+   "last_candle_ts": 1787562000,
+   "last_candle_close": 3.933772265240535e-06,
+   "first_seen": "2026-08-24T09:31:55Z",
+   "desc": "After blowing up recently from making $40M on $TRUMP, I wanted to celebrate it t",
+   "attempts": 1
   }
  },
- "cohort_size": 311,
- "updated": "2026-08-24T03:46:37Z",
- "probed": 311,
+ "cohort_size": 312,
+ "updated": "2026-08-24T09:32:04Z",
+ "probed": 312,
  "remaining": 0,
  "unresolved": 0
 }
