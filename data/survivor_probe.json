@@ -4746,11 +4746,26 @@
    "first_seen": "2026-08-24T17:29:42Z",
    "desc": "",
    "attempts": 1
+  },
+  "GUt3ebbJm6SJCvpa8SfFzZe132a78qZDyc2yXAP1pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "3KpmZWqrQskuEHX5veB4nW1MgYBKH5ex7KNAbGMN2HRk",
+   "live_liquidity_usd": 80906.1785,
+   "ohlcv_http": 200,
+   "n_candles": 8,
+   "first_candle_ts": 1787569200,
+   "first_candle_close": 0.0002221712152166383,
+   "last_candle_ts": 1787594400,
+   "last_candle_close": 0.0008841304140308398,
+   "first_seen": "2026-08-24T18:34:42Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 317,
- "updated": "2026-08-24T17:29:49Z",
- "probed": 317,
+ "cohort_size": 318,
+ "updated": "2026-08-24T18:34:49Z",
+ "probed": 318,
  "remaining": 0,
  "unresolved": 0
 }
