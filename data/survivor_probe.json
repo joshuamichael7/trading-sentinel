@@ -4776,11 +4776,26 @@
    "first_seen": "2026-08-24T18:58:32Z",
    "desc": "The first ever coin that Allocates itself entirely to you.",
    "attempts": 1
+  },
+  "9Y3fY1kwYUTgLwBU7DZKkEwCsZYj3BrXQNP74ZNEpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "Mwqyi3GoSwu3EjTsx2D9gDBNP1J7FTvsiKfXpPEUJP3",
+   "live_liquidity_usd": 40020.3251,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787594400,
+   "first_candle_close": 0.0001090535997235032,
+   "last_candle_ts": 1787601600,
+   "last_candle_close": 0.00026246252979638735,
+   "first_seen": "2026-08-24T20:08:32Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 319,
- "updated": "2026-08-24T18:58:40Z",
- "probed": 319,
+ "cohort_size": 320,
+ "updated": "2026-08-24T20:08:41Z",
+ "probed": 320,
  "remaining": 0,
  "unresolved": 0
 }
