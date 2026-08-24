@@ -4686,11 +4686,26 @@
    "first_seen": "2026-08-24T14:19:42Z",
    "desc": "beluga",
    "attempts": 1
+  },
+  "ErWFD2gFDxxvvo2bVY9PLS6cNqP5EZtRz8PjBp7Epump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "BVepmad4zko5zNDjB24DHLG4xje4pCDjn3Xxa9odf87p",
+   "live_liquidity_usd": 2091.1827,
+   "ohlcv_http": 200,
+   "n_candles": 14,
+   "first_candle_ts": 1787500800,
+   "first_candle_close": 9.411880473531614e-05,
+   "last_candle_ts": 1787580000,
+   "last_candle_close": 1.924706636010882e-06,
+   "first_seen": "2026-08-24T15:19:42Z",
+   "desc": "\ud83e\ude99 NO FUTURE TO SELL. \ud83d\uddc3 THE LEDGER archives deleted promises, dead links & wallet",
+   "attempts": 1
   }
  },
- "cohort_size": 313,
- "updated": "2026-08-24T14:19:49Z",
- "probed": 313,
+ "cohort_size": 314,
+ "updated": "2026-08-24T15:19:49Z",
+ "probed": 314,
  "remaining": 0,
  "unresolved": 0
 }
