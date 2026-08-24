@@ -4671,11 +4671,26 @@
    "first_seen": "2026-08-24T09:31:55Z",
    "desc": "After blowing up recently from making $40M on $TRUMP, I wanted to celebrate it t",
    "attempts": 1
+  },
+  "4qHAqsakh8oBgDpSHccmPHV4rPZDq1MgrQnsZ1QZpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "Gsi9XugXhf7sFxw1eGPc9ybEsEWQ5PbnHTTqLEAiSm1a",
+   "live_liquidity_usd": 25400.8752,
+   "ohlcv_http": 200,
+   "n_candles": 9,
+   "first_candle_ts": 1787551200,
+   "first_candle_close": 8.333437176501015e-05,
+   "last_candle_ts": 1787580000,
+   "last_candle_close": 0.0001001117911298819,
+   "first_seen": "2026-08-24T14:19:42Z",
+   "desc": "beluga",
+   "attempts": 1
   }
  },
- "cohort_size": 312,
- "updated": "2026-08-24T09:32:04Z",
- "probed": 312,
+ "cohort_size": 313,
+ "updated": "2026-08-24T14:19:49Z",
+ "probed": 313,
  "remaining": 0,
  "unresolved": 0
 }
