@@ -4821,11 +4821,26 @@
    "first_seen": "2026-08-25T04:46:28Z",
    "desc": "Mr. Cate is the richest cat on solana",
    "attempts": 1
+  },
+  "HBDkJT9kMc12usUrcZDpWyfr7kvTTEfvbeyofL1gpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "BTYhUWj6vyz5QvRznz4QGVKVbAcAUHNVyxJedML3jqYP",
+   "live_liquidity_usd": 104775.6835,
+   "ohlcv_http": 200,
+   "n_candles": 17,
+   "first_candle_ts": 1787583600,
+   "first_candle_close": 0.00013712066578821619,
+   "last_candle_ts": 1787641200,
+   "last_candle_close": 0.0012550706783851688,
+   "first_seen": "2026-08-25T07:35:29Z",
+   "desc": "i restarted $QCLS with my partner @csvoss to create the world's first fully phot",
+   "attempts": 1
   }
  },
- "cohort_size": 322,
- "updated": "2026-08-25T04:46:36Z",
- "probed": 322,
+ "cohort_size": 323,
+ "updated": "2026-08-25T07:35:36Z",
+ "probed": 323,
  "remaining": 0,
  "unresolved": 0
 }
