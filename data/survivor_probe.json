@@ -4866,11 +4866,26 @@
    "first_seen": "2026-08-25T13:06:13Z",
    "desc": "PEPE Goblin ($CACKLE) is an independent, character-driven Solana meme project ce",
    "attempts": 1
+  },
+  "9orRZbVL3zontHSVC92p9LSUTdCFbYtqCdSDdKPpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "2Gb7LAdHWcEnnfPwQcprQRYS1SjNKzex8mWaZ2UWy48f",
+   "live_liquidity_usd": 45313.8981,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787666400,
+   "first_candle_close": 6.935468686363808e-05,
+   "last_candle_ts": 1787673600,
+   "last_candle_close": 0.0003088541741890009,
+   "first_seen": "2026-08-25T16:21:14Z",
+   "desc": "Rural Hebei\u2019s shaggy king. Calmed every pack, conquered the internet, and became",
+   "attempts": 1
   }
  },
- "cohort_size": 325,
- "updated": "2026-08-25T13:06:19Z",
- "probed": 325,
+ "cohort_size": 326,
+ "updated": "2026-08-25T16:21:20Z",
+ "probed": 326,
  "remaining": 0,
  "unresolved": 0
 }
