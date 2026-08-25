@@ -4896,11 +4896,26 @@
    "first_seen": "2026-08-25T19:02:44Z",
    "desc": "Bullying our way to the top.",
    "attempts": 1
+  },
+  "DU2PhxxifcuD7iL9PuQvDGa6M9ggpXosVK3BEninpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "rfrssNQnwLM85GenAJ1AMKDzpCJiotuRVckniKfz76d",
+   "live_liquidity_usd": 26477.1554,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787680800,
+   "first_candle_close": 7.517678399446515e-05,
+   "last_candle_ts": 1787684400,
+   "last_candle_close": 0.00011497421828825054,
+   "first_seen": "2026-08-25T19:22:44Z",
+   "desc": "A chubby grey cat found a green pill on pump fun, swallowed it, and the chart ne",
+   "attempts": 1
   }
  },
- "cohort_size": 327,
- "updated": "2026-08-25T19:02:51Z",
- "probed": 327,
+ "cohort_size": 328,
+ "updated": "2026-08-25T19:22:52Z",
+ "probed": 328,
  "remaining": 0,
  "unresolved": 0
 }
