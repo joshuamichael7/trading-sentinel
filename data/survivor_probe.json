@@ -4836,11 +4836,26 @@
    "first_seen": "2026-08-25T07:35:29Z",
    "desc": "i restarted $QCLS with my partner @csvoss to create the world's first fully phot",
    "attempts": 1
+  },
+  "3QwPmTFxDWTtkPGSdwqNGLHTG3xxffDE6ZyvSXo6pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "DzDyVEuS7JtcAWxGKgH1kETFjmqQPgfe6dsRMZDFti8n",
+   "live_liquidity_usd": 23674.514,
+   "ohlcv_http": 200,
+   "n_candles": 18,
+   "first_candle_ts": 1787598000,
+   "first_candle_close": 9.131253950417226e-05,
+   "last_candle_ts": 1787659200,
+   "last_candle_close": 8.436149824093815e-05,
+   "first_seen": "2026-08-25T12:35:29Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 323,
- "updated": "2026-08-25T07:35:36Z",
- "probed": 323,
+ "cohort_size": 324,
+ "updated": "2026-08-25T12:35:37Z",
+ "probed": 324,
  "remaining": 0,
  "unresolved": 0
 }
