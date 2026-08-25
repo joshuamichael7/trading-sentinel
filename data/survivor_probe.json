@@ -4851,11 +4851,26 @@
    "first_seen": "2026-08-25T12:35:29Z",
    "desc": "",
    "attempts": 1
+  },
+  "BQJfL1yiHbJQ8AciHLcKxaCbQrWP2ws8oZHHYgbBpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "39e3inYn9tDu4GAeBJ4L1MZrRW8hMhu2yqJ59vhPeCai",
+   "live_liquidity_usd": 20285.2943,
+   "ohlcv_http": 200,
+   "n_candles": 123,
+   "first_candle_ts": 1787022000,
+   "first_candle_close": 2.8222342846892256e-05,
+   "last_candle_ts": 1787662800,
+   "last_candle_close": 4.176632295765624e-05,
+   "first_seen": "2026-08-25T13:06:13Z",
+   "desc": "PEPE Goblin ($CACKLE) is an independent, character-driven Solana meme project ce",
+   "attempts": 1
   }
  },
- "cohort_size": 324,
- "updated": "2026-08-25T12:35:37Z",
- "probed": 324,
+ "cohort_size": 325,
+ "updated": "2026-08-25T13:06:19Z",
+ "probed": 325,
  "remaining": 0,
  "unresolved": 0
 }
