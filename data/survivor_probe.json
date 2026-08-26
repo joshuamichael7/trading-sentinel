@@ -5106,11 +5106,26 @@
    "first_seen": "2026-08-26T22:11:43Z",
    "desc": "\u2600\ufe0f Crypto winter is over. Welcome to $CRYPTOSUMMER\u2014where green candles bloom, vi",
    "attempts": 1
+  },
+  "VJdpSDDLof7HuZiNmsRUSL4YCncsk1FGiVoHyAJpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "CNZhuow8qBBLtL746HpqhJcN7G3iWhGhs8KQXhx8zUzm",
+   "live_liquidity_usd": 520449.6288,
+   "ohlcv_http": 200,
+   "n_candles": 153,
+   "first_candle_ts": 1787234400,
+   "first_candle_close": 0.0003966909694235261,
+   "last_candle_ts": 1787781600,
+   "last_candle_close": 0.02610794531164433,
+   "first_seen": "2026-08-26T22:51:43Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 341,
- "updated": "2026-08-26T22:11:51Z",
- "probed": 341,
+ "cohort_size": 342,
+ "updated": "2026-08-26T22:51:50Z",
+ "probed": 342,
  "remaining": 0,
  "unresolved": 0
 }
