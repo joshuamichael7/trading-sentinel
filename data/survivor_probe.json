@@ -4986,11 +4986,26 @@
    "first_seen": "2026-08-26T04:29:00Z",
    "desc": "just Wuf",
    "attempts": 1
+  },
+  "GCr352ouzNZkNQd3KZqs6jFuQb8LiYnWsEJSUpSfpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "44FFDFYFCLKAsjxdPVqHBKbSo2e2CBU2SJfhZVqynPEk",
+   "live_liquidity_usd": 112294.9384,
+   "ohlcv_http": 200,
+   "n_candles": 28,
+   "first_candle_ts": 1787652000,
+   "first_candle_close": 0.0005267926893522244,
+   "last_candle_ts": 1787749200,
+   "last_candle_close": 0.001594941198500185,
+   "first_seen": "2026-08-26T13:38:28Z",
+   "desc": "The original cat character by Matt Furie",
+   "attempts": 1
   }
  },
- "cohort_size": 333,
- "updated": "2026-08-26T04:29:07Z",
- "probed": 333,
+ "cohort_size": 334,
+ "updated": "2026-08-26T13:38:36Z",
+ "probed": 334,
  "remaining": 0,
  "unresolved": 0
 }
