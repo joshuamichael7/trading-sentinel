@@ -5076,11 +5076,26 @@
    "first_seen": "2026-08-26T21:46:43Z",
    "desc": "Created by Graeme Devine, who worked on Quake at id Software. Now Quake brought ",
    "attempts": 1
+  },
+  "G6iuKxHsQ5L4ak5SfkdMurDyGbaQMRetrwio31NXpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6unNUh1EAHcJHRt4EA3twUnzyw6jWBJ5c648skq66Jfk",
+   "live_liquidity_usd": 2365.5736,
+   "ohlcv_http": 200,
+   "n_candles": 7,
+   "first_candle_ts": 1787752800,
+   "first_candle_close": 0.0001527513618926517,
+   "last_candle_ts": 1787778000,
+   "last_candle_close": 2.1965929867181883e-06,
+   "first_seen": "2026-08-26T22:06:43Z",
+   "desc": "I FOUND THE ORIGINAL PISTACIO BUT ITS SPELLED CORRECTLY PISTACHIO",
+   "attempts": 1
   }
  },
- "cohort_size": 339,
- "updated": "2026-08-26T21:46:52Z",
- "probed": 339,
+ "cohort_size": 340,
+ "updated": "2026-08-26T22:06:51Z",
+ "probed": 340,
  "remaining": 0,
  "unresolved": 0
 }
