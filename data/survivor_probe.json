@@ -5121,11 +5121,41 @@
    "first_seen": "2026-08-26T22:51:43Z",
    "desc": "",
    "attempts": 1
+  },
+  "24GWZn5HerwLTVoZuC3H7Kxg6jLFMvroA1hTU4uWpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "DfMGeehqSpVeoGgmn5wWXRi8LmKMgsWbhe3Q5NPdoxUS",
+   "live_liquidity_usd": 35351.3114,
+   "ohlcv_http": 200,
+   "n_candles": 5,
+   "first_candle_ts": 1787770800,
+   "first_candle_close": 0.00012949839094223453,
+   "last_candle_ts": 1787785200,
+   "last_candle_close": 0.00017877957253489238,
+   "first_seen": "2026-08-26T23:56:43Z",
+   "desc": "",
+   "attempts": 1
+  },
+  "2TvUVvuQeVcUwVFp6WVy61wwpnSMG6kNzYpdvEkMpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "53ANP2QVQ5PmQMa7NZrKuxu1btkfNsqQY4UzCzsSnsvD",
+   "live_liquidity_usd": 36397.1876,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787778000,
+   "first_candle_close": 0.00015198455193896274,
+   "last_candle_ts": 1787785200,
+   "last_candle_close": 0.00014746056071890577,
+   "first_seen": "2026-08-26T23:56:43Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 342,
- "updated": "2026-08-26T22:51:50Z",
- "probed": 342,
+ "cohort_size": 344,
+ "updated": "2026-08-26T23:56:55Z",
+ "probed": 344,
  "remaining": 0,
  "unresolved": 0
 }
