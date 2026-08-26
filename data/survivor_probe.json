@@ -4956,11 +4956,26 @@
    "first_seen": "2026-08-26T00:17:44Z",
    "desc": "Catacio",
    "attempts": 1
+  },
+  "2WbTSrJHr1hNCtmYBjuSetZNdsZWZ2eZTuK9GjNPpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "ESQ4FnuFrBKUSf2xMLw66cXmANDHb7ywFaEpLrMqmT3p",
+   "live_liquidity_usd": 59699.5309,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787709600,
+   "first_candle_close": 0.00023223625585074066,
+   "last_candle_ts": 1787713200,
+   "last_candle_close": 0.0005408635662324572,
+   "first_seen": "2026-08-26T03:29:00Z",
+   "desc": "Pistacio\u2019s lovely girlfriend, Pistacia\u2014the sweetest nut in the meme market.",
+   "attempts": 1
   }
  },
- "cohort_size": 331,
- "updated": "2026-08-26T00:17:51Z",
- "probed": 331,
+ "cohort_size": 332,
+ "updated": "2026-08-26T03:29:07Z",
+ "probed": 332,
  "remaining": 0,
  "unresolved": 0
 }
