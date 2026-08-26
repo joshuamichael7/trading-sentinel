@@ -5046,11 +5046,26 @@
    "first_seen": "2026-08-26T20:06:43Z",
    "desc": "The Fluffiest sniper in crypto, always on target",
    "attempts": 1
+  },
+  "2cm7HRJjQnaM2cbBe8c7DCjFdrWY1wUjmgAzzZVKpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "9dBuvjoz8q5dx9SRVMm1fkrWJAXsSPQDdTJhGUFg8Urz",
+   "live_liquidity_usd": 2363.3309,
+   "ohlcv_http": 200,
+   "n_candles": 6,
+   "first_candle_ts": 1787756400,
+   "first_candle_close": 0.0001515688157005378,
+   "last_candle_ts": 1787774400,
+   "last_candle_close": 2.106572100008562e-06,
+   "first_seen": "2026-08-26T20:21:43Z",
+   "desc": "His nickname on the street is Pisstacio. He leaks.",
+   "attempts": 1
   }
  },
- "cohort_size": 337,
- "updated": "2026-08-26T20:06:57Z",
- "probed": 337,
+ "cohort_size": 338,
+ "updated": "2026-08-26T20:21:52Z",
+ "probed": 338,
  "remaining": 0,
  "unresolved": 0
 }
