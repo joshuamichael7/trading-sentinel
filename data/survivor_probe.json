@@ -5016,11 +5016,41 @@
    "first_seen": "2026-08-26T13:53:27Z",
    "desc": "The most anticipated game in history. One cat. Nine lives. Zero concerns. $GATO",
    "attempts": 1
+  },
+  "CcgRSw62atZK9EEAQVGyTcsshgtGJxtLHK2ZGwZ7pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "3sTYqkCmxretQsLon7ZQNx8KeTtS2h1pAP3RkoxDv2Gi",
+   "live_liquidity_usd": 176232.0508,
+   "ohlcv_http": 200,
+   "n_candles": 23,
+   "first_candle_ts": 1787695200,
+   "first_candle_close": 0.00022792273265999154,
+   "last_candle_ts": 1787774400,
+   "last_candle_close": 0.004137011946618439,
+   "first_seen": "2026-08-26T20:06:43Z",
+   "desc": "Very strange Scottish Fold \ud83d\ude3a | \u0421\u0443\u043f\u0435\u0440 \u0441\u0442\u0440\u0430\u043d\u043d\u044b\u0439 \u043a\u043e\u0442 \ud83d\ude3c",
+   "attempts": 1
+  },
+  "5RhPVzDsj4K6WMyYJ71yEXAGfhuT25bbSesfKNFEpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "HaRH8rgha94zqypS8qzpqPXax73uLz1jk4FFuaTiHfxG",
+   "live_liquidity_usd": 2233.064,
+   "ohlcv_http": 200,
+   "n_candles": 19,
+   "first_candle_ts": 1787691600,
+   "first_candle_close": 0.0004224566207338182,
+   "last_candle_ts": 1787774400,
+   "last_candle_close": 2.0758270825167696e-06,
+   "first_seen": "2026-08-26T20:06:43Z",
+   "desc": "The Fluffiest sniper in crypto, always on target",
+   "attempts": 1
   }
  },
- "cohort_size": 335,
- "updated": "2026-08-26T13:53:36Z",
- "probed": 335,
+ "cohort_size": 337,
+ "updated": "2026-08-26T20:06:57Z",
+ "probed": 337,
  "remaining": 0,
  "unresolved": 0
 }
