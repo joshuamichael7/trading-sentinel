@@ -5061,11 +5061,26 @@
    "first_seen": "2026-08-26T20:21:43Z",
    "desc": "His nickname on the street is Pisstacio. He leaks.",
    "attempts": 1
+  },
+  "FR3fLGui4CNGWX6f544aFuDnAykAhi65K5GD11YMpump": {
+   "pools_http": 200,
+   "n_pools": 7,
+   "pool": "5CLD9rrS8aN4CeNDDjXwvGd1UVbAQoXsLmZ2xRARvCcC",
+   "live_liquidity_usd": 43774.9855,
+   "ohlcv_http": 200,
+   "n_candles": 5,
+   "first_candle_ts": 1787763600,
+   "first_candle_close": 0.00031571581103216124,
+   "last_candle_ts": 1787778000,
+   "last_candle_close": 0.00023535111479453433,
+   "first_seen": "2026-08-26T21:46:43Z",
+   "desc": "Created by Graeme Devine, who worked on Quake at id Software. Now Quake brought ",
+   "attempts": 1
   }
  },
- "cohort_size": 338,
- "updated": "2026-08-26T20:21:52Z",
- "probed": 338,
+ "cohort_size": 339,
+ "updated": "2026-08-26T21:46:52Z",
+ "probed": 339,
  "remaining": 0,
  "unresolved": 0
 }
