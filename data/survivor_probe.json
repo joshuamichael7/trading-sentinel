@@ -5091,11 +5091,26 @@
    "first_seen": "2026-08-26T22:06:43Z",
    "desc": "I FOUND THE ORIGINAL PISTACIO BUT ITS SPELLED CORRECTLY PISTACHIO",
    "attempts": 1
+  },
+  "4ehAacgHtLA9jhYpFFD7yTKDLuNiGkuLdfX3FiZNpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "9uBTitBSeov1hJqP24vr28SEeeWCFtxajR8PsMp2gzWq",
+   "live_liquidity_usd": 2291.0445,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787774400,
+   "first_candle_close": 0.00020489649541684932,
+   "last_candle_ts": 1787781600,
+   "last_candle_close": 2.152039367212426e-06,
+   "first_seen": "2026-08-26T22:11:43Z",
+   "desc": "\u2600\ufe0f Crypto winter is over. Welcome to $CRYPTOSUMMER\u2014where green candles bloom, vi",
+   "attempts": 1
   }
  },
- "cohort_size": 340,
- "updated": "2026-08-26T22:06:51Z",
- "probed": 340,
+ "cohort_size": 341,
+ "updated": "2026-08-26T22:11:51Z",
+ "probed": 341,
  "remaining": 0,
  "unresolved": 0
 }
