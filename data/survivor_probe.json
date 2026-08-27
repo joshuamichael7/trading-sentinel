@@ -5226,11 +5226,26 @@
    "first_seen": "2026-08-27T16:31:09Z",
    "desc": "hi, i am just an ape",
    "attempts": 1
+  },
+  "AUsU7BR5RrPxJ7C7MoPJ7bV8sxnzfvcHzNdKq4zqpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "EDXaP67hQPu3LjfHgFceiQvGsNv8yyqE912XDY3Dc3Ny",
+   "live_liquidity_usd": 37508.6999,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1787850000,
+   "first_candle_close": 0.00019228478234751666,
+   "last_candle_ts": 1787850000,
+   "last_candle_close": 0.00019228478234751666,
+   "first_seen": "2026-08-27T17:46:09Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 349,
- "updated": "2026-08-27T16:31:16Z",
- "probed": 349,
+ "cohort_size": 350,
+ "updated": "2026-08-27T17:46:16Z",
+ "probed": 350,
  "remaining": 0,
  "unresolved": 0
 }
