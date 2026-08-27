@@ -5211,11 +5211,26 @@
    "first_seen": "2026-08-27T13:01:09Z",
    "desc": "CRYPTO TREMP is storming Solana with bold memes, viral energy, and unstoppable T",
    "attempts": 1
+  },
+  "CGysUrvVEB6EqGFY7MhEVHNZ9S3wSJGLpaK72DCCpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6cNdpeDED3PVVoRp7e5rWRC679MXqqENKxLGpupcbAzy",
+   "live_liquidity_usd": 54837.987,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787842800,
+   "first_candle_close": 0.00020671925873892702,
+   "last_candle_ts": 1787846400,
+   "last_candle_close": 0.00042504423431594866,
+   "first_seen": "2026-08-27T16:31:09Z",
+   "desc": "hi, i am just an ape",
+   "attempts": 1
   }
  },
- "cohort_size": 348,
- "updated": "2026-08-27T13:01:22Z",
- "probed": 348,
+ "cohort_size": 349,
+ "updated": "2026-08-27T16:31:16Z",
+ "probed": 349,
  "remaining": 0,
  "unresolved": 0
 }
