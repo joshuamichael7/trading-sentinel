@@ -5166,11 +5166,26 @@
    "first_seen": "2026-08-27T02:24:49Z",
    "desc": "Beagles are saved by Trump from facilities that supplied dogs for animal testing",
    "attempts": 1
+  },
+  "ok6X4xkJwerNNcksvWFkFDYUgVqxaSwS5Mqyf5vpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "56AiTrQ5ycd8G3UPermrrXXJy619Dt4FLDPg27SQS5cX",
+   "live_liquidity_usd": 36257.2914,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1787799600,
+   "first_candle_close": 0.00017641683150468456,
+   "last_candle_ts": 1787799600,
+   "last_candle_close": 0.00017641683150468456,
+   "first_seen": "2026-08-27T03:59:49Z",
+   "desc": "apeonputer",
+   "attempts": 1
   }
  },
- "cohort_size": 345,
- "updated": "2026-08-27T02:24:55Z",
- "probed": 345,
+ "cohort_size": 346,
+ "updated": "2026-08-27T03:59:55Z",
+ "probed": 346,
  "remaining": 0,
  "unresolved": 0
 }
