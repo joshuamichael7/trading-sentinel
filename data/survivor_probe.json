@@ -5181,11 +5181,41 @@
    "first_seen": "2026-08-27T03:59:49Z",
    "desc": "apeonputer",
    "attempts": 1
+  },
+  "DuVgdHeEk7ejWPxWY5G3PQA99oEGGLmnbWuWWxpEpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "EYtdjhQiSRQJ2cgH71mxcstTQQhZdJTX3zufb7qGonzp",
+   "live_liquidity_usd": 21242.6486,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1787828400,
+   "first_candle_close": 4.5171946387194094e-05,
+   "last_candle_ts": 1787835600,
+   "last_candle_close": 9.221651898694909e-05,
+   "first_seen": "2026-08-27T13:01:09Z",
+   "desc": "The Black Bull - \n$ANSEM\n is heading to a new ATH so lets run up the perfect Bet",
+   "attempts": 1
+  },
+  "3Y1ptgZ541yQh7FdwGeMoGQ7tpgHeeFxWKEKCL3Epump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6s9pLi4HTQYTPoQSA6eTgqvmpQofKKtNV82Rn9fYPwzP",
+   "live_liquidity_usd": 2353.4373,
+   "ohlcv_http": 200,
+   "n_candles": 7,
+   "first_candle_ts": 1787806800,
+   "first_candle_close": 0.0007651323544614712,
+   "last_candle_ts": 1787828400,
+   "last_candle_close": 2.153821930204082e-06,
+   "first_seen": "2026-08-27T13:01:09Z",
+   "desc": "CRYPTO TREMP is storming Solana with bold memes, viral energy, and unstoppable T",
+   "attempts": 1
   }
  },
- "cohort_size": 346,
- "updated": "2026-08-27T03:59:55Z",
- "probed": 346,
+ "cohort_size": 348,
+ "updated": "2026-08-27T13:01:22Z",
+ "probed": 348,
  "remaining": 0,
  "unresolved": 0
 }
