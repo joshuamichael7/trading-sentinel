@@ -5241,11 +5241,26 @@
    "first_seen": "2026-08-27T17:46:09Z",
    "desc": "",
    "attempts": 1
+  },
+  "pRDTsjfAZjWeV4FAuamh2GFu9Zc3Mqs4UDgPdfSpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6A9Co5Jsy3C5Knk9n2owWfwyRiTA4dajPEYQMY8Dd6b2",
+   "live_liquidity_usd": 2993.5032,
+   "ohlcv_http": 200,
+   "n_candles": 12,
+   "first_candle_ts": 1787832000,
+   "first_candle_close": 9.187462569642515e-05,
+   "last_candle_ts": 1787871600,
+   "last_candle_close": 2.5542369222113944e-06,
+   "first_seen": "2026-08-27T23:30:47Z",
+   "desc": "\u9ed1\u725b symbolizes diligence, strength, and dependability\u2014a meme that marks the begin",
+   "attempts": 1
   }
  },
- "cohort_size": 350,
- "updated": "2026-08-27T17:46:16Z",
- "probed": 350,
+ "cohort_size": 351,
+ "updated": "2026-08-27T23:30:53Z",
+ "probed": 351,
  "remaining": 0,
  "unresolved": 0
 }
