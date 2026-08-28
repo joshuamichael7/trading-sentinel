@@ -5271,11 +5271,26 @@
    "first_seen": "2026-08-28T01:15:47Z",
    "desc": "",
    "attempts": 1
+  },
+  "CMx1EUTXhnUKYF5xYMCSkDmJfvRSD7a4iwayW1DVpump": {
+   "pools_http": 200,
+   "n_pools": 18,
+   "pool": "3fGANHkT84ZLgg449h1BguQtDdp1NMBXCb1oohAp32Ui",
+   "live_liquidity_usd": 18175.2219,
+   "ohlcv_http": 200,
+   "n_candles": 877,
+   "first_candle_ts": 1783263600,
+   "first_candle_close": 5.330173877935264e-05,
+   "last_candle_ts": 1787882400,
+   "last_candle_close": 2.8284393634864158e-05,
+   "first_seen": "2026-08-28T02:30:47Z",
+   "desc": "0x is recognized by developers. OX is recognized by the community.",
+   "attempts": 1
   }
  },
- "cohort_size": 352,
- "updated": "2026-08-28T01:15:53Z",
- "probed": 352,
+ "cohort_size": 353,
+ "updated": "2026-08-28T02:30:54Z",
+ "probed": 353,
  "remaining": 0,
  "unresolved": 0
 }
