@@ -5301,11 +5301,26 @@
    "first_seen": "2026-08-28T03:00:47Z",
    "desc": "THE VAULT ($VAULT) \ud83c\udfe6\n\nA meme coin powered by a transparently tracked, actively m",
    "attempts": 1
+  },
+  "A4FJQGuSmykD6erkywPrSkzCrGsxQPRFh3SAXN63pump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "2Pj2VSpgDmdrZMUtU4U9GckA82YYQ4Y2v2Yj66m4ouJc",
+   "live_liquidity_usd": 36383.2984,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787911200,
+   "first_candle_close": 7.025211245968954e-05,
+   "last_candle_ts": 1787914800,
+   "last_candle_close": 0.0001983726096002409,
+   "first_seen": "2026-08-28T11:10:57Z",
+   "desc": "just ape wif kash",
+   "attempts": 1
   }
  },
- "cohort_size": 354,
- "updated": "2026-08-28T03:00:53Z",
- "probed": 354,
+ "cohort_size": 355,
+ "updated": "2026-08-28T11:11:05Z",
+ "probed": 355,
  "remaining": 0,
  "unresolved": 0
 }
