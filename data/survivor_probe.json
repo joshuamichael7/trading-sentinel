@@ -5286,11 +5286,26 @@
    "first_seen": "2026-08-28T02:30:47Z",
    "desc": "0x is recognized by developers. OX is recognized by the community.",
    "attempts": 1
+  },
+  "2hM4xUC3g3u1qcjf6GANPvQTZDa9kvjNkpFH2h6spump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "Hag64AuvextShRhJzSBxZab3VdEPev7EYDuYEk2yLqPY",
+   "live_liquidity_usd": 27258.0884,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787882400,
+   "first_candle_close": 0.00010667051193068586,
+   "last_candle_ts": 1787886000,
+   "last_candle_close": 0.00010862162594982729,
+   "first_seen": "2026-08-28T03:00:47Z",
+   "desc": "THE VAULT ($VAULT) \ud83c\udfe6\n\nA meme coin powered by a transparently tracked, actively m",
+   "attempts": 1
   }
  },
- "cohort_size": 353,
- "updated": "2026-08-28T02:30:54Z",
- "probed": 353,
+ "cohort_size": 354,
+ "updated": "2026-08-28T03:00:53Z",
+ "probed": 354,
  "remaining": 0,
  "unresolved": 0
 }
