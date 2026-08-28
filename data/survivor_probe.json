@@ -5316,11 +5316,26 @@
    "first_seen": "2026-08-28T11:10:57Z",
    "desc": "just ape wif kash",
    "attempts": 1
+  },
+  "GNGhPhcLt5HJ6WjUHQSYoY3KhBFsksxu6FpvLpCFpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7ZiungFoeoPU1xwWfBDBfXtREmLb7wyTemKZctR7N9hN",
+   "live_liquidity_usd": 50008.6768,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787911200,
+   "first_candle_close": 0.0001980347280847215,
+   "last_candle_ts": 1787914800,
+   "last_candle_close": 0.00032847820397779916,
+   "first_seen": "2026-08-28T11:40:57Z",
+   "desc": "Ape in Vest \ud83d\udcc8\ud83d\ude4a\nHold $invest \u2192 Earn SPY dividends.",
+   "attempts": 1
   }
  },
- "cohort_size": 355,
- "updated": "2026-08-28T11:11:05Z",
- "probed": 355,
+ "cohort_size": 356,
+ "updated": "2026-08-28T11:41:05Z",
+ "probed": 356,
  "remaining": 0,
  "unresolved": 0
 }
