@@ -5256,11 +5256,26 @@
    "first_seen": "2026-08-27T23:30:47Z",
    "desc": "\u9ed1\u725b symbolizes diligence, strength, and dependability\u2014a meme that marks the begin",
    "attempts": 1
+  },
+  "3U4QeTDaj4DWDmKc3yzsdgxnd8QtHjXSyMeJgwgVpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "DKbkc9SMYLk5pJTAJ3GKFJAq7jX6J8fR54m3d8B9MpXa",
+   "live_liquidity_usd": 16967.2033,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1787875200,
+   "first_candle_close": 0.00010242039311896843,
+   "last_candle_ts": 1787878800,
+   "last_candle_close": 3.8149978089084575e-05,
+   "first_seen": "2026-08-28T01:15:47Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 351,
- "updated": "2026-08-27T23:30:53Z",
- "probed": 351,
+ "cohort_size": 352,
+ "updated": "2026-08-28T01:15:53Z",
+ "probed": 352,
  "remaining": 0,
  "unresolved": 0
 }
