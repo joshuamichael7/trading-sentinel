@@ -5376,11 +5376,26 @@
    "first_seen": "2026-08-29T07:05:04Z",
    "desc": "nothing",
    "attempts": 1
+  },
+  "6ctMBCcT8gimXqGK67ye5vE4HeVz4A6QKbfxohUBV8vv": {
+   "pools_http": 200,
+   "n_pools": 1,
+   "pool": "6AxDMsfSNNjKC2xKquXHE3tT2imTNrs55S6WxpVs16Ki",
+   "live_liquidity_usd": 4230.5983,
+   "ohlcv_http": 200,
+   "n_candles": 5,
+   "first_candle_ts": 1787994000,
+   "first_candle_close": 3.9590218045409275e-06,
+   "last_candle_ts": 1788008400,
+   "last_candle_close": 4.779073153930512e-06,
+   "first_seen": "2026-08-29T13:09:54Z",
+   "desc": "Market going up? \nWe eat bamboo. \n\nMarket going down? \nWe take a 4-hour nap and ",
+   "attempts": 1
   }
  },
- "cohort_size": 359,
- "updated": "2026-08-29T07:05:10Z",
- "probed": 359,
+ "cohort_size": 360,
+ "updated": "2026-08-29T13:10:01Z",
+ "probed": 360,
  "remaining": 0,
  "unresolved": 0
 }
