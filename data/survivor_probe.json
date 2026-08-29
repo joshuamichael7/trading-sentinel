@@ -5421,11 +5421,26 @@
    "first_seen": "2026-08-29T21:24:25Z",
    "desc": "trading is becoming social\n\nfeeds, callouts, screenshots, group chats, \ncopy tra",
    "attempts": 1
+  },
+  "DTdDsWkaXimkyMQgr6mKTiTfsuFQBM6dHS478N6Apump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "H2FKR9v7HnbeU3hPUVxR1LUW9g9G7HierD567iMMGXbm",
+   "live_liquidity_usd": 2574.3323,
+   "ohlcv_http": 200,
+   "n_candles": 16,
+   "first_candle_ts": 1787983200,
+   "first_candle_close": 0.0001403786838049148,
+   "last_candle_ts": 1788037200,
+   "last_candle_close": 2.308338740231001e-06,
+   "first_seen": "2026-08-29T21:49:25Z",
+   "desc": "Bailey Tongue out. Treats in. Good vibes only. The internet\u2019s most lovable boxer",
+   "attempts": 1
   }
  },
- "cohort_size": 362,
- "updated": "2026-08-29T21:24:32Z",
- "probed": 362,
+ "cohort_size": 363,
+ "updated": "2026-08-29T21:49:32Z",
+ "probed": 363,
  "remaining": 0,
  "unresolved": 0
 }
