@@ -5391,11 +5391,26 @@
    "first_seen": "2026-08-29T13:09:54Z",
    "desc": "Market going up? \nWe eat bamboo. \n\nMarket going down? \nWe take a 4-hour nap and ",
    "attempts": 1
+  },
+  "AfGdjAp9djSaqJxzYo3t6jy8tJA3o2aDPHoZ57Egpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "CAKa2RatbNyiMjxAtpeTKsj3567MSLaTbXifws6g2rej",
+   "live_liquidity_usd": 68404.1415,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788008400,
+   "first_candle_close": 0.00045465230918584056,
+   "last_candle_ts": 1788012000,
+   "last_candle_close": 0.0006274554122484026,
+   "first_seen": "2026-08-29T14:09:54Z",
+   "desc": "Greyson, Florida\u2019s viral Onewheel-riding pit bull, conquering speed bumps and wi",
+   "attempts": 1
   }
  },
- "cohort_size": 360,
- "updated": "2026-08-29T13:10:01Z",
- "probed": 360,
+ "cohort_size": 361,
+ "updated": "2026-08-29T14:10:01Z",
+ "probed": 361,
  "remaining": 0,
  "unresolved": 0
 }
