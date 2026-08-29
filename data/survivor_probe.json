@@ -5406,11 +5406,26 @@
    "first_seen": "2026-08-29T14:09:54Z",
    "desc": "Greyson, Florida\u2019s viral Onewheel-riding pit bull, conquering speed bumps and wi",
    "attempts": 1
+  },
+  "5mFZZzyUawGknigAxf3zkQQtSpnYqSGUg5bRz3b3pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "J76thqRVr7ioMKj4ryJEif5e28my98CZVdvZxcMTY4mE",
+   "live_liquidity_usd": 2639.0208,
+   "ohlcv_http": 200,
+   "n_candles": 14,
+   "first_candle_ts": 1787990400,
+   "first_candle_close": 0.00014544219977104735,
+   "last_candle_ts": 1788037200,
+   "last_candle_close": 2.392698203501307e-06,
+   "first_seen": "2026-08-29T21:24:25Z",
+   "desc": "trading is becoming social\n\nfeeds, callouts, screenshots, group chats, \ncopy tra",
+   "attempts": 1
   }
  },
- "cohort_size": 361,
- "updated": "2026-08-29T14:10:01Z",
- "probed": 361,
+ "cohort_size": 362,
+ "updated": "2026-08-29T21:24:32Z",
+ "probed": 362,
  "remaining": 0,
  "unresolved": 0
 }
