@@ -5451,11 +5451,26 @@
    "first_seen": "2026-08-29T22:19:25Z",
    "desc": "Woodstock is not a great flyer. In fact, he doesn\u2019t even know what type of bird ",
    "attempts": 1
+  },
+  "8AFPG5SDGyQbVo4ez1gd4dpYKBtVByFmkykkzAaHpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "GUze6JKtQy7neNSAHJYFBhfnCCGSbbKb8s2jdjzmazAG",
+   "live_liquidity_usd": 3322.2389,
+   "ohlcv_http": 200,
+   "n_candles": 9,
+   "first_candle_ts": 1788019200,
+   "first_candle_close": 0.0005656196983182363,
+   "last_candle_ts": 1788048000,
+   "last_candle_close": 2.9083114605634864e-06,
+   "first_seen": "2026-08-30T00:44:25Z",
+   "desc": "the trenches picked a color. his nickname on the street is pinktacio.",
+   "attempts": 1
   }
  },
- "cohort_size": 364,
- "updated": "2026-08-29T22:19:32Z",
- "probed": 364,
+ "cohort_size": 365,
+ "updated": "2026-08-30T00:44:31Z",
+ "probed": 365,
  "remaining": 0,
  "unresolved": 0
 }
