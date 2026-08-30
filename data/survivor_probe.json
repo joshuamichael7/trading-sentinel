@@ -5556,11 +5556,26 @@
    "first_seen": "2026-08-30T14:07:54Z",
    "desc": "Ape. Holds through red. Buys more green.",
    "attempts": 1
+  },
+  "Femuy4XPWMumb1L8ErHiWuXGweXCyqCyfrZxxxxqpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "2TWFrAxAEFNKK4UcubT7JksdAbN5xjTQGTcGLdCVQLEr",
+   "live_liquidity_usd": 59882.8612,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1788098400,
+   "first_candle_close": 0.00016704446825374937,
+   "last_candle_ts": 1788105600,
+   "last_candle_close": 0.00044542858099780547,
+   "first_seen": "2026-08-30T16:47:54Z",
+   "desc": "RAMCOIN \u2014 powering the next generation of memory.\n100% of fees support the DDR6 ",
+   "attempts": 1
   }
  },
- "cohort_size": 371,
- "updated": "2026-08-30T14:08:01Z",
- "probed": 371,
+ "cohort_size": 372,
+ "updated": "2026-08-30T16:48:01Z",
+ "probed": 372,
  "remaining": 0,
  "unresolved": 0
 }
