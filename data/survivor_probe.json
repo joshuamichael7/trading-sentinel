@@ -5496,11 +5496,26 @@
    "first_seen": "2026-08-30T05:57:21Z",
    "desc": "Pepe Parker's least favourite person. The Lily Pad Cartel has arrived on Solana.",
    "attempts": 1
+  },
+  "BoaPfCRY99XA4KcvZzpJNGupwUitNp5jVGhSoaBZpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "Gf9gQhQjYesCZKnFBNREummbjBhuWaBUrsGdN17oHmXB",
+   "live_liquidity_usd": 2362.1653,
+   "ohlcv_http": 200,
+   "n_candles": 7,
+   "first_candle_ts": 1788051600,
+   "first_candle_close": 0.0001234890534881872,
+   "last_candle_ts": 1788073200,
+   "last_candle_close": 2.1307698300410214e-06,
+   "first_seen": "2026-08-30T07:17:21Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 367,
- "updated": "2026-08-30T05:57:35Z",
- "probed": 367,
+ "cohort_size": 368,
+ "updated": "2026-08-30T07:17:29Z",
+ "probed": 368,
  "remaining": 0,
  "unresolved": 0
 }
