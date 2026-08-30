@@ -5571,11 +5571,26 @@
    "first_seen": "2026-08-30T16:47:54Z",
    "desc": "RAMCOIN \u2014 powering the next generation of memory.\n100% of fees support the DDR6 ",
    "attempts": 1
+  },
+  "CvepWqy7S6YngubvTxAUM4fQQr7bfduaZPYrL3PDpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "6KVpRHxpRVmXW1n3cvnd9zhf1FqMJoJLStMyby3K1LqJ",
+   "live_liquidity_usd": 11830.1154,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1788105600,
+   "first_candle_close": 4.424722724881829e-05,
+   "last_candle_ts": 1788112800,
+   "last_candle_close": 2.524790081845343e-05,
+   "first_seen": "2026-08-30T18:47:22Z",
+   "desc": "If you want to quit your 9-5, buy and hold this coin.",
+   "attempts": 1
   }
  },
- "cohort_size": 372,
- "updated": "2026-08-30T16:48:01Z",
- "probed": 372,
+ "cohort_size": 373,
+ "updated": "2026-08-30T18:47:30Z",
+ "probed": 373,
  "remaining": 0,
  "unresolved": 0
 }
