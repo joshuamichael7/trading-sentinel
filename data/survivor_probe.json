@@ -5466,11 +5466,41 @@
    "first_seen": "2026-08-30T00:44:25Z",
    "desc": "the trenches picked a color. his nickname on the street is pinktacio.",
    "attempts": 1
+  },
+  "6E8fPgsBvwjGRHcoeLUW8iugy736SKo54VvYLbYMpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "7n9drBwKK4LxgW8kVhx8VZw8FaGupjJH6ebhyNDXj9XB",
+   "live_liquidity_usd": 67260.3663,
+   "ohlcv_http": 200,
+   "n_candles": 280,
+   "first_candle_ts": 1787040000,
+   "first_candle_close": 5.9226363514312874e-05,
+   "last_candle_ts": 1788066000,
+   "last_candle_close": 0.0006301238316574684,
+   "first_seen": "2026-08-30T05:57:21Z",
+   "desc": "The all-in-one hub, fully Decentralized Perpetual Exchange (DEX), and the upcomi",
+   "attempts": 1
+  },
+  "F7TGmpDqNFKxhHGCMcHDzoyxwkNtuX2d4aTZuEwwpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "EGEBRx3Y79A3uudA2U4UbNDF81QFFyfLxLYPNJFpvbZF",
+   "live_liquidity_usd": 22940.0656,
+   "ohlcv_http": 200,
+   "n_candles": 99,
+   "first_candle_ts": 1786320000,
+   "first_candle_close": 3.6698595421498476e-05,
+   "last_candle_ts": 1788066000,
+   "last_candle_close": 4.379351615102611e-05,
+   "first_seen": "2026-08-30T05:57:21Z",
+   "desc": "Pepe Parker's least favourite person. The Lily Pad Cartel has arrived on Solana.",
+   "attempts": 1
   }
  },
- "cohort_size": 365,
- "updated": "2026-08-30T00:44:31Z",
- "probed": 365,
+ "cohort_size": 367,
+ "updated": "2026-08-30T05:57:35Z",
+ "probed": 367,
  "remaining": 0,
  "unresolved": 0
 }
