@@ -5661,11 +5661,26 @@
    "first_seen": "2026-08-31T19:12:41Z",
    "desc": "First-ever autonomous cat agent on Solana.",
    "attempts": 1
+  },
+  "9TyMG9GkQncEqH3mvTwphkcTYSXtJYHGuCUrXsKcpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "Db4QLY2j3mqzsmBAJgzhrvANhmakQ94tAbmaTXm8Qr4N",
+   "live_liquidity_usd": 30120.9572,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788199200,
+   "first_candle_close": 7.921425804082177e-05,
+   "last_candle_ts": 1788202800,
+   "last_candle_close": 0.00013136842594073405,
+   "first_seen": "2026-08-31T19:32:41Z",
+   "desc": "just a chill ape",
+   "attempts": 1
   }
  },
- "cohort_size": 378,
- "updated": "2026-08-31T19:12:48Z",
- "probed": 378,
+ "cohort_size": 379,
+ "updated": "2026-08-31T19:32:48Z",
+ "probed": 379,
  "remaining": 0,
  "unresolved": 0
 }
