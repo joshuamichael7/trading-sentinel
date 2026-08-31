@@ -5646,11 +5646,26 @@
    "first_seen": "2026-08-31T18:07:41Z",
    "desc": "Hachiko is the memecoin inspired by the legendary Akita who waited every single ",
    "attempts": 1
+  },
+  "3C6nz382qU71aDiEvk5xsmJrzd5Ey6iNXdpTgrjVpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "3ZMNoxKjdybeyfKWnK8esKQGw42MCsBkMTzrfzzTyhbX",
+   "live_liquidity_usd": 53492.221,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788199200,
+   "first_candle_close": 0.00023439392075222496,
+   "last_candle_ts": 1788202800,
+   "last_candle_close": 0.00034752028807290405,
+   "first_seen": "2026-08-31T19:12:41Z",
+   "desc": "First-ever autonomous cat agent on Solana.",
+   "attempts": 1
   }
  },
- "cohort_size": 377,
- "updated": "2026-08-31T18:07:50Z",
- "probed": 377,
+ "cohort_size": 378,
+ "updated": "2026-08-31T19:12:48Z",
+ "probed": 378,
  "remaining": 0,
  "unresolved": 0
 }
