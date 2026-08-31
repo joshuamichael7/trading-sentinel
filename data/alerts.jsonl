@@ -15,3 +15,4 @@
 {"ts": "2026-08-28T19:11:40Z", "alert": "ALERT MEME-001 (ANSEM): moved -11.3% since last sample \u2014 price 0.3295"}
 {"ts": "2026-08-30T10:02:21Z", "alert": "ALERT MEME-001 (ANSEM): moved +41.3% since last sample \u2014 price 0.4881"}
 {"ts": "2026-08-31T03:03:02Z", "alert": "ALERT MEME-001 (ANSEM): trailing stop hit (40% off high 0.4881) \u2014 price 0.2917"}
+{"ts": "2026-08-31T04:08:02Z", "alert": "ALERT MEME-001 (ANSEM): trailing stop hit (40% off high 0.4881) \u2014 price 0.2892"}
