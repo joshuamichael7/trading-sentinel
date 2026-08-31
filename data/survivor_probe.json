@@ -5601,11 +5601,26 @@
    "first_seen": "2026-08-31T02:58:02Z",
    "desc": "Apeus Maximus rises as the supreme ape and king of memes on Solana.",
    "attempts": 1
+  },
+  "7TBkWkqohDZEoCAh1ykErGKyZzgFUEjxTv75xQeAvTeP": {
+   "pools_http": 200,
+   "n_pools": 8,
+   "pool": "6d2ttxfc4iwK2WmD7MdnY3a2eaPowdYrWhGnmU1Hs2XB",
+   "live_liquidity_usd": 48911.8313,
+   "ohlcv_http": 200,
+   "n_candles": 13,
+   "first_candle_ts": 1788130800,
+   "first_candle_close": 4.323950998607799e-05,
+   "last_candle_ts": 1788174000,
+   "last_candle_close": 0.00035392600540705513,
+   "first_seen": "2026-08-31T11:34:02Z",
+   "desc": "$APEC is a token whose trading fees feed a machine. Half of every fee goes to ho",
+   "attempts": 1
   }
  },
- "cohort_size": 374,
- "updated": "2026-08-31T02:58:09Z",
- "probed": 374,
+ "cohort_size": 375,
+ "updated": "2026-08-31T11:34:10Z",
+ "probed": 375,
  "remaining": 0,
  "unresolved": 0
 }
