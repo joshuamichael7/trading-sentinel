@@ -5676,11 +5676,26 @@
    "first_seen": "2026-08-31T19:32:41Z",
    "desc": "just a chill ape",
    "attempts": 1
+  },
+  "DnQu6xQd9zzW5dWpKppjNTRcTYFS6JDpK5xLXEZypump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "BD2381TaQhPFjzn1t6NDqb6KJYY9nmosFXFCdE4XbbEW",
+   "live_liquidity_usd": 30922.9811,
+   "ohlcv_http": 200,
+   "n_candles": 25,
+   "first_candle_ts": 1788127200,
+   "first_candle_close": 0.00010101352512250297,
+   "last_candle_ts": 1788213600,
+   "last_candle_close": 0.00013836494349956426,
+   "first_seen": "2026-08-31T22:12:41Z",
+   "desc": "Catfish",
+   "attempts": 1
   }
  },
- "cohort_size": 379,
- "updated": "2026-08-31T19:32:48Z",
- "probed": 379,
+ "cohort_size": 380,
+ "updated": "2026-08-31T22:12:48Z",
+ "probed": 380,
  "remaining": 0,
  "unresolved": 0
 }
