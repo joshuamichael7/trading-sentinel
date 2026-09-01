@@ -5736,11 +5736,26 @@
    "first_seen": "2026-09-01T19:52:26Z",
    "desc": "everything is fine",
    "attempts": 1
+  },
+  "91X4ErT2VPRbK6SHsEBQ8J1T25twwFeTJhrHxJv7pump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "CztvdCZgL4zeY8BbbupUi2FQf3zLG3U7dR6p5m9TXaAE",
+   "live_liquidity_usd": 2485.4414,
+   "ohlcv_http": 200,
+   "n_candles": 16,
+   "first_candle_ts": 1788235200,
+   "first_candle_close": 0.00016228029775344516,
+   "last_candle_ts": 1788296400,
+   "last_candle_close": 2.1721562441705876e-06,
+   "first_seen": "2026-09-01T23:32:26Z",
+   "desc": "NICK GPRO brings legendary camera energy, wild memes, and nonstop action to Sola",
+   "attempts": 1
   }
  },
- "cohort_size": 383,
- "updated": "2026-09-01T19:52:34Z",
- "probed": 383,
+ "cohort_size": 384,
+ "updated": "2026-09-01T23:32:34Z",
+ "probed": 384,
  "remaining": 0,
  "unresolved": 0
 }
