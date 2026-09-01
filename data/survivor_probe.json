@@ -5706,11 +5706,26 @@
    "first_seen": "2026-09-01T04:31:48Z",
    "desc": "$47 or $45 dollar purchases only or you hate America $F#kyeah is the meme coin o",
    "attempts": 1
+  },
+  "6dQocvGFwQybNVrf8srJa5SwvN7rRpfnzexaoeJLpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "AHE7XAcfZbnKVY9kNEu6A5t2JX88BDrSNK1og8ByaEyE",
+   "live_liquidity_usd": 65415.6583,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788285600,
+   "first_candle_close": 0.0004094830140741668,
+   "last_candle_ts": 1788289200,
+   "last_candle_close": 0.0005651086017226061,
+   "first_seen": "2026-09-01T19:37:26Z",
+   "desc": "The Official Skelly Coin On Solana",
+   "attempts": 1
   }
  },
- "cohort_size": 381,
- "updated": "2026-09-01T04:31:56Z",
- "probed": 381,
+ "cohort_size": 382,
+ "updated": "2026-09-01T19:37:36Z",
+ "probed": 382,
  "remaining": 0,
  "unresolved": 0
 }
