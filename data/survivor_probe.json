@@ -5721,11 +5721,26 @@
    "first_seen": "2026-09-01T19:37:26Z",
    "desc": "The Official Skelly Coin On Solana",
    "attempts": 1
+  },
+  "FBFSVbKL5ztEeD1mXFxrvaR7AjVfZAjd2j4W2yMJpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "3ghCJ1VwD1KnWm3L87R2Dppygi81CbSwCbw7ykewwAL5",
+   "live_liquidity_usd": 37209.7363,
+   "ohlcv_http": 200,
+   "n_candles": 1,
+   "first_candle_ts": 1788289200,
+   "first_candle_close": 0.00016467987396564794,
+   "last_candle_ts": 1788289200,
+   "last_candle_close": 0.00016467987396564794,
+   "first_seen": "2026-09-01T19:52:26Z",
+   "desc": "everything is fine",
+   "attempts": 1
   }
  },
- "cohort_size": 382,
- "updated": "2026-09-01T19:37:36Z",
- "probed": 382,
+ "cohort_size": 383,
+ "updated": "2026-09-01T19:52:34Z",
+ "probed": 383,
  "remaining": 0,
  "unresolved": 0
 }
