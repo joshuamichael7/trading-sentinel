@@ -5811,11 +5811,26 @@
    "first_seen": "2026-09-02T15:57:54Z",
    "desc": "",
    "attempts": 1
+  },
+  "DGxNfqdqQLxCdrNZrbcA9AutX2cobj7Nx4dpJmDVpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "D9EZbnN7UrEARoUCdmkLzyerj2uiE539f5PayKRNuHPT",
+   "live_liquidity_usd": 38786.1477,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788361200,
+   "first_candle_close": 0.0002065845809713061,
+   "last_candle_ts": 1788364800,
+   "last_candle_close": 0.00020456505268472556,
+   "first_seen": "2026-09-02T16:22:54Z",
+   "desc": "Ape ditched the signal. Useless Fone never works.",
+   "attempts": 1
   }
  },
- "cohort_size": 388,
- "updated": "2026-09-02T15:58:01Z",
- "probed": 388,
+ "cohort_size": 389,
+ "updated": "2026-09-02T16:23:03Z",
+ "probed": 389,
  "remaining": 0,
  "unresolved": 0
 }
