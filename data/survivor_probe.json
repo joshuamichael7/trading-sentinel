@@ -5796,11 +5796,26 @@
    "first_seen": "2026-09-02T06:19:29Z",
    "desc": "$CHOMP is Hungry Creator fee\u2014 - BuyBack & Marketing\u2014-> Supply Feed to Chomp\u2014-> $",
    "attempts": 1
+  },
+  "HmJDgky11u77hpBss6D8sjNpYPD5B6fWgSVDj58jpump": {
+   "pools_http": 200,
+   "n_pools": 10,
+   "pool": "6imhRyMYu5xoGJ5W7yveymB5o5yfyAvXxveozWpbU5ix",
+   "live_liquidity_usd": 156968.3145,
+   "ohlcv_http": 200,
+   "n_candles": 27,
+   "first_candle_ts": 1788267600,
+   "first_candle_close": 0.0007628687616343484,
+   "last_candle_ts": 1788361200,
+   "last_candle_close": 0.002124653979066563,
+   "first_seen": "2026-09-02T15:57:54Z",
+   "desc": "",
+   "attempts": 1
   }
  },
- "cohort_size": 387,
- "updated": "2026-09-02T06:19:39Z",
- "probed": 387,
+ "cohort_size": 388,
+ "updated": "2026-09-02T15:58:01Z",
+ "probed": 388,
  "remaining": 0,
  "unresolved": 0
 }
