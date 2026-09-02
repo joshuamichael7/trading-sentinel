@@ -5751,11 +5751,26 @@
    "first_seen": "2026-09-01T23:32:26Z",
    "desc": "NICK GPRO brings legendary camera energy, wild memes, and nonstop action to Sola",
    "attempts": 1
+  },
+  "H76u9jTTbMtEF5JGmqXM2wW6xqMXpvTdVyer4RvKpump": {
+   "pools_http": 200,
+   "n_pools": 3,
+   "pool": "3VLpiEBR9S31uDgBQUTz3hEtZt5YAUK2225iY54npghL",
+   "live_liquidity_usd": 82807.7046,
+   "ohlcv_http": 200,
+   "n_candles": 3,
+   "first_candle_ts": 1788314400,
+   "first_candle_close": 0.0004537635392677932,
+   "last_candle_ts": 1788321600,
+   "last_candle_close": 0.0009344860117072636,
+   "first_seen": "2026-09-02T04:24:29Z",
+   "desc": "Pumpooor is broke degen, still chasing the next life-changing pump",
+   "attempts": 1
   }
  },
- "cohort_size": 384,
- "updated": "2026-09-01T23:32:34Z",
- "probed": 384,
+ "cohort_size": 385,
+ "updated": "2026-09-02T04:24:43Z",
+ "probed": 385,
  "remaining": 0,
  "unresolved": 0
 }
