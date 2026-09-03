@@ -5841,11 +5841,26 @@
    "first_seen": "2026-09-02T19:53:33Z",
    "desc": "",
    "attempts": 1
+  },
+  "GzttC7TXFVxcxgsSLja4PAHitaM9Jttc6YMDTUyrpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "A9mRtFsbkQh9zcmYfn9zQM1RJHFGPps1VU7vBztTvs3z",
+   "live_liquidity_usd": 36303.6959,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788390000,
+   "first_candle_close": 0.00015848689297489764,
+   "last_candle_ts": 1788393600,
+   "last_candle_close": 0.00023905991802942558,
+   "first_seen": "2026-09-03T00:08:32Z",
+   "desc": "The Hood Stays Off",
+   "attempts": 1
   }
  },
- "cohort_size": 390,
- "updated": "2026-09-02T19:53:42Z",
- "probed": 390,
+ "cohort_size": 391,
+ "updated": "2026-09-03T00:08:40Z",
+ "probed": 391,
  "remaining": 0,
  "unresolved": 0
 }
