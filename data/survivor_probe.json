@@ -5886,11 +5886,26 @@
    "first_seen": "2026-09-03T15:45:26Z",
    "desc": "SolFone \ud83d\udcde Solana\u2019s always-on line. Trade, ape & never hang up.",
    "attempts": 1
+  },
+  "2kvQpbNcdToU8hhA7b47RDw8ivc79Kb43WUYgd3npump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "5k2jYn4g53ghDiHfJK3fnpt9r2QdxJGUdCtpq4z1DHuu",
+   "live_liquidity_usd": 36926.2502,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788451200,
+   "first_candle_close": 0.0001321460865592526,
+   "last_candle_ts": 1788454800,
+   "last_candle_close": 0.00018461989052433682,
+   "first_seen": "2026-09-03T17:15:26Z",
+   "desc": "hi im SolBen Official Meme Mascot of @solflare",
+   "attempts": 1
   }
  },
- "cohort_size": 393,
- "updated": "2026-09-03T15:45:33Z",
- "probed": 393,
+ "cohort_size": 394,
+ "updated": "2026-09-03T17:15:33Z",
+ "probed": 394,
  "remaining": 0,
  "unresolved": 0
 }
