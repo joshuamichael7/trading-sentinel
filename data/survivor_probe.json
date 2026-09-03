@@ -5856,11 +5856,26 @@
    "first_seen": "2026-09-03T00:08:32Z",
    "desc": "The Hood Stays Off",
    "attempts": 1
+  },
+  "5EHz51kdjgqmq7SH287DihsKZ2GkjziWLUpfpdrVpump": {
+   "pools_http": 200,
+   "n_pools": 4,
+   "pool": "Bc41Ped2cpQyzFvFUzsTN9Rkq3Ggcsav4JjGyYfLWdvr",
+   "live_liquidity_usd": 2491.0479,
+   "ohlcv_http": 200,
+   "n_candles": 17,
+   "first_candle_ts": 1788346800,
+   "first_candle_close": 0.0003177732264528783,
+   "last_candle_ts": 1788408000,
+   "last_candle_close": 2.196745344431662e-06,
+   "first_seen": "2026-09-03T04:27:06Z",
+   "desc": "Duck \ud83e\udd1d Goose. Different birds, same flock. Flying through every pump and dip tog",
+   "attempts": 1
   }
  },
- "cohort_size": 391,
- "updated": "2026-09-03T00:08:40Z",
- "probed": 391,
+ "cohort_size": 392,
+ "updated": "2026-09-03T04:27:13Z",
+ "probed": 392,
  "remaining": 0,
  "unresolved": 0
 }
