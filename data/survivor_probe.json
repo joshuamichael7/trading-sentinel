@@ -5916,11 +5916,26 @@
    "first_seen": "2026-09-04T03:40:19Z",
    "desc": "From the creator of Pepark and fukyeah comes Side Eye Baby. a Memeify original b",
    "attempts": 1
+  },
+  "DqHKom9vHM2sEU9thNzeHtvfjzsZJPDgkq3Xwuhtpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "DPJ4mLgM5DCqvypsrvMX7fqZCJBA8kUwn66qBygXeG5i",
+   "live_liquidity_usd": 2555.1138,
+   "ohlcv_http": 200,
+   "n_candles": 15,
+   "first_candle_ts": 1788458400,
+   "first_candle_close": 0.00045824834119265385,
+   "last_candle_ts": 1788508800,
+   "last_candle_close": 2.241396640633358e-06,
+   "first_seen": "2026-09-04T09:29:36Z",
+   "desc": "SOLOTC \u2014 Solana-native OTC desks earning stocks, pre-IPO exposure & yield.",
+   "attempts": 1
   }
  },
- "cohort_size": 395,
- "updated": "2026-09-04T03:40:26Z",
- "probed": 395,
+ "cohort_size": 396,
+ "updated": "2026-09-04T09:29:44Z",
+ "probed": 396,
  "remaining": 0,
  "unresolved": 0
 }
