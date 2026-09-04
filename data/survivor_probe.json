@@ -5946,11 +5946,26 @@
    "first_seen": "2026-09-04T10:44:36Z",
    "desc": "",
    "attempts": 1
+  },
+  "3pCfBG2gNWWwWbKEs7cxvPcvDtaQi7yh9qmVB2Cqpump": {
+   "pools_http": 200,
+   "n_pools": 2,
+   "pool": "273u4LFJPepwri5NaenzsLVgKcPWbJoqBYR3Jxg88MGh",
+   "live_liquidity_usd": 75052.6907,
+   "ohlcv_http": 200,
+   "n_candles": 2,
+   "first_candle_ts": 1788526800,
+   "first_candle_close": 0.0007427226204215713,
+   "last_candle_ts": 1788530400,
+   "last_candle_close": 0.0006499673674027667,
+   "first_seen": "2026-09-04T14:04:36Z",
+   "desc": "Just a memestock",
+   "attempts": 1
   }
  },
- "cohort_size": 397,
- "updated": "2026-09-04T10:44:43Z",
- "probed": 397,
+ "cohort_size": 398,
+ "updated": "2026-09-04T14:04:43Z",
+ "probed": 398,
  "remaining": 0,
  "unresolved": 0
 }
