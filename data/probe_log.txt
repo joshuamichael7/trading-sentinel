@@ -25678,3 +25678,6 @@
 22:17:15 rc=0 out='survivor_probe: complete, 398/398 probed, 0 unresolved after 5 tries, nothing to do' err=''
 22:17:15 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
 22:17:15 candle_harvest.py rc=0 out='candle_harvest: complete (397 pools harvested)' err=''
+22:22:15 rc=0 out='survivor_probe: complete, 398/398 probed, 0 unresolved after 5 tries, nothing to do' err=''
+22:22:15 hl_crawl.py rc=0 out='hl_crawl: complete, 400 vaults known' err=''
+22:22:15 candle_harvest.py rc=0 out='candle_harvest: complete (397 pools harvested)' err=''
